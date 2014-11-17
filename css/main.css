@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?    family=Libre+Baskerville:400,700,400italic|Vollkorn:400,700italic,700,400italic|PT+Serif:400,700italic,400italic,700|Bitter:700,400italic,400|Droid+Serif:400,700italic,400italic,700|Noto+Serif:400,400italic,700,700italic);
+
+
+h1,
+h2 {
+  font-family: 'PT Serif', serif;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 50px; /* bottom = footer height */
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
