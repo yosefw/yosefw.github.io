@@ -1,11 +1,4 @@
-@import url(http://fonts.googleapis.com/css?    family=Libre+Baskerville:400,700,400italic|Vollkorn:400,700italic,700,400italic|PT+Serif:400,700italic,400italic,700|Bitter:700,400italic,400|Droid+Serif:400,700italic,400italic,700|Noto+Serif:400,400italic,700,700italic);
-
-
-h1,
-h2 {
-  font-family: 'PT Serif', serif;
-}
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 html {
   position: relative;
@@ -13,13 +6,66 @@ html {
 }
 
 body {
-  margin: 0 0 50px; /* bottom = footer height */
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #FBFBFB;
+}
+
+nav {
+  padding-top: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-top: 10px #2ecc71 solid;
+}
+
+nav .container,
+footer .container {
+  height: 30px;
+}
+
+nav .container,
+footer .container,
+nav a,
+nav span,
+footer span {
+  line-height: 30px;
+}
+
+nav span {
+  color: #777;
+}
+
+nav a {
+  color: #2ecc71;
+}
+
+#hero-unit {
+
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -5px;
+}
+
+.btn {
+  font-weight: 700;
 }
 
 footer {
+  padding-bottom: 20px;
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 50px;
+  height: 60px;
   width: 100%;
+  border-bottom: 10px #333 solid;
 }
