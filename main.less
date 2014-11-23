@@ -1,6 +1,23 @@
-@brandColor: #2ecc71;
+/***************
+   variables
+***************/
+
+@brandColor: hsl(145, 63%, 49%);
+@brandColorHover: lighten(@brandColor, 20%);
+@brandColorShadow: darken(@brandColor, 20%);
+@brandColorShadowHover: lighten(@brandColorShadow, 20%);
+
+@btnShadow: 0px 0.25em 0px 0px;
+
+/**************
+   typography
+**************/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+/************
+   the rest
+************/
 
 html,
 body,
@@ -38,48 +55,44 @@ footer span {
   line-height: 30px;
 }
 
-nav span {
-  color: #777;
-}
-
-nav a {
-  color: @brandColor;
-}
-
-nav a:hover {
-  color: #55d88b;
+nav {
+  span {
+    color: #777;
+  }
+  a {
+    color: @brandColor;
+    &:hover {
+      color: @brandColorHover;
+    }
+  }
 }
 
 .row > * {
-  display: table;
+  display: table; //to enable vertical alignment for the #hero-unit
 }
 
 #hero-unit {
   display: table-cell;
   vertical-align: middle;
-}
-
-h1 {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: -5px;
-  margin-bottom: 30px;
-}
-
-#hero-unit p {
-  margin-bottom: 20px;
-}
-
-#hero-unit .btn {
-  font-weight: 700;
-  border: none;
-  background-color: @brandColor;
-  box-shadow: 0px 0.25em 0px 0px #25a259;
-}
-
-#hero-unit .btn:hover {
-  background-color: #55d88b;
-  box-shadow: 0px 0.25em 0px 0px #2ecc71;
+  h1 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -5px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .btn {
+    font-weight: 700;
+    border: none;
+    background-color: @brandColor;
+    box-shadow: @btnShadow @brandColorShadow;
+    &:hover {
+      background-color: @brandColorHover;
+      box-shadow: @btnShadow @brandColorShadowHover;
+    }
+  }
 }
 
 footer {
