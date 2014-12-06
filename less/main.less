@@ -10,22 +10,26 @@
    variables
 ***************/
 
-@brandColor: hsl(145, 63%, 49%);
-@brandColorHover: lighten(@brandColor, 20%);
-@brandColorShadow: darken(@brandColor, 20%);
-@brandColorShadowHover: lighten(@brandColorShadow, 20%);
+@brand-primary:                hsl(145, 63%, 49%);
+@brand-primary-hover:          lighten(@brand-primary, 10%);
+@brand-primary-shadow:         darken(@brand-primary, 10%);
+@brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 10%);
 
-@btnShadow: 0px 0.25em 0px 0px;
+@font-size-base:               16px;
+@headings-font-weight:         700;
+@btn-font-weight:              700;
 
-/**************
-   typography
-**************/
+@btn-shadow:                    0px 0.25em 0px 0px;
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/***************
+   mixins
+***************/
 
 /************
    the rest
 ************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 html,
 body {
@@ -36,21 +40,30 @@ body {
 body {
   display: table;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
   font-weight: 300;
 }
 
 header,
 footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
 }
 
+.btn {
+    border: none;
+    box-shadow: @btn-shadow @brand-primary-shadow;
+    &:hover {
+      background-color: @brand-primary-hover;
+      box-shadow: @btn-shadow @brand-primary-shadow-hover;
+    }
+  }
+  
+
 header {
-  padding-top: 20px;
+  padding-top: 10px;
   top: 0;
-  border-top: 10px @brandColor solid;
+  border-top: 10px @brand-primary solid;
 }
 
 header .container,
@@ -66,9 +79,9 @@ header {
     color: #777;
   }
   a {
-    color: @brandColor;
+    color: @brand-primary;
     &:hover {
-      color: @brandColorHover;
+      color: @brand-primary-hover;
     }
   }
 }
@@ -79,29 +92,20 @@ main {
 }
 
 #hero-unit {
-  h1 {
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: -5px;
-    margin-bottom: 30px;
+  @media (min-width: @screen-sm-min) {
+    h1 {
+      font-size: 80px;
+      letter-spacing: -5px;
+      margin-bottom: 30px;
+    }
   }
   p {
     margin-bottom: 20px;
   }
-  .btn {
-    font-weight: 700;
-    border: none;
-    background-color: @brandColor;
-    box-shadow: @btnShadow @brandColorShadow;
-    &:hover {
-      background-color: @brandColorHover;
-      box-shadow: @btnShadow @brandColorShadowHover;
-    }
-  }
 }
 
 footer {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   bottom: 0;
   border-bottom: 10px #333 solid;
 }
