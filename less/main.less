@@ -10,10 +10,10 @@
    variables
 ***************/
 
-@brand-primary:                hsl(145, 63%, 49%);
-@brand-primary-hover:          lighten(@brand-primary, 10%);
+@brand-primary:                #00AA32;
+@brand-primary-hover:          lighten(@brand-primary, 2%);
 @brand-primary-shadow:         darken(@brand-primary, 10%);
-@brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 10%);
+@brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 2%);
 
 @font-size-base:               16px;
 @headings-font-weight:         700;
@@ -50,6 +50,10 @@ footer {
   width: 100%;
 }
 
+h1 {
+  letter-spacing: -2px;
+}
+
 .btn {
     border: none;
     box-shadow: @btn-shadow @brand-primary-shadow;
@@ -61,9 +65,12 @@ footer {
   
 
 header {
+  font-size: @font-size-large;
   padding-top: 10px;
   top: 0;
-  border-top: 10px @brand-primary solid;
+  a {
+    font-weight: 700;
+  }
 }
 
 header .container,
@@ -92,11 +99,12 @@ main {
 }
 
 #hero-unit {
-  @media (min-width: @screen-sm-min) {
-    h1 {
+  h1 {
+    margin-top: 0;
+    @media (min-width: @screen-sm-min) {
       font-size: 80px;
       letter-spacing: -5px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
   p {
@@ -107,5 +115,4 @@ main {
 footer {
   padding-bottom: 10px;
   bottom: 0;
-  border-bottom: 10px #333 solid;
 }
