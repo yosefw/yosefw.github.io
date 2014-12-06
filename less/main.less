@@ -1,0 +1,110 @@
+// out: ../main.css
+
+/***************
+   imports
+***************/
+
+@import "bootstrap/bootstrap.less";
+
+/***************
+   variables
+***************/
+
+@brandColor: hsl(145, 63%, 49%);
+@brandColorHover: lighten(@brandColor, 20%);
+@brandColorShadow: darken(@brandColor, 20%);
+@brandColorShadowHover: lighten(@brandColorShadow, 20%);
+
+@btnShadow: 0px 0.25em 0px 0px;
+
+/**************
+   typography
+**************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+/************
+   the rest
+************/
+
+html,
+body,
+main,
+.row,
+.row > * {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #FBFBFB;
+}
+
+header,
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+header {
+  padding-top: 20px;
+  top: 0;
+  border-top: 10px @brandColor solid;
+}
+
+header .container,
+footer .container,
+header a,
+header span,
+footer span {
+  line-height: 30px;
+}
+
+header {
+  span {
+    color: #777;
+  }
+  a {
+    color: @brandColor;
+    &:hover {
+      color: @brandColorHover;
+    }
+  }
+}
+
+.row > * {
+  display: table; //to enable vertical alignment for the #hero-unit
+}
+
+#hero-unit {
+  display: table-cell;
+  vertical-align: middle;
+  h1 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -5px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .btn {
+    font-weight: 700;
+    border: none;
+    background-color: @brandColor;
+    box-shadow: @btnShadow @brandColorShadow;
+    &:hover {
+      background-color: @brandColorHover;
+      box-shadow: @btnShadow @brandColorShadowHover;
+    }
+  }
+}
+
+footer {
+  padding-bottom: 20px;
+  bottom: 0;
+  border-bottom: 10px #333 solid;
+}
