@@ -6300,21 +6300,19 @@ button.close {
    the rest
 ************/
 html,
-body,
-main,
-.row,
-.row > * {
+body {
   height: 100%;
+  width: 100%;
 }
 body {
+  display: table;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
-  background-color: #FBFBFB;
 }
 header,
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100%;
 }
@@ -6339,10 +6337,7 @@ header a {
 header a:hover {
   color: #7ee2a8;
 }
-.row > * {
-  display: table;
-}
-#hero-unit {
+main {
   display: table-cell;
   vertical-align: middle;
 }

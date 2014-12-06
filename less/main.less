@@ -28,23 +28,21 @@
 ************/
 
 html,
-body,
-main,
-.row,
-.row > * {
+body {
   height: 100%;
+  width: 100%;
 }
 
 body {
+  display: table;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
-  background-color: #FBFBFB;
 }
 
 header,
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100%;
 }
@@ -75,13 +73,12 @@ header {
   }
 }
 
-.row > * {
-  display: table; //to enable vertical alignment for the #hero-unit
+main {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #hero-unit {
-  display: table-cell;
-  vertical-align: middle;
   h1 {
     font-size: 80px;
     font-weight: 700;
