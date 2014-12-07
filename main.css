@@ -6334,13 +6334,6 @@ header {
 header a {
   font-weight: 700;
 }
-header .container,
-footer .container,
-header a,
-header span,
-footer span {
-  line-height: 30px;
-}
 header span {
   color: #777;
 }
