@@ -55,14 +55,19 @@ h1 {
 }
 
 .btn {
-    border: none;
-    box-shadow: @btn-shadow @brand-primary-shadow;
-    &:hover {
-      background-color: @brand-primary-hover;
-      box-shadow: @btn-shadow @brand-primary-shadow-hover;
-    }
+  border-color: @brand-primary-shadow;
+  border-width: 0 1px 4px;
+  &:hover {
+    background-color: @brand-primary-hover;
+    margin-top: 1px;
+    border-bottom-width: 3px;
   }
-  
+  &:active {
+    margin-top: 2px;
+    border-bottom-width: 2px;
+  }
+}
+
 
 header {
   font-size: @font-size-large;
