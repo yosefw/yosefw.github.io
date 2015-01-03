@@ -4,17 +4,21 @@
    imports
 ***************/
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 @import "bootstrap/bootstrap.less";
+@import "font-awesome/font-awesome.less";
 
 /***************
    variables
 ***************/
 
-@brand-primary:                #00AA32;
+@brand-primary:                hsl(138, 100%, 33%); // #00AA32
 @brand-primary-hover:          lighten(@brand-primary, 2%);
 @brand-primary-shadow:         darken(@brand-primary, 10%);
 @brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 2%);
 
+@font-stack:                   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-size-base:               16px;
 @headings-font-weight:         700;
 @btn-font-weight:              700;
@@ -29,25 +33,29 @@
    the rest
 ************/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-
-html,
-body {
+html {
   height: 100%;
   width: 100%;
 }
 
 body {
-  display: table;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: @font-stack;
   font-weight: 300;
-}
-
-header,
-footer {
-  position: absolute;
-  left: 0;
-  width: 100%;
+  &.homepage {
+    display: table;
+    height: 100%;
+    width: 100%;
+    header,
+    footer {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    main {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 }
 
 h1 {
@@ -64,30 +72,26 @@ h1 {
   }
   
 
-header {
-  font-size: @font-size-large;
-  padding-top: 10px;
-  top: 0;
-  a {
+.navbar {
+  &-brand {
     font-weight: 700;
-  }
-}
-
-header {
-  span {
-    color: #777;
-  }
-  a {
     color: @brand-primary;
     &:hover {
       color: @brand-primary-hover;
     }
   }
+  &-text {
+    color: @gray-light;
+  }
+  &-brand, 
+  &-text {
+    font-size: @font-size-large;  
+  }
 }
 
-main {
-  display: table-cell;
-  vertical-align: middle;
+footer {
+  padding-bottom: 10px;
+  bottom: 0;
 }
 
 #hero-unit {
@@ -102,9 +106,4 @@ main {
   p {
     margin-bottom: 20px;
   }
-}
-
-footer {
-  padding-bottom: 10px;
-  bottom: 0;
 }
