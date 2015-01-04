@@ -13,6 +13,20 @@
    variables
 ***************/
 
+@gray-base:                    #000000;
+@gray-darker:                  lighten(@gray-base, 13.5%); //
+@gray-dark:                    lighten(@gray-base, 20%);   //
+@gray:                         lighten(@gray-base, 33.5%); //
+@gray-light:                   lighten(@gray-base, 46.7%); //
+@gray-lighter:                 lighten(@gray-base, 93.5%); //
+
+@brand-primary:                hsl(138, 100%, 33%); // #00AA32
+@brand-success:                #5cb85c;
+@brand-info:                   #5bc0de;
+@brand-warning:                #f0ad4e;
+@brand-danger:                 #d9534f;
+
+
 @brand-primary:                hsl(138, 100%, 33%); // #00AA32
 @brand-primary-hover:          lighten(@brand-primary, 2%);
 @brand-primary-shadow:         darken(@brand-primary, 10%);
@@ -23,7 +37,9 @@
 @headings-font-weight:         700;
 @btn-font-weight:              700;
 
-@btn-shadow:                    0px 0.25em 0px 0px;
+@btn-shadow:                   0px 0.25em 0px 0px;
+
+@navbar-height:                50px;
 
 /***************
    mixins
@@ -64,7 +80,7 @@ h1 {
 
 .btn {
   border-color: @brand-primary-shadow;
-  border-width: 0 1px 4px;
+  border-width: 0 0 4px 0;
   &:hover {
     background-color: @brand-primary-hover;
     margin-top: 1px;
@@ -77,20 +93,20 @@ h1 {
 }
 
 
-.navbar {
-  &-brand {
-    font-weight: 700;
-    color: @brand-primary;
+.navbar-default {
+  background-color: @body-bg;
+  .navbar-brand {
+    font-size: @font-size-large;
     &:hover {
-      color: @brand-primary-hover;
+      color: @navbar-default-brand-color;
     }
-  }
-  &-text {
-    color: @gray-light;
-  }
-  &-brand, 
-  &-text {
-    font-size: @font-size-large;  
+    a {
+      font-weight: 700;
+      color: @brand-primary;
+      &:hover {
+        color: @brand-primary-hover;
+      }
+    }
   }
 }
 

@@ -8000,26 +8000,33 @@ h1 {
   letter-spacing: -2px;
 }
 .btn {
-  border: none;
-  box-shadow: 0px 0.25em 0px 0px #007523;
+  border-color: #007523;
+  border-width: 0 0 4px 0;
 }
 .btn:hover {
   background-color: #00b336;
-  box-shadow: 0px 0.25em 0px 0px #008026;
+  margin-top: 1px;
+  border-bottom-width: 3px;
 }
-.navbar-brand {
+.btn:active {
+  margin-top: 2px;
+  border-bottom-width: 2px;
+}
+.navbar-default {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  font-size: 20px;
+}
+.navbar-default .navbar-brand:hover {
+  color: #777777;
+}
+.navbar-default .navbar-brand a {
   font-weight: 700;
   color: #00a832;
 }
-.navbar-brand:hover {
+.navbar-default .navbar-brand a:hover {
   color: #00b336;
-}
-.navbar-text {
-  color: #777777;
-}
-.navbar-brand,
-.navbar-text {
-  font-size: 20px;
 }
 footer {
   padding-bottom: 10px;
