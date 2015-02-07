@@ -2,13 +2,19 @@
 layout: default
 ---
 
-<main class="container">
+<div class="container">
+  <div class="page-header">
+    <h1>{{page.title}}</h1>
+  </div>
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-        <h1>
-          {{post.title}}
-        </h1>
-        {{content}}
-    </div><!-- /.col-sm-6 -->
+    <aside class="col-md-3">
+      <nav id="toc">
+        <!-- toc -->
+      </nav>
+    </aside>
+    <main id="main_content" class="col-md-6">
+      {{content}}
+    </main><!-- /.col-md-6 -->
   </div><!-- /.row -->
-</main><!-- /.container -->
+</div><!-- /.container -->
+<script src="/js/toc.js"></script>
