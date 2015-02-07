@@ -7,8 +7,6 @@ time: May 2013 - present
 type: Voluntary project
 ---
 
-Abstract
---------
 Open Pension is voluntary [open data](https://en.wikipedia.org/wiki/Open_data) project, aimed at to open up data about the Israeli pension market. My job was (and still is) to convert this abstract project goal into a useful product. I joined the project on May 2013. We're a team of 7 volunteers, usually contributing several hours a week to the project. While the project is still under development, it has already garnared the attention and co-operation of both the press and the Ministary of Finance.
 
 About the project
@@ -47,11 +45,6 @@ On the back end, all the reports were combined into one huge table, which in ess
 
 I started wireframing the UI with a "mobile first" approach. Although we had no reason to believe we'll get alot of traffic from mobile, **I insisted on using "mobile first" to easily structure the main UI template** - a slice of the market.
 
-![img](/path/to/img.jpg "Optional title")
-![img](/path/to/img.jpg "Optional title")
-![img](/path/to/img.jpg "Optional title")
-![img](/path/to/img.jpg "Optional title")
-
 ### Feedback
 It took us about 3 months to implement the design (bare in mind we're only working on this 4-5 hours a week). The database wasn't complete yet (and still isn't - this remains the project's top challange), but we started showing it to postential users anyway. After getting some feedback, and having "dog fooding" it ourselves, we realized that we missed something. Our users don't think of the pension market as this huge blob of data to slice and dice. **Instead, they percieve the pension market as comprised of several distinct entities:**
 
@@ -70,10 +63,6 @@ For each investment, we show:
 * its trend over the past 4 quarters
 
 The investments are laid out in compact tables and sorted by size. This allows quick comparison and identifaction of exceptional investment sizes.
-
-![img](/path/to/img.jpg "Optional title")
-![img](/path/to/img.jpg "Optional title")
-![img](/path/to/img.jpg "Optional title")
 
 ### Feedback
 The new design got much better feedback. The users we were in touch with got around it much better. The aesthetics were much appreciated by everyone. Although the database is still incomplete, the design itself got us appreciation and cooperation from journalists and researchers. The project was presented to the Director of Capital Market, Insurance and Savings Department in the Minister of Finance. She was very impressed with the project, and directed her office to help us gather all the information we need from the pension funds. In addition, she promised to work with us on creating an API for this information, so we won't have to scrape the data by hand from each fund's individual fund. By all measures, this is a siginificant achievement for voluntary non-profit project such as this.
