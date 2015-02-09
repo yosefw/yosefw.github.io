@@ -31,9 +31,12 @@
 @brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 2%);
 
 @font-stack:                   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-size-base:               16px;
+@font-size-base:               18px;
 @headings-font-weight:         700;
 @btn-font-weight:              700;
+
+@line-height-base:        2;
+@line-height-computed:    floor((@font-size-base * @line-height-base));
 
 @btn-shadow:                   0px 0.25em 0px 0px;
 
@@ -130,4 +133,14 @@ footer {
 
 #toc {
   top: 40px;
+}
+
+main {
+  p {
+    color: @gray-dark;
+    &.lead {
+      font-size: 1.15em;
+      line-height: 2;
+    }
+  }
 }
