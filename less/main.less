@@ -4,21 +4,25 @@
    imports
 ***************/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700);
 
 @import "bootstrap/bootstrap.less";
+@import "bootstrap-switch/bootstrap-switch.less";
 @import "font-awesome/font-awesome.less";
 
 /***************
    variables
 ***************/
 
-@gray-base:                    #000000;
-@gray-darker:                  lighten(@gray-base, 13.5%); //
-@gray-dark:                    lighten(@gray-base, 20%);   //
-@gray:                         lighten(@gray-base, 33.5%); //
-@gray-light:                   lighten(@gray-base, 46.7%); //
-@gray-lighter:                 lighten(@gray-base, 93.5%); //
+@gray-base:                    #000;
+@gray-darker:                  lighten(@gray-base, 13.5%); // #222
+@gray-dark:                    lighten(@gray-base, 20%);   // #333
+@gray:                         lighten(@gray-base, 33.5%); // #555
+@gray-light:                   lighten(@gray-base, 46.7%); // #777
+@gray-lighter:                 lighten(@gray-base, 93.5%); // #eee
+
+@border-color:                 lighten(@gray-base, 87%); // #ddd
+@bg-color:                     lighten(@gray-base, 99%); // #fbfbfb
 
 @brand-primary:                darken(#428bca, 6.5%); // #337ab7
 @brand-success:                #5cb85c;
@@ -31,12 +35,12 @@
 @brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 2%);
 
 @font-stack:                   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-size-base:               18px;
-@headings-font-weight:         700;
+@font-size-base:               21px;
+@headings-font-weight:         600;
 @btn-font-weight:              700;
 
-@line-height-base:        2;
-@line-height-computed:    floor((@font-size-base * @line-height-base));
+@line-height-base:             2;
+@line-height-computed:         floor((@font-size-base * @line-height-base));
 
 @btn-shadow:                   0px 0.25em 0px 0px;
 
@@ -45,6 +49,20 @@
 /***************
    mixins
 ***************/
+
+.img-row(@images) {
+  width: 100%;
+  display: block;
+  .img-wrapper {
+    .clearfix;
+  }
+  img {
+    width: percentage(1/@images);
+    float: left;
+    display: inline-block;
+    margin: 0;
+  }
+}
 
 /************
    the rest
@@ -78,6 +96,7 @@ body {
 
 h1 {
   letter-spacing: -2px;
+  font-weight: 700;
 }
 
 .btn {
@@ -97,6 +116,7 @@ h1 {
 
 .navbar-default {
   background-color: @body-bg;
+  margin-bottom: 0;
   .navbar-brand {
     font-size: @font-size-large;
     &:hover {
@@ -131,16 +151,140 @@ footer {
   }
 }
 
+#cover {
+  height: 58.6vw;
+  max-height: 768px;
+  padding-top: 20px;
+  overflow: hidden;
+  background-color: @bg-color;
+  border-bottom: 1px solid @border-color;
+  text-align: center;
+  img {
+    border: 1px solid @gray-lighter;
+    margin: auto;
+  }
+}
+
+.page-header {
+  margin-top: @line-height-computed;
+  h1 {
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.bootstrap-switch {
+  float: right;
+  font-family: 'FontAwesome';
+  .fa-fw;
+  .bootstrap-switch-handle-on,
+  .bootstrap-switch-handle-off {
+     color: @gray !important;
+  }
+}
+
+aside {
+  &,
+  h2 {
+    color: @gray;
+    font-size: floor(@font-size-base * 0.875);
+  }
+  h2 {
+    margin-bottom: 5px;
+  }
+}
+
+#project-metadata {
+  dt, dd {
+    line-height: 1.75;
+  }
+  dt {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  dd {
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+}
+
+#toc {
+  li {
+    a {
+      line-height: @line-height-large;
+      padding: 5px 0;
+    }
+  }
+}
+
 #toc {
   top: 40px;
+  li {
+    > a {
+      line-height: @line-height-large;
+      color: @gray;
+      &:hover,
+      &:focus {
+        font-weight: 500;
+        background-color: inherit;
+      }
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        font-weight: 600;
+        color: inherit;
+        background-color: inherit;
+      }
+    }
+    ul > li {
+      > a {
+        padding-left: 10px;
+        font-size: floor(@font-size-base * 0.8);
+      }
+    }
+  }
 }
 
 main {
   p {
-    color: @gray-dark;
+    color: @gray-darker;
     &.lead {
-      font-size: 1.15em;
+      font-size: floor(@font-size-base * 1.25);
       line-height: 2;
     }
+  }
+}
+
+.img-2-row {
+  .img-row(2);
+}
+
+.img-3-row {
+  .img-row(3);
+}
+
+.img-6-row {
+  .img-row(6);
+}
+
+.caption {
+  font-size: 0.875em;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.carousel-inner {
+  &,
+  & item {
+    height: 600px;
+  }
+  item {
+    overflow: hidden;
   }
 }

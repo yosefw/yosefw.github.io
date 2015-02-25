@@ -2,19 +2,55 @@
 layout: default
 ---
 
+{% if page.cover-image %}
+
+  <div id="cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{{ page.cover-image }}">
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endif %}
 <div class="container">
   <div class="page-header">
-    <h1>{{page.title}}</h1>
+    <h1> {{ page.title }} </h1>
+    <input type="checkbox" name="display-mode" data-size="small" data-on-color="default" data-off-text="&#xf1dd" data-on-text="&#xf03e">
   </div>
   <div class="row">
-    <aside class="col-sm-3">
+    <aside class="col-md-3">
+      <dl id="project-metadata">
+        <dt>
+          Responsibilities
+        </dt>
+        <dd>
+          {{ page.tags | array_to_sentence_string }}
+        </dd>
+        <dt>
+          Type
+        </dt>
+        <dd>
+          {{ page.type }}
+        </dd>
+        <dt>
+          Timeline
+        </dt>
+        <dd>
+          {{ page.time }}
+        </dd>
+      </dl>
+      <h2>Contents</h2>
       <nav id="toc">
         <!-- toc -->
       </nav>
     </aside>
-    <main id="main_content" class="col-sm-7">
-      {{content}}
+    <main id="main_content" class="col-md-9">
+      {{ content }}
     </main><!-- /.col-md-6 -->
   </div><!-- /.row -->
 </div><!-- /.container -->
 <script src="/js/toc.js"></script>
+<script src="/js/bootstrap-switch.js"></script>
