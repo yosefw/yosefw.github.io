@@ -4,7 +4,9 @@
    imports
 ***************/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 
 @import "bootstrap/bootstrap.less";
 @import "bootstrap-switch/bootstrap-switch.less";
@@ -21,6 +23,10 @@
 @gray-light:                   lighten(@gray-base, 46.7%); // #777
 @gray-lighter:                 lighten(@gray-base, 93.5%); // #eee
 
+@text-color:                   @gray-dark;
+@headings-color:               @gray-dark;
+@headings-small-color:         @gray-light;
+@text-muted:                   lighten(@gray-base, 65%); // #a6a6a6a
 @border-color:                 lighten(@gray-base, 87%); // #ddd
 @bg-color:                     lighten(@gray-base, 99%); // #fbfbfb
 
@@ -34,12 +40,22 @@
 @brand-primary-shadow:         darken(@brand-primary, 10%);
 @brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 2%);
 
-@font-stack:                   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-size-base:               21px;
+@font-family-base:                   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-base:               18px;
+@font-size-large:              ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:              ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:                 floor((@font-size-base * 4)); // ~36px
+@font-size-h2:                 floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:                 ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:                 ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:                 @font-size-base;
+@font-size-h6:                 ceil((@font-size-base * 0.85)); // ~12px
+
 @headings-font-weight:         600;
 @btn-font-weight:              700;
 
-@line-height-base:             2;
+@line-height-base:             1.8;
 @line-height-computed:         floor((@font-size-base * @line-height-base));
 
 @btn-shadow:                   0px 0.25em 0px 0px;
@@ -52,15 +68,12 @@
 
 .img-row(@images) {
   width: 100%;
-  display: block;
   .img-wrapper {
-    .clearfix;
-  }
-  img {
-    width: percentage(1/@images);
-    float: left;
-    display: inline-block;
-    margin: 0;
+    display: flex;
+    img {
+      width: floor(percentage(1/@images));
+      margin: 5px;
+    }
   }
 }
 
@@ -74,8 +87,7 @@ html {
 }
 
 body {
-  font-family: @font-stack;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
   &.homepage {
     display: table;
@@ -95,7 +107,7 @@ body {
 }
 
 h1 {
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   font-weight: 700;
 }
 
@@ -113,6 +125,9 @@ h1 {
   }
 }
 
+strong {
+  font-weight: 600;
+}
 
 .navbar-default {
   background-color: @body-bg;
@@ -186,7 +201,6 @@ footer {
 aside {
   &,
   h2 {
-    color: @gray;
     font-size: floor(@font-size-base * 0.875);
   }
   h2 {
@@ -195,17 +209,18 @@ aside {
 }
 
 #project-metadata {
-  dt, dd {
+  dt,
+  dd {
     line-height: 1.75;
+    font-weight: 300;
   }
   dt {
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: @text-muted;
   }
   dd {
-    font-weight: 300;
-    font-style: italic;
-    margin-bottom: 20px;
+    color: @gray-light;
+    margin-bottom: 15px;
   }
 }
 
@@ -223,7 +238,7 @@ aside {
   li {
     > a {
       line-height: @line-height-large;
-      color: @gray;
+      color: @gray-light;
       &:hover,
       &:focus {
         font-weight: 500;
@@ -252,7 +267,6 @@ aside {
 
 main {
   p {
-    color: @gray-darker;
     &.lead {
       font-size: floor(@font-size-base * 1.25);
       line-height: 2;
@@ -282,9 +296,14 @@ main {
 .carousel-inner {
   &,
   & item {
-    height: 600px;
+    width: 100%;
+    height: 56.25vw;
   }
   item {
     overflow: hidden;
   }
+}
+
+.bootstrap-switch {
+  display: none;
 }
