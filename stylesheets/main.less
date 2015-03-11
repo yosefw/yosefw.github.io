@@ -1,0 +1,309 @@
+// out: ../main.css
+
+/***************
+   imports
+***************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+@import "bootstrap/bootstrap.less";
+@import "bootstrap-switch/bootstrap-switch.less";
+@import "font-awesome/font-awesome.less";
+
+/***************
+   variables
+***************/
+
+@gray-base:                    #000;
+@gray-darker:                  lighten(@gray-base, 13.5%); // #222
+@gray-dark:                    lighten(@gray-base, 20%);   // #333
+@gray:                         lighten(@gray-base, 33.5%); // #555
+@gray-light:                   lighten(@gray-base, 46.7%); // #777
+@gray-lighter:                 lighten(@gray-base, 93.5%); // #eee
+
+@text-color:                   @gray-dark;
+@headings-color:               @gray-dark;
+@headings-small-color:         @gray-light;
+@text-muted:                   lighten(@gray-base, 65%); // #a6a6a6a
+@border-color:                 lighten(@gray-base, 87%); // #ddd
+@bg-color:                     lighten(@gray-base, 99%); // #fbfbfb
+
+@brand-primary:                darken(#428bca, 6.5%); // #337ab7
+@brand-success:                #5cb85c;
+@brand-info:                   #5bc0de;
+@brand-warning:                #f0ad4e;
+@brand-danger:                 #d9534f;
+
+@brand-primary-hover:          lighten(@brand-primary, 2%);
+@brand-primary-shadow:         darken(@brand-primary, 10%);
+@brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 2%);
+
+@font-family-base:                   "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-base:               18px;
+@font-size-large:              ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:              ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:                 floor((@font-size-base * 4)); // ~36px
+@font-size-h2:                 floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:                 ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:                 ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:                 @font-size-base;
+@font-size-h6:                 ceil((@font-size-base * 0.85)); // ~12px
+
+@headings-font-weight:         600;
+@btn-font-weight:              700;
+
+@line-height-base:             1.8;
+@line-height-computed:         floor((@font-size-base * @line-height-base));
+
+@btn-shadow:                   0px 0.25em 0px 0px;
+
+@navbar-height:                50px;
+
+/***************
+   mixins
+***************/
+
+.img-row(@images) {
+  width: 100%;
+  .img-wrapper {
+    display: flex;
+    img {
+      width: floor(percentage(1/@images));
+      margin: 5px;
+    }
+  }
+}
+
+/************
+   the rest
+************/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-weight: 400;
+  position: relative;
+  &.homepage {
+    display: table;
+    height: 100%;
+    width: 100%;
+    header,
+    footer {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    main {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+h1 {
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.btn {
+  border-color: @brand-primary-shadow;
+  border-width: 0 0 4px 0;
+  &:hover {
+    background-color: @brand-primary-hover;
+    margin-top: 1px;
+    border-bottom-width: 3px;
+  }
+  &:active {
+    margin-top: 2px;
+    border-bottom-width: 2px;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+.navbar-default {
+  background-color: @body-bg;
+  margin-bottom: 0;
+  .navbar-brand {
+    font-size: @font-size-large;
+    &:hover {
+      color: @navbar-default-brand-color;
+    }
+    a {
+      font-weight: 700;
+      color: @brand-primary;
+      &:hover {
+        color: @brand-primary-hover;
+      }
+    }
+  }
+}
+
+footer {
+  padding-bottom: 10px;
+  bottom: 0;
+}
+
+#hero-unit {
+  h1 {
+    margin-top: 0;
+    @media (min-width: @screen-sm-min) {
+      font-size: 80px;
+      letter-spacing: -5px;
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+#cover {
+  height: 58.6vw;
+  max-height: 768px;
+  padding-top: 20px;
+  overflow: hidden;
+  background-color: @bg-color;
+  border-bottom: 1px solid @border-color;
+  text-align: center;
+  img {
+    border: 1px solid @gray-lighter;
+    margin: auto;
+  }
+}
+
+.page-header {
+  margin-top: @line-height-computed;
+  h1 {
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.bootstrap-switch {
+  float: right;
+  font-family: 'FontAwesome';
+  .fa-fw;
+  .bootstrap-switch-handle-on,
+  .bootstrap-switch-handle-off {
+     color: @gray !important;
+  }
+}
+
+aside {
+  &,
+  h2 {
+    font-size: floor(@font-size-base * 0.875);
+  }
+  h2 {
+    margin-bottom: 5px;
+  }
+}
+
+#project-metadata {
+  dt,
+  dd {
+    line-height: 1.75;
+    font-weight: 300;
+  }
+  dt {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: @text-muted;
+  }
+  dd {
+    color: @gray-light;
+    margin-bottom: 15px;
+  }
+}
+
+#toc {
+  li {
+    a {
+      line-height: @line-height-large;
+      padding: 5px 0;
+    }
+  }
+}
+
+#toc {
+  top: 40px;
+  li {
+    > a {
+      line-height: @line-height-large;
+      color: @gray-light;
+      &:hover,
+      &:focus {
+        font-weight: 500;
+        background-color: inherit;
+      }
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        font-weight: 600;
+        color: inherit;
+        background-color: inherit;
+      }
+    }
+    ul > li {
+      > a {
+        padding-left: 10px;
+        font-size: floor(@font-size-base * 0.8);
+      }
+    }
+  }
+}
+
+main {
+  p {
+    &.lead {
+      font-size: floor(@font-size-base * 1.25);
+      line-height: 2;
+    }
+  }
+}
+
+.img-2-row {
+  .img-row(2);
+}
+
+.img-3-row {
+  .img-row(3);
+}
+
+.img-6-row {
+  .img-row(6);
+}
+
+.caption {
+  font-size: 0.875em;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.carousel-inner {
+  &,
+  & item {
+    width: 100%;
+    height: 56.25vw;
+  }
+  item {
+    overflow: hidden;
+  }
+}
+
+.bootstrap-switch {
+  display: none;
+}
