@@ -1,0 +1,10 @@
+.img-row(@images) {
+  width: 100%;
+  .img-wrapper {
+    display: flex;
+    img {
+      width: floor(percentage(1/@images));
+      margin: 5px;
+    }
+  }
+}

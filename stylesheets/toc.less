@@ -1,0 +1,32 @@
+#toc {
+  top: 40px;
+  li {
+    > a {
+      line-height: @line-height-large;
+      padding: 5px 0;
+      color: @gray-light;
+      &:hover,
+      &:focus {
+        font-weight: 500;
+        background-color: inherit;
+      }
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        font-weight: 600;
+        color: inherit;
+        background-color: inherit;
+      }
+    }
+    ul > li {
+      > a {
+        padding-left: 10px;
+        font-size: floor(@font-size-base * 0.8);
+      }
+    }
+  }
+}

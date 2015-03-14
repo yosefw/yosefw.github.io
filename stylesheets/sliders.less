@@ -1,0 +1,89 @@
+.slick-slider {
+  border: 1px solid @list-group-border;
+  background-color: white;
+  padding: 0;
+  
+  .slider-toolber {
+    height: 30px;
+    width: 100%;
+    background-color: red;
+  }
+  
+  .slick-slide {
+    
+    .slide-img {
+      border-bottom: 1px solid @list-group-border;
+      height: 400px;
+      overflow: hidden;
+    }
+    
+    .slide-caption {
+      .thumbnail .caption;
+      font-weight: 300;
+      font-size: floor(@font-size-base * 0.875);
+      color: @gray-light;
+      position: relative;
+      
+      .full-screen {
+        position: relative;
+        &:before {
+          content: "\f065 ";
+          font-family: "FontAwesome";
+          margin-right: 5px
+        }
+      }
+    }
+  }
+  
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    margin-top: -10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+      outline: none;
+      background: transparent;
+      color: transparent;
+      &:before {
+        opacity: 0.5;
+      }
+    }
+    &.slick-disabled:before {
+      opacity: 0.1;
+    }
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "FontAwesome";
+    font-size: 2 * @fa-font-size-base;
+    line-height: 1;
+    color: @gray-light;
+    opacity: 0.25;
+}
+
+  .slick-prev {
+    left: @fa-font-size-base;
+    &:before {
+      content: "\f053";
+    }
+  }
+
+  .slick-next {
+    right: @fa-font-size-base;
+    &:before {
+      content: "\f054";
+    }
+  }
+}

@@ -1,0 +1,27 @@
+#hero-unit {
+  h1 {
+    margin-top: 0;
+    @media (min-width: @screen-sm-min) {
+      font-size: 80px;
+      letter-spacing: -5px;
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+#cover {
+  height: 58.6vw;
+  max-height: 768px;
+  padding-top: 20px;
+  overflow: hidden;
+  background-color: @bg-color;
+  border-bottom: 1px solid @border-color;
+  text-align: center;
+  img {
+    border: 1px solid @gray-lighter;
+    margin: auto;
+  }
+}

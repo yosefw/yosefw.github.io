@@ -1,0 +1,64 @@
+.page-header {
+  margin-top: @line-height-computed;
+  h1 {
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.bootstrap-switch {
+  display: none;
+  float: right;
+  font-family: 'FontAwesome';
+  .fa-fw;
+  .bootstrap-switch-handle-on,
+  .bootstrap-switch-handle-off {
+     color: @gray !important;
+  }
+}
+
+main {
+  p {
+    &.lead {
+      font-size: floor(@font-size-base * 1.25);
+      line-height: 2;
+    }
+  }
+}
+
+aside {
+  &,
+  h2 {
+    font-size: floor(@font-size-base * 0.875);
+  }
+  h2 {
+    margin-bottom: 5px;
+  }
+}
+
+#project-metadata {
+  dt,
+  dd {
+    line-height: 1.75;
+    font-weight: 300;
+  }
+  dt {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: @text-muted;
+  }
+  dd {
+    color: @gray-light;
+    margin-bottom: 15px;
+  }
+}
+.img-2-row {
+  .img-row(2);
+}
+
+.img-3-row {
+  .img-row(3);
+}
+
+.img-6-row {
+  .img-row(6);
+}
