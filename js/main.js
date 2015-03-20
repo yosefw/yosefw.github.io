@@ -10,6 +10,16 @@ $(document).ready(function() {
   // Make all images responsive
   $('img').addClass('img-responsive');
 
+  $.fn.extend({
+    srOnlyText: function() {
+      $(this)
+        .contents()
+        .filter(function() {
+          return this.nodeType === 3; //Node.TEXT_NODE
+        })
+        .wrap('<span class="sr-only" />');
+    }
+  });
   
   /**********************
      TABLE OF CONTENTS
@@ -111,22 +121,18 @@ $(document).ready(function() {
   });
 
   // Find contents of slider indicators and nav buttons and wrap them with .sr-only
-  $('.slick-dots button, .slick-prev, .slick-next')
-    .contents()
-    .filter(function() {
-      return this.nodeType === 3; //Node.TEXT_NODE
-    })
-    .wrap('<span class="sr-only" />');
+  var slickButtons = '.slick-dots button, .slick-prev, .slick-next';
+  $('.slick-dots button, .slick-prev, .slick-next').srOnlyText();
   
   // Add lightbox functionality to each slider
   $(sliders).each(function() {
     $(this).slickLightbox({
-    
+      
     });
   });
   
   $('body').on('show.slickLightbox', function() {
-     $(this).addClass('modal-open');
+    $(this).addClass('modal-open');
   });
   
   $('body').on('hide.slickLightbox', function() {
