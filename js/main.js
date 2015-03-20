@@ -73,7 +73,7 @@ $(document).ready(function() {
   // Find and wrap all slide images
   $(slides)
     .children('img')
-    .wrap('<div class="slide-img" />');
+    .wrap('<a class="slide-img" href="' + $(this).attr('src') + '" />');
     
   // Find and wrap all slide captions
   $(slides)
@@ -83,7 +83,7 @@ $(document).ready(function() {
     })
     .wrap('<div class="slide-caption" />');
   
-  // Initiate slick.js
+  // Initiate slick
   $(sliders).slick({
     arrows: true,
     dots: true,
@@ -116,5 +116,8 @@ $(document).ready(function() {
     .wrap('<span class="sr-only" />');
   
 });
+
+
+  
 
 
