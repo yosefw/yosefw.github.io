@@ -115,6 +115,13 @@ $(document).ready(function() {
     })
     .wrap('<span class="sr-only" />');
   
+  // Add lightbox functionality to each slider
+  $(sliders).each(function() {
+    $(this).slickLightbox({
+    
+    });
+  });
+  
 });
 
 
