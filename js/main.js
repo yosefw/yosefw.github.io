@@ -122,6 +122,14 @@ $(document).ready(function() {
     });
   });
   
+  $('body').on('open.slickLightbox', function() {
+     $(this).addClass('modal-open');
+  });
+  
+  $('body').on('close.slickLightbox', function() {
+    $(this).removeClass('modal-open');
+  });
+  
 });
 
 
