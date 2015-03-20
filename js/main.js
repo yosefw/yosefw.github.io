@@ -73,7 +73,10 @@ $(document).ready(function() {
   // Find and wrap all slide images
   $(slides)
     .children('img')
-    .wrap('<a class="slide-img" href="' + $(this).attr('src') + '" />');
+    .each(function() {
+      $(this).wrap('<a class="slide-img" href="' + $(this).attr('src') + '" />');
+    });
+    
     
   // Find and wrap all slide captions
   $(slides)
@@ -122,11 +125,11 @@ $(document).ready(function() {
     });
   });
   
-  $('body').on('open.slickLightbox', function() {
+  $('body').on('show.slickLightbox', function() {
      $(this).addClass('modal-open');
   });
   
-  $('body').on('close.slickLightbox', function() {
+  $('body').on('hide.slickLightbox', function() {
     $(this).removeClass('modal-open');
   });
   
