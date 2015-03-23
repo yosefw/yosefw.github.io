@@ -8272,6 +8272,113 @@ button.close {
 .fa-medium:before {
   content: "\f23a";
 }
+.slick-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: black;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.slick-lightbox.slick-hide {
+  opacity: 0;
+}
+.slick-lightbox.slick-hide-init {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+.slick-lightbox.slick-lightbox-ie.slick-hide,
+.slick-lightbox.slick-lightbox-ie.slick-hide-init {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.slick-lightbox .slick-lightbox-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item {
+  text-align: center;
+  overflow: hidden;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item .slick-lightbox-slick-item-inner {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 90%;
+  max-height: 90%;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item .slick-lightbox-slick-item-inner .slick-lightbox-slick-img {
+  margin: 0 auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item .slick-lightbox-slick-item-inner .slick-lightbox-slick-caption {
+  margin-top: 10px;
+  color: white;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick.slick-caption-bottom .slick-lightbox-slick-item .slick-lightbox-slick-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick.slick-caption-dynamic .slick-lightbox-slick-item .slick-lightbox-slick-caption {
+  display: block;
+  text-align: center;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  padding: 0;
+  border: none;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-close:focus {
+  outline: none;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-close:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '×';
+}
+.slick-lightbox .slick-loading .slick-list {
+  background-color: transparent;
+}
+.slick-lightbox .slick-prev {
+  left: 15px;
+}
+.slick-lightbox .slick-next {
+  right: 15px;
+}
 /****************
     Originals
 ****************/
@@ -8457,7 +8564,6 @@ aside h2 {
 }
 .slick-slider {
   border: 1px solid #dddddd;
-  background-color: white;
   padding: 0;
   border-radius: 4px;
 }
@@ -8521,6 +8627,7 @@ aside h2 {
   position: relative;
   height: 0;
   overflow: hidden;
+  display: block;
 }
 .slick-slider .slick-slide .slide-img > * {
   position: absolute;
@@ -8727,4 +8834,138 @@ fieldset[disabled] .slick-slider .slick-next.active {
   font-family: "FontAwesome";
   font-size: inherit;
   font-weight: normal;
+}
+.slick-lightbox {
+  z-index: inherit;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick {
+  position: static;
+  z-index: 1040;
+  border: none;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slider-toolbar {
+  z-index: 1030;
+  background-color: #222;
+  border-radius: 0;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slider-toolbar .slick-dots > li > button {
+  background-color: #626262;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slider-toolbar .slick-lightbox-close {
+  float: right;
+  font-size: inherit;
+  position: relative;
+  height: auto;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slider-toolbar .slick-lightbox-close:before {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  font-size: inherit;
+  font-weight: normal;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item {
+  max-height: none;
+  overflow: auto;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item .slick-lightbox-slick-item-inner {
+  max-height: none;
+  padding: 20px;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-lightbox-slick-item .slick-lightbox-slick-item-inner img.slick-lightbox-slick-img {
+  max-height: none !important;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 18px;
+  line-height: 1.7;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-width: 2px;
+  background-color: #222;
+  border-color: #000;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:active:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:active:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev.active:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next.active:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev.focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next.focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:active.focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:active.focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev.active.focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:hover,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:hover,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev.focus,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:active,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:active,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev.active,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev.disabled,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next.disabled,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev[disabled],
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next[disabled],
+fieldset[disabled] .slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev,
+fieldset[disabled] .slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:hover,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:hover,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev:focused,
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next:focused {
+  border-bottom-width: 1px;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-prev {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.slick-lightbox .slick-lightbox-inner .slick-lightbox-slick .slick-next {
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }

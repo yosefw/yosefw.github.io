@@ -1,5 +1,51 @@
 $(document).ready(function() {
 
+  /************************
+      CUSTOM FUNCTIONS
+  ************************/
+  
+  $.fn.extend({
+    // Wraps text elements with .sr-only so they're accessible to screen readers but don't appear on screen
+    srOnlyText: function() {
+      return this.each(function() {
+        $(this)
+          .contents()
+          .filter(function() {
+            return this.nodeType === 3; //Node.TEXT_NODE
+          })
+          .wrap('<span class="sr-only" />');
+      });
+    },
+    // Adds a toolbar element
+    addToolbar: function() {
+      return this.each(function() {
+        $(this)
+          .prepend('<div class="slider-toolbar"></div>');
+      });
+    },
+    moveIntoToolbar: function() {
+      return this.each(function() {
+        /*
+        var sliderContainer = $(this).closest('.slick-lightbox');
+        var closestToolbar = sliderContainer.find('.slider-toolbar');
+        $(this)
+          .appendTo(closestToolbar);
+        */
+        var sliderContainer;
+        var closestToolbar;
+        if ($(this).parents('.slick-lightbox').length > 0) {
+          sliderContainer = $(this).parents('.slick-lightbox');
+        }
+        else {
+          sliderContainer = $(this).parents('.slick-slider');
+        };
+        closestToolbar = sliderContainer.find('.slider-toolbar');
+        $(this)
+          .appendTo(closestToolbar);
+      });
+    }
+  });
+  
   /****************
      SCAFFOLDING
   *****************/
@@ -10,16 +56,6 @@ $(document).ready(function() {
   // Make all images responsive
   $('img').addClass('img-responsive');
 
-  $.fn.extend({
-    srOnlyText: function() {
-      $(this)
-        .contents()
-        .filter(function() {
-          return this.nodeType === 3; //Node.TEXT_NODE
-        })
-        .wrap('<span class="sr-only" />');
-    }
-  });
   
   /**********************
      TABLE OF CONTENTS
@@ -97,20 +133,21 @@ $(document).ready(function() {
     .wrap('<div class="slide-caption" />');
   
   // Initiate slick
-  $(sliders).slick({
+  var slickOptions = {
+    infinite: false,
     arrows: true,
     dots: true,
     lazyLoad: 'onDemand',
     speed: 0
-  });
+  };
+  
+  $(sliders).slick(slickOptions);
   
   // Create toolbar
-  $(sliders).prepend('<div class="slider-toolbar"></div>');
+  $(sliders).addToolbar();
   
   // Move .slick-dots into toolbar
-  $('.slick-dots').each( function() {
-    $(this).appendTo( $(this).siblings('.slider-toolbar'));
-  });
+  $('.slick-dots').moveIntoToolbar();
   
   // Add full screen button
   $('.slider-toolbar').append('<button class="full-screen toolbar-action">Full screen</button>');
@@ -121,18 +158,22 @@ $(document).ready(function() {
   });
 
   // Find contents of slider indicators and nav buttons and wrap them with .sr-only
-  var slickButtons = '.slick-dots button, .slick-prev, .slick-next';
   $('.slick-dots button, .slick-prev, .slick-next').srOnlyText();
   
   // Add lightbox functionality to each slider
   $(sliders).each(function() {
     $(this).slickLightbox({
-      
+      slick: slickOptions,
+      background: 'rgba(0,0,0,0.9)'
     });
   });
   
   $('body').on('show.slickLightbox', function() {
     $(this).addClass('modal-open');
+    $('.slick-lightbox-slick').addToolbar();
+    $('.slick-lightbox .slick-dots').moveIntoToolbar();
+    $('.slick-lightbox .slick-lightbox-close').moveIntoToolbar().srOnlyText();
+    $('.slick-lightbox .slick-dots button, .slick-lightbox .slick-prev, .slick-lightbox .slick-next').srOnlyText();
   });
   
   $('body').on('hide.slickLightbox', function() {
