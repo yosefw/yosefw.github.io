@@ -14,17 +14,19 @@
   }
   
   .slider-toolbar {
+    .small;
     width: 100%;
-    vertical-align: middle;
-    padding: 10px;
-    font-size: @font-size-small;
     line-height: 1;
+    
+    button {
+      .btn-xs;
+    }
     
     > .toolbar-action {
       float: right;
-      line-height: 1;
       font-weight: 300;
       background-color: transparent;
+      margin: 6px 5px;
       
       &:before {
         .icn("f065");
@@ -32,36 +34,47 @@
       }
     }
     
-    .slick-dots {
+    .slick-dots {    
       .list-unstyled;
       .list-inline;
-      margin: 0;
+      margin: 10px 5px;
       display: inline-block !important;
-      
+
       > li {
-        margin: 0 10px 0 0;
+        margin: 0;
         padding: 0;
-        
+
         > button {
-          width: 10px;
-          height: 10px;
-          padding: 0;
-          border-radius: 50%;
-          background-color: @slider-button-color;
-          display: block;
-          
-          
+          border: none;
+          background: none;
+          line-height: 1;
+
+          &:before {
+            .fa;
+            color: @slider-dot-color;
+            content: "\f111";
+          }
         }
         
+        &:hover,
+        &:focus,
         &.slick-active {
+          > button {
+            &:before {
+              color: darken(@slider-dot-color,25%);
+            }
+          }
+        }
+      }
+      
+      &.slick-active {
           
           > button {
             background-color: darken(@slider-button-color, 25%);
           }
         }
       }
-    }
-  }
+    }   
   
   .slick-slide {
     
@@ -153,9 +166,7 @@
 
         .slick-dots {
 
-          > li > button {
-            background-color: darken(@slider-button-color, 45%);
-          }
+          
         }
 
         .slick-lightbox-close {
