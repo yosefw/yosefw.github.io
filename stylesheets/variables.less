@@ -3,6 +3,7 @@
 @gray-dark:                    lighten(@gray-base, 20%);   // #333
 @gray:                         lighten(@gray-base, 33.5%); // #555
 @gray-light:                   lighten(@gray-base, 46.7%); // #777
+@gray-lightish:                lighten(@gray-base, 60%); // #999
 @gray-lighter:                 lighten(@gray-base, 93.5%); // #eee
 
 @text-color:                   @gray-dark;
@@ -22,14 +23,16 @@
 @brand-primary-shadow:         darken(@brand-primary, 10%);
 @brand-primary-shadow-hover:   lighten(@brand-primary-shadow, 2%);
 
-@font-family-base:             "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-base:             "PT Serif", Georgia, serif;
 @font-size-base:               18px;
-@font-size-large:              round(@font-size-base * 4/3);
-@font-size-small:              round(@font-size-base * 3/4);
+@font-size-scale:              4/3;
+@font-size-large:              round(@font-size-base * @font-size-scale);
+@font-size-small:              round(@font-size-base / @font-size-scale);
 
-@font-size-h1:                 round(@font-size-base * pow(4/3, 4));
-@font-size-h2:                 round(@font-size-base * pow(4/3, 3));
-@font-size-h3:                 round(@font-size-base * pow(4/3, 2));
+@headings-font-family:         "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-h1:                 round(@font-size-base * pow(@font-size-scale, 5));
+@font-size-h2:                 round(@font-size-base * pow(@font-size-scale, 3));
+@font-size-h3:                 round(@font-size-base * pow(@font-size-scale, 2));
 @font-size-h4:                 @font-size-large;
 @font-size-h5:                 @font-size-base;
 @font-size-h6:                 @font-size-small;
@@ -46,6 +49,9 @@
 
 @navbar-height:                50px;
 
+@img-shadow:                   0px 3px 5px 3px hsla(0, 0%, 0%, 0.125);
+
 @slider-button-color:          darken(@gray-lighter, 10%);
 @slider-button-height:         40px;
 @slider-button-width:          20px;
+@slider-dot-color:             darken(@gray-lighter, 10%);

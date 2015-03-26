@@ -1,8 +1,46 @@
-.page-header {
-  margin-top: @line-height-computed;
+#page-header {
+  text-align: center;
+  background-color: @bg-color;
+  border-bottom: 1px solid @border-color;
+  margin-bottom: 3 * @line-height-computed;
+  overflow: hidden;
+  height: 90vw;
+  
   h1 {
-    margin: 0;
-    display: inline-block;
+    text-align: center;
+    margin-bottom: 0.5 * @line-height-computed;
+    font-weight: 900;
+    
+    small {
+      display: block;
+      font-size: round(@font-size-base * pow(@font-size-scale, 2));
+      font-family: @font-family-base;
+      margin-top: 0.5 * @line-height-computed;
+      color: @gray-lightish;
+    }
+  }
+  
+  #project-metadata {
+    
+    span {
+      margin: 0 10px;
+      font-weight: 300;
+      font-family: @headings-font-family;
+      color: @gray-lightish;
+      
+      i {
+        color: @text-muted; 
+        margin-right: 5px;
+      }
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    box-shadow: @img-shadow;
+    margin-top: 1.5 * @line-height-computed;
+    max-width: 100%;
+    .center-block;
   }
 }
 
@@ -18,39 +56,12 @@
 }
 
 main {
-  p {
-    &.lead {
-      font-size: floor(@font-size-base * 1.25);
-      line-height: 2;
-    }
+  p:first {
+    .lead;
   }
 }
 
-aside {
-  &,
-  h2 {
-    font-size: floor(@font-size-base * 0.875);
-  }
-  h2 {
-    margin-bottom: 5px;
-  }
-}
 
-#project-metadata {
-  dt,
-  dd {
-    line-height: 1.75;
-    font-weight: 300;
-  }
-  dt {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: @text-muted;
-  }
-  dd {
-    color: @gray-light;
-    margin-bottom: 15px;
-  }
-}
 .img-2-row {
   .img-row(2);
 }
