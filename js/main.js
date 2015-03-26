@@ -46,17 +46,6 @@ $(document).ready(function() {
     }
   });
   
-  /****************
-     SCAFFOLDING
-  *****************/
-  
-  // Add ".lead" to abstract
-  $('main > p:first-child').addClass('lead');
-
-  // Make all images responsive
-  $('img').addClass('img-responsive');
-
-  
   /**********************
      TABLE OF CONTENTS
   **********************/
@@ -67,9 +56,6 @@ $(document).ready(function() {
     headers: 'h2, h3, h4',
     showSpeed: 0
   });
-
-  // Remove unnesseccary <i>
-  $('i').remove();
 
   
   // Add scrollspy
