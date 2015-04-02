@@ -123,34 +123,15 @@ $(document).ready(function() {
     infinite: false,
     arrows: true,
     dots: true,
-    lazyLoad: 'onDemand',
-    speed: 0
+    speed: 300
   };
   
   $(sliders).slick(slickOptions);
   
-  // Create toolbar
-  $(sliders).addToolbar();
-  
-  // Move .slick-dots into toolbar
-  $('.slick-dots').moveIntoToolbar();
-  
-  // Add full screen button
-  $('.slider-toolbar').append('<button class="full-screen toolbar-action">Full screen</button>');
-  $('.full-screen').click( function() {
-    var parentSlider = $(this).closest('.slick-slider');
-    var activeSlide = $(parentSlider).find('.slick-slide.slick-active');
-    var slideImgUrl = $(activeSlide).find('img').attr('src');
-  });
-
-  // Find contents of slider indicators and nav buttons and wrap them with .sr-only
-  $('.slick-dots button, .slick-prev, .slick-next').srOnlyText();
-  
-  // Add lightbox functionality to each slider
+  // Initiate slickLightbox
   $(sliders).each(function() {
     $(this).slickLightbox({
       slick: slickOptions,
-      background: 'rgba(0,0,0,0.9)'
     });
   });
   
@@ -165,10 +146,26 @@ $(document).ready(function() {
   $('body').on('hide.slickLightbox', function() {
     $(this).removeClass('modal-open');
   });
+
+// Create toolbar
+  $(sliders).addToolbar();
   
+  // Move .slick-dots into toolbar
+  $('.slick-dots').moveIntoToolbar();
+  
+  // Add full screen button
+  $('.slider-toolbar').append('<button class="full-screen toolbar-action">Full screen</button>');
+  $('.full-screen').click( function() {
+    var parentSlider = $(this).closest('.slick-slider');
+    parentSlider.removeClass('slick-hide-init');
+    activeSlide = $(parentSlider).find('.slick-slide.slick-active > a');
+    activeSlide.trigger('click');
+  });
+
+  // Find all slider buttons and wrap them with .sr-only
+  $('.slick-slider button').srOnlyText();
+
 });
-
-
   
 
 
