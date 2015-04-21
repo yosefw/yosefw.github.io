@@ -3,24 +3,9 @@ html {
   width: 100%;
 }
 
-body {
-  font-weight: 400;
-  position: relative;
-  &.homepage {
-    display: table;
-    height: 100%;
-    width: 100%;
-    header,
-    footer {
-      position: absolute;
-      left: 0;
-      width: 100%;
-    }
-    main {
-      display: table-cell;
-      vertical-align: middle;
-    }
-  }
+button {
+  font-family: @font-family-sans-serif;
+  font-weight: @btn-font-weight;
 }
 
 .btn {
@@ -29,31 +14,4 @@ body {
   &:focused {
     border-bottom-width: 1px;
   }
-}
-
-strong {
-  font-weight: 600;
-}
-
-.navbar-default {
-  background-color: @body-bg;
-  margin-bottom: 0;
-  .navbar-brand {
-    font-size: @font-size-large;
-    &:hover {
-      color: @navbar-default-brand-color;
-    }
-    a {
-      font-weight: 700;
-      color: @brand-primary;
-      &:hover {
-        color: @brand-primary-hover;
-      }
-    }
-  }
-}
-
-footer {
-  padding-bottom: 10px;
-  bottom: 0;
 }
