@@ -1,8 +1,6 @@
 .icn(@unicode) {
+  .fa;
   content: "\@{unicode}";
-  font-family: @icon-font;
-  font-size: inherit;
-  font-weight: normal;
 }
 
 .img-row(@images) {
@@ -16,15 +14,16 @@
   }
 }
 
-.aspect-ratio(@width, @height) {
+.aspect-ratio(@width, @height, @padding-top: 0, @padding-sides: 0) {
   @ratio: percentage(@height/@width);
   padding-bottom: @ratio;
   position: relative;
   height: 0;
   & > * {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: @padding-top;
+    left: @padding-sides;
+    right: @padding-sides;
+    max-width: 100%;
   }
 }
