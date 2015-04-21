@@ -8571,6 +8571,13 @@ body.homepage #my-work #coming-soon span {
 body.homepage #somewhat-nice {
   background-color: #dddddd;
 }
+body.homepage header li > a,
+body.homepage #job-looking,
+body.homepage #somewhat-nice,
+body.homepage .project {
+  display: none !important;
+  visibility: hidden !important;
+}
 #page-header {
   text-align: center;
   background-color: #fcfcfc;
