@@ -3,6 +3,11 @@
   content: "\@{unicode}";
 }
 
+.btn-icn(@unicode, @margin-right:5px) {
+  .icn(@unicode);
+  margin-right: @margin-right;
+}
+
 .img-row(@images) {
   width: 100%;
   .img-wrapper {
