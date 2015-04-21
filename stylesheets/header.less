@@ -8,8 +8,13 @@ header {
       font-weight: @headings-font-weight;
     }
     
-    a[href*="mailto"]:before {
-      .btn-icn("f0e0");
+    .navbar-btn {
+      margin-right: 15px;
+      margin-left: 15px;
+      &[onClick*="mailto"]:before {
+        .btn-icn("f0e0");
+        .fa-fw;
+      }
     }
   }
 }

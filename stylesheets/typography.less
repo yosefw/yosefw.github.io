@@ -4,7 +4,13 @@ h3,
 h4,
 h5,
 h6 {
-  text-align: center;
+  > small {
+    font-size: percentage(1/@font-size-scale);
+    margin-top: 10px;
+    font-family: @font-family-serif;
+    display: block;
+    text-align: inherit;
+  }
 }
 
 h2 {
@@ -25,5 +31,5 @@ h3 {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 500;
 }
