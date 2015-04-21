@@ -154,7 +154,7 @@ $(document).ready(function() {
   $('.slick-dots').moveIntoToolbar();
   
   // Add full screen button
-  $('.slider-toolbar').append('<button class="full-screen toolbar-action">Full screen</button>');
+  $('.slider-toolbar').append('<button class="full-screen toolbar-action">View in full screen</button>');
   $('.full-screen').click( function() {
     var parentSlider = $(this).closest('.slick-slider');
     parentSlider.removeClass('slick-hide-init');
@@ -163,7 +163,7 @@ $(document).ready(function() {
   });
 
   // Find all slider buttons and wrap them with .sr-only
-  $('.slick-slider button').srOnlyText();
+  $('.slick-slider button:not(.full-screen)').srOnlyText();
 
 });
   
