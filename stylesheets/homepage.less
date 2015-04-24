@@ -2,18 +2,13 @@ body.homepage {
   
   section {
     min-height: 30vh;
-    padding: 50px;
     border-bottom: 1px solid @border-color;
     .vertical-align-children;
+    padding-bottom: 50px;
     @media (min-width: @screen-sm-min) {
       text-align: center;
     }
     
-  }
-  
-  h1,
-  h2 {
-    margin-top: 0;
   }
   
   h2 {
@@ -35,6 +30,7 @@ body.homepage {
     h1 {
       font-size: @font-size-h5;
       font-weight: 300;
+      margin-bottom: @line-height-computed;
     }
 
     p {
@@ -99,14 +95,18 @@ body.homepage {
     #coming-soon {
 
       span {
-        width: 50%;
+        width: 100%;
         font-family: @font-family-sans-serif;
         color: @text-muted;
+        text-align: center;
         padding: 20px;
         border: 1px solid @border-color;
         border-radius: 4px;
         font-weight: 300;
-        .center-block;  
+        .center-block;
+        @media (min-width: @screen-sm-min) {
+          width: 50%;
+        }
       }
     }
     

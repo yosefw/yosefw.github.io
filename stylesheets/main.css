@@ -8397,6 +8397,7 @@ h6 > small {
   font-family: Georgia, "Times New Roman", Times, serif;
   display: block;
   text-align: inherit;
+  line-height: 1.2;
 }
 h2 {
   margin-top: 81px;
@@ -8428,6 +8429,11 @@ button {
 .btn:focused {
   border-bottom-width: 1px;
 }
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
 header .navbar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -8458,30 +8464,77 @@ header .navbar .navbar-btn[onClick*="mailto"]:before.pull-left {
 header .navbar .navbar-btn[onClick*="mailto"]:before.pull-right {
   margin-left: .3em;
 }
+header .navbar .navbar-toggle {
+  border: 0;
+}
+header .navbar .navbar-toggle:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  content: "\f0c9";
+}
+header .navbar .navbar-toggle:before.pull-left {
+  margin-right: .3em;
+}
+header .navbar .navbar-toggle:before.pull-right {
+  margin-left: .3em;
+}
 footer {
-  color: #fcfcfc;
+  color: #eeeeee;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   background-color: #222222;
-  height: 60px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
 }
+@media (min-width 768px) {
+  footer {
+    height: 60px;
+  }
+}
+footer span,
+footer strong {
+  display: block;
+}
+@media (min-width: 768px) {
+  footer span,
+  footer strong {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  footer span:last-child {
+    float: right !important;
+    float: right;
+  }
+}
+footer hr {
+  margin: 10px 0;
+  border-color: #333333;
+}
+@media (min-width: 768px) {
+  footer hr {
+    display: none;
+  }
+}
 body.homepage section {
   min-height: 30vh;
-  padding: 50px;
   border-bottom: 1px solid #e6e6e6;
   display: flex;
   align-items: center;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   body.homepage section {
     text-align: center;
   }
-}
-body.homepage h1,
-body.homepage h2 {
-  margin-top: 0;
 }
 body.homepage h2 {
   font-size: 24px;
@@ -8510,6 +8563,7 @@ body.homepage #hero {
 body.homepage #hero h1 {
   font-size: 24px;
   font-weight: 300;
+  margin-bottom: 27px;
 }
 body.homepage #hero p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -8557,9 +8611,10 @@ body.homepage #my-work .thumbnail .caption span.project-desc {
   color: #a6a6a6;
 }
 body.homepage #my-work #coming-soon span {
-  width: 50%;
+  width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #a6a6a6;
+  text-align: center;
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -8567,6 +8622,11 @@ body.homepage #my-work #coming-soon span {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 768px) {
+  body.homepage #my-work #coming-soon span {
+    width: 50%;
+  }
 }
 body.homepage #somewhat-nice {
   background-color: #dddddd;
