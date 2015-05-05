@@ -3,7 +3,7 @@
   content: "\@{unicode}";
 }
 
-.btn-icn(@unicode, @margin-right:5px) {
+.btn-icn(@unicode; @margin-right:5px) {
   .icn(@unicode);
   margin-right: @margin-right;
 }
@@ -24,16 +24,20 @@
   }
 }
 
-.aspect-ratio(@width, @height, @padding-top: 0, @padding-sides: 0) {
+.aspect-ratio(@width; @height) {
   @ratio: percentage(@height/@width);
-  padding-bottom: @ratio;
   position: relative;
-  height: 0;
-  & > * {
+  
+  &:before {
+    content: "";
+    display: block;
+    padding-bottom: @ratio;
+  }
+  
+  & img {
     position: absolute;
-    top: @padding-top;
-    left: @padding-sides;
-    right: @padding-sides;
+    top: 0;
+    margin: 0 auto;
     max-width: 100%;
   }
 }
