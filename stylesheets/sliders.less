@@ -1,88 +1,67 @@
 .slick-slider {
-  border: 1px solid @list-group-border;
-  padding: 0;
-  border-radius: 4px;
+  margin-top: @line-height-computed;
+  margin-bottom: 2 * @line-height-computed;
+  // margin-right: -10%;
+  // margin-left: -10%;
+  margin-right: -10px;
+  margin-left: -10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid @border-color;
+  position: relative;
+  background-color: transparent;
   
-  button {
-    color: @slider-button-color;
-    border: none;
-    
-    &:hover,
-    &:focus {
-      color: darken(@slider-button-color, 15%);
-    }
-  }
-  
-  .slider-toolbar {
-    .small;
+  .slick-dots {    
+    .list-unstyled;
+    .list-inline;
+    font-size: 0.65rem;
+    text-align: center;
+    display: block;
     width: 100%;
-    line-height: 1;
-    
-    button {
-      .btn-xs;
-    }
-    
-    > .toolbar-action {
-      float: right;
-      font-weight: 300;
-      background-color: transparent;
-      margin: 6px 5px;
-      
-      &:before {
-        .icn("f065");
-        margin-right: 5px;
-      }
-    }
-    
-    .slick-dots {    
-      .list-unstyled;
-      .list-inline;
-      margin: 10px 5px;
-      display: inline-block !important;
+    position: absolute;
+    margin: 0 auto;
+    bottom: -1.5 * @line-height-computed;
 
-      > li {
-        margin: 0;
-        padding: 0;
+    > li {
+      margin: 0;
+      padding: 0;
 
-        > button {
-          border: none;
-          background: none;
-          line-height: 1;
+      > button,
+      > button:active {
+        padding: 0 5px;
+        color: @gray-lightish;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
 
-          &:before {
-            .fa;
-            color: @slider-dot-color;
-            content: "\f111";
-          }
+        &:before {
+          .icn("f111");
         }
         
         &:hover,
-        &:focus,
-        &.slick-active {
-          > button {
-            &:before {
-              color: darken(@slider-dot-color,25%);
-            }
-          }
+        &:focus {
+          color: @gray-light;
         }
       }
       
+      
       &.slick-active {
-          
-          > button {
-            background-color: darken(@slider-button-color, 25%);
-          }
+        > button {
+          color: @gray;
         }
       }
-    }   
+    }
+  }
+  
+  .slick-list {
+    box-shadow: @img-shadow;
+  }
   
   .slick-slide {
-    
-    .slide-img {
-      .aspect-ratio(16,9);
-      overflow: hidden;
-      display: block;
-    }
+    .aspect-ratio(16, 9);
+    overflow: hidden;
+    border: lighten(@border-color, 3%);
+    // margin: @slider-top-padding @slider-side-padding 0;
     
     .slide-caption {
       .thumbnail .caption;
@@ -90,48 +69,27 @@
       font-size: @font-size-small;
       color: @gray-light;
       position: relative;
-      
-      .full-screen {
-        position: relative;
-        &:before {
-          content: "\f065 ";
-          font-family: "FontAwesome";
-          margin-right: 5px
-        }
-      }
     }
   }
   
   .slick-prev,
   .slick-next {
     .btn;
-    .btn-default;
-    .btn-sm;
+    .btn-inverse;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -21px;
-    padding: 10px 6px;
+    margin-top: -1 * (@padding-base-vertical + 0.5 * @line-height-computed);
     
-    &:before,
-    &:after {
-      // font-size: 2 * @fa-font-size-base;
-      line-height: 1;
-      color:@slider-button-color;
-    }
-    
-    &:hover,
-    &:focus {
-      
-    }
-    
-    &.slick-disabled:before {
-      opacity: 0.1;
+    &.slick-disabled,
+    &.slick-disabled:hover,
+    &.slick-disabled:focus {
+      .btn.disabled;
+      .button-variant(darken(@btn-inverse-color, 75%);darken(@btn-inverse-bg, 75%);darken(@btn-inverse-border, 75%));
     }
   }
 
   .slick-prev {
-    left: -12px;
+    left: 0;
     
     &:before {
       .icn("f053");
@@ -139,7 +97,7 @@
   }
 
   .slick-next {
-    right: -12px;
+    right: 0;
     
     &:after {
       .icn("f054");
@@ -154,36 +112,10 @@
   .slick-lightbox-inner {
     
     .slick-lightbox-slick {
+      margin-top: 0;
       position: static;
       z-index: @zindex-modal;
       border: none;
-      
-      .slider-toolbar {
-        z-index: @zindex-navbar-fixed;
-        background-color: #222;
-        border-radius: 0;
-        .opacity(.9);
-
-        .slick-dots {
-
-          
-        }
-
-        .slick-lightbox-close {
-          float: right;
-          font-size: inherit;
-          position: relative;
-          height: auto;
-          width: auto;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          &:before {
-            .icn('f00d');
-          }
-        }
-      }
 
       .slick-lightbox-slick-item {
         max-height: none;
@@ -191,32 +123,45 @@
 
         .slick-lightbox-slick-item-inner {
           max-height: none;
-          padding: 20px;
+          height: auto;
             
-          img.slick-lightbox-slick-img {
+          .slick-lightbox-slick-img {
+            position: relative;
             max-height: none !important;
+            max-width: 100%;
+            margin: 30px 0;
           }
         }
-      }
-      
-      .slick-prev,
-      .slick-next {
-        .btn;
-        background-color: #222;
-        border-color: #000;
-      }
-
-      .slick-prev {
-        left: 0;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-
-      .slick-next {
-        right: 0;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
       }  
+    }
+    
+    .slick-lightbox-close {
+      font-size: inherit;
+      
+
+      &:before {
+        .icn('f00d');
+        color: @gray-lightish;
+      }
+    } 
+
+    .slick-prev {
+      left: -5px;
+    }
+
+    .slick-next {
+      right: -5px;
+    }
+    
+    .slick-dots {
+      padding: 10px;
+      background-color: @gray-darker;
+      opacity: 0.9;
+      border-radius: 4px;
+      position: absolute;
+      width: auto;
+      bottom: 20px;
+      left: 20px;
     }
   }
 }

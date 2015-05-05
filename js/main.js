@@ -97,26 +97,16 @@ $(document).ready(function() {
   **************/
   
   // Find all sliders
-  var sliders = $('ol').has('img');
+  var sliders = $('.slider');
   
   // Find all slides
-  var slides = $(sliders).children('li');
+  var slides = $(sliders).children('img');
   
-  // Find and wrap all slide images
+  // Wrap all slide images with links
   $(slides)
-    .children('img')
     .each(function() {
-      $(this).wrap('<a class="slide-img" href="' + $(this).attr('src') + '" />');
+      $(this).wrap('<a href="' + $(this).attr('src') + '" />');
     });
-    
-    
-  // Find and wrap all slide captions
-  $(slides)
-    .contents()
-    .filter(function() {
-      return this.nodeType === 3; //Node.TEXT_NODE
-    })
-    .wrap('<div class="slide-caption" />');
   
   // Initiate slick
   var slickOptions = {
@@ -128,38 +118,28 @@ $(document).ready(function() {
   
   $(sliders).slick(slickOptions);
   
+  // Proper button disabeling
+  // ADD http://getbootstrap.com/css/#buttons-disabled
+  
   // Initiate slickLightbox
   $(sliders).each(function() {
     $(this).slickLightbox({
-      slick: slickOptions,
+      slick: slickOptions
     });
   });
   
   $('body').on('show.slickLightbox', function() {
     $(this).addClass('modal-open');
+    /*
     $('.slick-lightbox-slick').addToolbar();
     $('.slick-lightbox .slick-dots').moveIntoToolbar();
     $('.slick-lightbox .slick-lightbox-close').moveIntoToolbar().srOnlyText();
+    */
     $('.slick-lightbox .slick-dots button, .slick-lightbox .slick-prev, .slick-lightbox .slick-next').srOnlyText();
   });
   
   $('body').on('hide.slickLightbox', function() {
     $(this).removeClass('modal-open');
-  });
-
-// Create toolbar
-  $(sliders).addToolbar();
-  
-  // Move .slick-dots into toolbar
-  $('.slick-dots').moveIntoToolbar();
-  
-  // Add full screen button
-  $('.slider-toolbar').append('<button class="full-screen toolbar-action">View in full screen</button>');
-  $('.full-screen').click( function() {
-    var parentSlider = $(this).closest('.slick-slider');
-    parentSlider.removeClass('slick-hide-init');
-    activeSlide = $(parentSlider).find('.slick-slide.slick-active > a');
-    activeSlide.trigger('click');
   });
 
   // Find all slider buttons and wrap them with .sr-only
