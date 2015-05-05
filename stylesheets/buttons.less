@@ -1,0 +1,21 @@
+button {
+  font-family: @font-family-sans-serif;
+  font-weight: @btn-font-weight;
+}
+
+.btn {
+  border-bottom-width: 4px;
+  
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: @cursor-disabled;
+
+  }
+}
+
+.btn-inverse {
+  .button-variant(@btn-inverse-color; @btn-inverse-bg; @btn-inverse-border);
+}
