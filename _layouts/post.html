@@ -21,18 +21,25 @@ layout: default
             <i class="fa fa-calendar"></i> {{ page.time }}
           </span>
         </div>
-        <img src="{{ page.cover-image }}">
+        <div id="cover-image">
+          <img src="{{ page.cover-image }}">
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
-    <main id="main_content" class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-      {{ content }}
-    </main><!-- /.col-md-6 -->    
-  </div><!-- /.row -->
+  <main class="row">
+    <div id="abstract" class="col-xs-12 lead">
+      {{ page.excerpt }}
+    </div>
+    <div id="full-story" class="col-xs-12 col-md-offset-1 col-md-10">
+      {{ content | remove: page.excerpt }}
+    </div>
+  </main>
+  <div id="read-next">
+  </div>
 </div><!-- /.container -->
 <script src="/js/toc.js"></script>
 <script src="/js/bootstrap-switch.js"></script>
