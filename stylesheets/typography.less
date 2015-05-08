@@ -1,36 +1,93 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+html {
+  font-size: @font-size-base;
+  
+  /* 
+  @media (min-width: @screen-sm-min) {
+    font-size: 1.125 * @font-size-base;
+  }
+  */
+  
+  /*
+  @media (min-width: @screen-lg-min) {
+    font-size: 1.75 * @font-size-base;
+  } 
+  */
+}
+
+body {
+  font-family: @font-family-serif;
+  font-size: 1em;
+  font-weight: @text-font-weight;
+  text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga", "kern";
+  letter-spacing: -0.5px;
+  
+}
+
+p {
+  margin-bottom: 0.5 * @line-height-computed;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  
   > small {
-    font-size: percentage(1/@font-size-scale);
+    font-size: .35em;
     margin-top: 10px;
     font-family: @font-family-serif;
     display: block;
     text-align: inherit;
     line-height: 1.2
   }
+  
+  strong {
+    font-weight: 500;
+  }
 }
 
 h2 {
-  margin-top: 3 * @line-height-computed;
+  margin-top: 2 * @line-height-computed;
+  margin-bottom: 1 * @line-height-computed;
 }
 
 h3 {
-  margin-top: 2 * @line-height-computed;
+  margin-top: 1.5 * @line-height-computed;
+  margin-bottom: 0.5 * @line-height-computed;
 }
 
-
-
 .lead {
+  font-family: @font-family-serif;
+  font-weight: @lead-font-weight;;
+  font-size: 1.15rem;
+  line-height: @line-height-base * 1;
+  margin-bottom: @line-height-computed;
+  color: @lead-text-color;
+}
+
+hr {
+  border-color: @border-color;
+  border-width: 1px;
+  width: 15%;
+  margin-top: 2 * @line-height-computed;
   margin-bottom: 2 * @line-height-computed;
-  line-height: 1.7;
-  font-size: @font-size-large;
-  letter-spacing: -0.5px;
+}
+
+em {
+  
 }
 
 strong {
-  font-weight: 500;
+  color: @strong-text-color;
+  font-weight: @strong-font-weight;
+}
+
+figcaption {
+  color: @text-muted;
+  font-style: italic;
 }
