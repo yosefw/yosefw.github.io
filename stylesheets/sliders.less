@@ -1,17 +1,8 @@
 .slick-slider {
   margin-top: @line-height-computed;
-  margin-bottom: 2.5 * @line-height-computed;
-  // margin-right: -10%;
-  // margin-left: -10%;
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-bottom: 2 * @line-height-computed;
   position: relative;
   background-color: transparent;
-  
-  @media (min-width: @screen-md-min) {
-    margin-right: -30px;
-    margin-left: -30px;
-  }
   
   .slick-list {
     border: 1px solid @border-color;
@@ -21,7 +12,6 @@
     .aspect-ratio(16, 9);
     overflow: hidden;
     border: lighten(@border-color, 3%);
-    // margin: @slider-top-padding @slider-side-padding 0;
     
     .slide-caption {
       .thumbnail .caption;
@@ -71,6 +61,7 @@
     text-align: center;
     display: block;
     width: 100%;
+    margin: 0 auto;
     margin-top: 10px;
 
     > li {
