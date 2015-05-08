@@ -1,5 +1,18 @@
-exclude: 
+exclude:
 - less
 - Gemfile
 - Gemfile.lock
 - CNAME
+
+kramdown:
+  input: GFM
+
+permalink: short-urls-jekyll
+relative_permalinks: true
+
+title: Yosef Waysman
+tagline: 'is a product guy'
+url: http://yosef.me
+
+name: Yosef Waysman
+email: yosefwaysman@gmail.com
