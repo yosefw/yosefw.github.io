@@ -7,8 +7,7 @@ exclude:
 kramdown:
   input: GFM
 
-permalink: short-urls-jekyll
-relative_permalinks: true
+permalink: /:title
 
 title: Yosef Waysman
 tagline: 'is a product guy'
