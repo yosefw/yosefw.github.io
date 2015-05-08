@@ -16,14 +16,14 @@
 .img-row(@images) {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   img {
-    width: percentage(1/@images);
+    width: percentage(1/(@images+1/pow(@images,@images)));
     height: auto;
     flex-shrink: 0;
-    padding: 5px;
+
   }
 }
 
