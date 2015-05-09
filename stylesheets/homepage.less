@@ -13,7 +13,6 @@ body.homepage {
   }
   
   h2 {
-    font-size: @font-size-h5;
     margin-bottom: 10px;
     
     ~ a {
@@ -25,35 +24,45 @@ body.homepage {
 
   
   #hero {
+    font-family: @font-family-serif; 
+    background-color: @gray-dark;
+    color: @gray-lightish;
     padding-top: 0;
-    min-height: 85vh;
+    min-height: 75vh;
     
     h1 {
-      font-size: @font-size-h3;
-      font-weight: 300;
-      margin-bottom: @line-height-computed;
+      font-family:inherit;
+      color: inherit;
+      font-size: @font-size-h2;
+      font-weight: 400;
+      margin-bottom: 0.5 * @line-height-computed;
     }
 
     p {
-      font-family: @font-family-sans-serif;
-      font-size: @font-size-h1;
+      color: inherit;
+      font-size: @font-size-h2;
+      font-weight: 400;
       line-height: 1.25;
 
       i.love{
         color: @brand-red;
       }
+      
+      strong {
+        color: white;
+        font-weight: inherit;
+      }
     }
   }
   
   #job-looking {
-    background-color: @brand-yellow;
+    background-color: white;
   }
   
   #my-work {
     background-color: @bg-color;
 
     h2 {
-      font-size: @font-size-h4;
       margin-bottom: 2 * @line-height-computed;
     }
     
@@ -119,7 +128,6 @@ body.homepage {
   }
   
   header li > a,
-  #job-looking,
   #somewhat-nice {
     .hidden; 
   }
