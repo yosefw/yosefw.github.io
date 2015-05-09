@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1> 
+          {{ page.title }}
+        </h1>
+        
+        {% if page.cover-image %}
+        <div id="cover-image">
+          <img src="{{ page.cover-image }}">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="container">
+  <main class="row">
+    {% if page.excerpt %}
+    <div id="abstract" class="col-xs-12 col-md-offset-0 col-md-12">
+      <p class="lead">
+        {{ page.excerpt }}
+      </p>
+      <hr></hr>
+    </div>
+    {% endif %}
+    <div id="full-story" class="col-xs-12 col-md-offset-1 col-md-10">
+      {{ content}}
+    </div>
+  </main>
+  </div>
+</div><!-- /.container -->
