@@ -30,6 +30,7 @@
 .aspect-ratio(@width; @height) {
   @ratio: percentage(@height/@width);
   position: relative;
+  overflow: hidden;
   
   &:before {
     content: "";
