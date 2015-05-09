@@ -7,8 +7,6 @@ exclude:
 kramdown:
   input: GFM
 
-permalink: /:title
-
 title: Yosef Waysman
 tagline: 'is a product guy'
 url: http://yosef.me

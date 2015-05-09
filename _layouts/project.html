@@ -2,13 +2,12 @@
 layout: default
 ---
 
-
 <div id="page-header" {% if page.cover-image %} class="with-image" {% endif %}>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <h1> 
-          {{ page.title | upcase }}
+          {{ page.title }}
           <small>
             {{ page.subtitle }}
           </small>
@@ -30,18 +29,18 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</div> 
 
 <div class="container">
   <main class="row">
     <div id="abstract" class="col-xs-12 col-md-offset-0 col-md-12">
       <p class="lead">
-        {{ page.excerpt | strip_html}}
+        {{ page.excerpt }}
       </p>
       <hr></hr>
     </div>
     <div id="full-story" class="col-xs-12 col-md-offset-1 col-md-10">
-      {{ content | remove: page.excerpt }}
+      {{ content}}
     </div>
   </main>
   <div id="read-next">
@@ -51,3 +50,4 @@ layout: default
 <script src="/js/bootstrap-switch.js"></script>
 <script src="/js/slick.min.js"></script>
 <script src="/js/slick-lightbox.js"></script>
+
