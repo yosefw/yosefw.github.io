@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: Open Letter to a Potential Employer
 subtitle: Everything you need to know when considering me for a position in your company
 ---
