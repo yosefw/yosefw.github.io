@@ -71,7 +71,7 @@
       > button,
       > button:active {
         padding: 0 5px;
-        color: @gray-lightish;
+        color: @gray-light;
         background-color: transparent;
         border: none;
         box-shadow: none;
@@ -106,20 +106,24 @@
       position: static;
       z-index: @zindex-modal;
       border: none;
-
-      .slick-lightbox-slick-item {
-        max-height: none;
-        overflow: auto;
-
-        .slick-lightbox-slick-item-inner {
+      
+      .slick-list {
+        border: none;
+        
+        .slick-lightbox-slick-item {
           max-height: none;
-          height: auto;
-            
-          .slick-lightbox-slick-img {
-            position: relative;
-            max-height: none !important;
-            max-width: 100%;
-            margin: 30px 0;
+          overflow: auto;
+
+          .slick-lightbox-slick-item-inner {
+            max-height: none;
+            height: auto;
+
+            .slick-lightbox-slick-img {
+              position: relative;
+              max-height: none !important;
+              max-width: 100%;
+              margin: 30px 0;
+            }
           }
         }
       }  
@@ -131,7 +135,7 @@
 
       &:before {
         .icn('f00d');
-        color: @gray-lightish;
+        color: @gray-light;
       }
     } 
 

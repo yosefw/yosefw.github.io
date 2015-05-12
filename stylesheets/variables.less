@@ -2,22 +2,21 @@
 @container-lg:                 @container-md;
 
 @gray-base:                    #000;
-@gray-darker:                  lighten(@gray-base, 13.5%); // #222
-@gray-dark:                    lighten(@gray-base, 20%);   // #333
-@gray:                         lighten(@gray-base, 33.5%); // #555
-@gray-light:                   lighten(@gray-base, 46.7%); // #777
-@gray-lightish:                lighten(@gray-base, 60%); // #999
-@gray-lighter:                 lighten(@gray-base, 93.5%); // #eee
+@gray-darker:                  #1b1b1b;
+@gray-dark:                    #66666e;
+@gray:                         #9999A1;
+@gray-light:                   #e6e6e9;
+@gray-lighter:                 #f4f4f6;
 
 @text-color:                   @gray;
 @strong-text-color:            @gray-dark;
-@lead-text-color:              @gray-dark;
-@headings-color:               @gray-dark;
-@headings-small-color:         @gray-light;
+@lead-text-color:              @gray-darker;
+@headings-color:               @gray-darker;
+@headings-small-color:         @gray;
 @text-muted:                   lighten(@text-color, 25%); // #a6a6a6a
 
 @border-color:                 #ccc; // #e6e6e6
-@bg-color:                     lighten(@gray-base, 95%); // #f2f2f2
+@bg-color:                     @gray-lighter;
 
 @brand-primary:                darken(#428bca, 6.5%); // #337ab7
 @brand-success:                #5cb85c;
@@ -25,13 +24,13 @@
 @brand-warning:                #f0ad4e;
 @brand-danger:                 #d9534f;
 
-@brand-red:                    #ff4136;
+@brand-red:                    red;
 @brand-yellow:                 #ffdc00 ;
 @brand-silver:                 #ddd;
 
 
 
-@font-family-sans-serif:       "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:       "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:            "Merriweather", Georgia, "Times New Roman", Times, serif;
 @icon-font:                    "FontAwesome";
 

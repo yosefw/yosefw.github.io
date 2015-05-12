@@ -12,12 +12,12 @@
   h1 {
     font-size: unit(pow(@font-size-scale,5),rem);
     margin-bottom: 0.5 * @line-height-computed;
+    font-weight: 900;
     
     small {
-      font-size: 1.5rem;
+      font-size: @font-size-scale * 1rem;
       display: block;
       margin-top: 0.5 * @line-height-computed;
-      color: @gray-lightish;
     }
   }
   
@@ -28,7 +28,7 @@
       margin: 0 10px;
       font-weight: 300;
       font-family: @headings-font-family;
-      color: @gray-lightish;
+      color: @gray-light;
       
       i {
         color: @text-muted; 
@@ -39,9 +39,8 @@
   
   #cover-image {
     .aspect-ratio(16,10);
+    
     img {
-      .center-block;
-      max-width: 100%;
       margin-top: 0.5 * @line-height-computed;
       border: 1px solid @border-color;
 

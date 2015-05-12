@@ -12,6 +12,7 @@ body {
   font-weight: @text-font-weight;
   letter-spacing: -0.5px;
   text-rendering: optimizelegibility;
+  text-align: justify;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "kern";
@@ -32,7 +33,8 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   
-  > small {
+  small,
+  .small {
     margin-top: 10px;
     font-family: @font-family-serif;
     display: block;
