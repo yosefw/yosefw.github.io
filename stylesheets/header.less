@@ -5,9 +5,40 @@ header {
     margin-bottom: 0;
     
     .navbar-brand {
-      font-weight: @headings-font-weight;
-      font-size: 1rem;
-      color: @gray-darker;
+      height: auto;
+      line-height: 1;
+      vertical-align: middle;
+      
+      #logomark,
+      #logotype {
+        display: block;
+        float: left;
+      }
+      
+      #logomark {
+        font-size: 1rem;
+        text-align: center;
+        color: red;
+        height: 2.3rem;
+        width: 2.3rem;
+        padding-top: 0.575rem;
+        background-color: @gray-lighter;
+        margin-right: 15px;
+        padding: 0 auto;
+        border-bottom: 4px solid darken(@gray-lighter, 10%);
+        border-radius: 8px;
+      }
+      
+      #logotype {
+        font-size: 1rem;
+        line-height: 1.15;
+        font-weight: @headings-font-weight;
+        color: @gray-darker;
+        
+        span {
+          display: block;
+        }
+      }
     }
     
     .navbar-btn {
