@@ -12,14 +12,17 @@ body {
   font-weight: @text-font-weight;
   letter-spacing: -0.5px;
   text-rendering: optimizelegibility;
-  text-align: justify;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-feature-settings: "liga", "kern";
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  
+  @media (min-width: @screen-md-min) {
+    text-align: justify;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga", "kern";
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
 }
 
 p {
