@@ -11,5 +11,6 @@ title: Yosef Waysman
 tagline: 'is a product guy'
 url: http://yosef.me
 
-name: Yosef Waysman
-email: yosefwaysman@gmail.com
+author:
+  name: Yosef Waysman
+  email: yosefwaysman@gmail.com
