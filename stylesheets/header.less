@@ -5,56 +5,118 @@ header {
     margin-bottom: 0;
     
     .navbar-brand {
-      height: auto;
+      padding: 15px @navbar-padding-horizontal;
       
-      #logomark,
-      #logotype {
-        display: block;
+      #logo {
+        font-size: 1rem;
         float: left;
-      }
-      
-      #logomark {
-        font-size: 1rem;
-        text-align: center;
-        color: red;
-        height: 2.3rem;
-        width: 2.3rem;
-        padding-top: 0.575rem;
-        background-color: @gray-lighter;
-        margin-right: 15px;
-        padding: 0 auto;
-        border: 1px solid darken(@gray-lighter, 20%);
-        border-bottom-width: 4px;
-        border-radius: 6px;
-      }
-      
-      #logotype {
-        font-size: 1rem;
-        line-height: 1.15;
-        font-weight: @headings-font-weight;
-        color: @gray-darker;
+        height: auto;
+        margin-top: 1px;
         
-        span {
+        #logomark,
+        #logotype {
           display: block;
+          float: left;
+        }
+
+        #logomark {
+          text-align: center;
+          height: 2.3rem;
+          width: 2.3rem;
+          background-color: @bg-color;
+          margin-right: 15px;
+          padding: 0 auto;
+          border: 1px solid darken(@bg-color, 20%);
+          border-bottom-width: 0.2rem;
+          border-radius: 6px;
+          vertical-align: middle;
+          
+          &:before {
+            .icn('f004');
+            color: red;
+            margin: 0.55rem auto 0;
+            
+          }
+          
+          &:hover:before {
+            
+          }
+        }
+
+        #logotype {
+          line-height: 1.15;
+          font-weight: @headings-font-weight;
+          color: @gray-darker;
+
+          span {
+            display: block;
+          }
+        }
+        
+        &:hover {
+          
+          #logomark {
+            
+            &:before {
+              .icn('f015');
+              color: @gray-dark;
+            }
+          }
         }
       }
     }
     
-    .navbar-btn {
-      margin-right: 15px;
-      margin-left: 15px;
+    .navbar-nav {
+      float: right;
+      font-size: @navbar-font-size;
       
-      &[onClick*="mailto"]:before {
-        .btn-icn("f0e0");
-        .fa-fw;
+      > * {
+        margin-bottom: 0;
       }
-    }
-    
-    .navbar-toggle {
-      border: 0;
       
-      &:before {
-        .icn("f0c9"); 
+      #menu {
+        
+        border-left: 1px solid @border-color;
+        
+        &:before {
+          .icn("f0c9");
+          margin-right: 0.35rem;
+        }
+      }
+      
+      .dropdown-menu {
+        border-color: @border-color;
+        padding-top: 0;
+        border-radius: 0;
+                
+        li {
+          
+          > a {
+            color: @strong-text-color;
+            font-size: 1rem / @font-size-scale;
+          }
+
+          &.disabled {
+            
+            > a {
+              color: @text-muted;
+            }
+          }
+        }
+        
+        .dropdown-header {
+          padding-top: 20px;
+          text-transform: uppercase;
+          font-size: @navbar-font-size / @font-size-scale;
+        }
+        
+        .divider {
+          background-color: @border-color; 
+        }
+        
+        > * {
+          font-size: inherit;
+        }
       }
     }
   }

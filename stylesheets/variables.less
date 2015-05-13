@@ -2,21 +2,21 @@
 @container-lg:                 @container-md;
 
 @gray-base:                    #000;
-@gray-darker:                  #1b1b1b;
-@gray-dark:                    #66666e;
-@gray:                         #9999A1;
-@gray-light:                   #e6e6e9;
-@gray-lighter:                 #f4f4f6;
+@gray-darker:                  rgb(27, 27, 27);
+@gray-dark:                    rgb(102, 102, 110);
+@gray:                         rgb(153, 153, 161);
+@gray-light:                   rgb(185, 185, 195);
+@gray-lighter:                 rgb(230, 230, 233);
 
 @text-color:                   @gray;
 @strong-text-color:            @gray-dark;
 @lead-text-color:              @gray-darker;
 @headings-color:               @gray-darker;
 @headings-small-color:         @gray;
-@text-muted:                   lighten(@text-color, 25%); // #a6a6a6a
+@text-muted:                   lighten(@text-color, 15%);
 
 @border-color:                 #ccc; // #e6e6e6
-@bg-color:                     @gray-lighter;
+@bg-color:                     #f4f4f6;
 
 @brand-primary:                darken(#428bca, 6.5%); // #337ab7
 @brand-success:                #5cb85c;
@@ -96,10 +96,37 @@
 
 
 
-@navbar-height:                60px;
+@navbar-height:                80px;
 @navbar-default-bg:            white;
 @navbar-default-brand-color:   @text-color;
 
+@navbar-font-size:             unit(pow(1/@font-size-scale,1),rem);
+
+@navbar-default-color:             @gray;
+@navbar-default-bg:                white;
+@navbar-default-border:            @border-color;
+
+@nav-link-hover-bg:                        @gray-lighter;
+@navbar-default-link-color:                @gray;
+@navbar-default-link-hover-color:          @gray-dark;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         @gray;
+@navbar-default-link-active-bg:            @gray-lighter;
+@navbar-default-link-disabled-color:       @gray-light;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @text-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           @gray-light;
+@navbar-default-toggle-icon-bar-bg:        @gray;
+@navbar-default-toggle-border-color:       @border-color;
+
+@dropdown-link-color:            @gray-dark;
+@dropdown-header-color:          @gray;
 
 
 @img-shadow:                   0px 1px 16px hsla(0, 0%, 0%, 0.125);
