@@ -14,6 +14,17 @@ body {
   }
 }
 
+.container-fluid {
+  width: 100%;
+}
+
+a {
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 a[href^="http"] {
    &:after {
      .icn('f08e');
@@ -46,5 +57,13 @@ figure {
     width: 100%;
     font-size: 16px;
     text-align: center;
+  }
+}
+
+.contact-me {
+  
+  &:before {
+    .icn('f003');
+    margin-right: 0.1em;
   }
 }
