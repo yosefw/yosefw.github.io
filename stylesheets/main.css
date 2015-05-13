@@ -8937,12 +8937,14 @@ body.homepage #somewhat-nice {
 #page-header {
   text-align: center;
   padding-top: 28px;
+  padding-bottom: 56px;
   margin-bottom: 56px;
+  background-color: #f4f4f6;
+  border-bottom: 1px solid #cccccc;
 }
 #page-header.with-image {
   overflow: hidden;
-  background-color: #f4f4f6;
-  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0;
 }
 #page-header h1 {
   margin-bottom: 14px;

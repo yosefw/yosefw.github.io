@@ -1,12 +1,14 @@
 #page-header {
   text-align: center;
   padding-top: 1 * @line-height-computed;
+  padding-bottom: 2 * @line-height-computed;
   margin-bottom: 2 * @line-height-computed;
+  background-color: @bg-color;
+  border-bottom: 1px solid @border-color;
   
   &.with-image {
     overflow: hidden;
-    background-color: @bg-color;
-    border-bottom: 1px solid @border-color;
+    padding-bottom: 0;
   }
   
   h1 {
