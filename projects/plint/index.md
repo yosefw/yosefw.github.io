@@ -3,7 +3,7 @@ layout: project
 title: Plint
 subtitle: OKCupid for conferences and business events
 tags: [Startup, Product, Interaction design, Visual design, Branding]
-time: July–October 2014
+time: July—October 2014
 cover-image: assets/design/comps/attendees.png
 excerpt: Plint was a short-lived startup that I joined as a co-founder. The idea was to create an <em>OKCupid</em> for conferences. Attendees would sign up, check into upcoming conferences, see other attendees and schedule meetings with them at the conference. This was the first time I took over all design related responsibilities for what was supposed to be the long run. After 4 months of work, we decided to shut down the project due to personal differences in our vision of the company. Although we disbanded at an early stage, I managed to create a solid design system that I was very pleased with, and gained some real-life startup experience.
 ---
@@ -117,7 +117,7 @@ For the logo itself, I wanted to play on the metaphor of face to face meetings. 
 
 Before figuring out the visual language, I consulted with my partners regarding their aesthetic preferences. They named products such as Quora, GitHub, Trello and Yelp as appealing to their taste. All of these products present a clean visual language, in which the brand is present but the content gets the front seat.
 
-Like most other web projects that I have been involved with in the last few years, I started with[ Bootstrap](http://getbootstrap.com/) and tweaked the visual language to match our goals and taste.
+Like most other web projects that I have been involved with in the last few years, I started with [Bootstrap](http://getbootstrap.com/) and tweaked the visual language to match our goals and taste.
 
 <div class="slider">
   <img src="assets/design/comps/homepage.png" />
