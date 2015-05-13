@@ -8465,7 +8465,8 @@ h2 {
   margin-top: 56px;
   margin-bottom: 28px;
 }
-h3 {
+h3,
+h4 {
   margin-top: 42px;
   margin-bottom: 14px;
 }
@@ -8882,10 +8883,12 @@ body.homepage #my-work .thumbnail .project-image:before {
   padding-bottom: 75%;
 }
 body.homepage #my-work .thumbnail .project-image img {
+  max-width: 100%;
   position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
   margin: 0 auto;
-  max-width: 100%;
 }
 body.homepage #my-work .thumbnail .project-image img {
   border-bottom: 1px solid #cccccc;
@@ -8944,7 +8947,7 @@ body.homepage #somewhat-nice {
 #page-header h1 {
   margin-bottom: 14px;
   font-weight: 700;
-  letter-spacing: -5px;
+  letter-spacing: -2.5px;
 }
 #page-header h1 small {
   display: block;
@@ -8975,10 +8978,12 @@ body.homepage #somewhat-nice {
   padding-bottom: 62.5%;
 }
 #page-header #cover-image img {
+  max-width: 100%;
   position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
   margin: 0 auto;
-  max-width: 100%;
 }
 #page-header #cover-image img {
   margin-top: 14px;
@@ -9080,6 +9085,7 @@ figure img:only-of-type {
   position: relative;
   overflow: hidden;
   border: #d4d4d4;
+  background-color: #f4f4f6;
 }
 .slick-slider .slick-slide:before {
   content: "";
@@ -9087,10 +9093,12 @@ figure img:only-of-type {
   padding-bottom: 56.25%;
 }
 .slick-slider .slick-slide img {
+  max-width: 100%;
   position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
   margin: 0 auto;
-  max-width: 100%;
 }
 .slick-slider .slick-slide .slide-caption {
   padding: 9px;

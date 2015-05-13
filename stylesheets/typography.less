@@ -12,17 +12,19 @@ body {
   font-weight: @text-font-weight;
   letter-spacing: -0.5px;
   text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga";
   
+  /*
   @media (min-width: @screen-md-min) {
     text-align: justify;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-feature-settings: "liga", "kern";
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
   }
+  */
 }
 
 p {
@@ -55,7 +57,8 @@ h2 {
   margin-bottom: 1 * @line-height-computed;
 }
 
-h3 {
+h3,
+h4 {
   margin-top: 1.5 * @line-height-computed;
   margin-bottom: 0.5 * @line-height-computed;
 }
@@ -64,7 +67,7 @@ h3 {
   font-family: @font-family-serif;
   font-weight: @lead-font-weight;
   font-size: 1.15rem;
-  line-height: @line-height-base * 1;
+  line-height: @line-height-base * 1.25;
   margin-bottom: @line-height-computed;
   color: @lead-text-color;
 }
@@ -87,6 +90,6 @@ strong {
 
 figcaption {
   font-family: @font-family-sans-serif;
-  color: @text-muted;
+  color: @gray;
   font-style: italic;
 }
