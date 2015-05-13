@@ -45,6 +45,11 @@ $(document).ready(function() {
       });
     }
   });
+
+  /***************************
+      HEADER DROPDOWN MENU
+  ***************************/
+  $('#menu').dropdown();
   
   /**********************
      TABLE OF CONTENTS

@@ -2,11 +2,56 @@
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/"><i id="logomark" class="fa fa-heart"></i><div id="logotype"><span>Yosef</span><span>Waysman</span></div></a>
-        <button type="button" class="btn navbar-toggle navbar-btn navcollapsed" data-toggle="collapse" data-target="#menu">
-          <span class="sr-only">Toggle navigation</span>
-        </button>
+        <a class="navbar-brand" href="/">
+          <div id="logo">
+          <div id="logomark"></div>
+          <div id="logotype">
+            <span>Yosef</span>
+            <span>Waysman</span>
+          </div>
+          </div>
+        </a>
       </div>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a id="menu" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="presentation" class="dropdown-header">My work</li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/projects/plint/">
+                  Plint
+                </a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/projects/open-pension/">
+                  Open Pension
+                </a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/projects/everythingme/">
+                  EverythingMe
+                </a>
+              </li>
+              <li role="presentation" class="dropdown-header">About me</li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/open-letter/">
+                  Open Letter to a Potential Employer
+                </a>
+              </li>
+              <li role="presentation" class="disabled">
+                <a role="menuitem" tabindex="-1" href="/resume/">
+                  Resume <span class="text-muted">coming soon</span>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="mailto:yosefwaysman@gmail.com" class="contact-me">
+                  Contact me
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
     </div> <!-- container -->
   </nav>
