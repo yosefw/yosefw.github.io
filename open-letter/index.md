@@ -52,7 +52,7 @@ There is an end goal we want to achieve. A designer’s job is to fill in the ga
 
 In an in-house product team, deliverables have no value in and of themselves. They are simply the result of activities that move a project forward. There is no reason to polish wireframes or mockups beyond the point of achieving a good solution.
 
-Therefore, many of my "deliverables" look like works in progress, even when I’m done with them and have moved on in the the next stage. That’s because what I care about the most is the end result. I’ll always use the most relevant tool or activity to solve the specific problem at hand, which I’ll stay with only until the problem is solved. I believe that the only deliverable that needs to be perfect is the published product.
+Therefore, many of my "deliverables" look like works in progress, even when I’m done with them and moved on in the the next stage. That’s because what I care about the most is the end result. I’ll always use the most relevant tool or activity to solve the specific problem at hand, which I’ll stay with only until the problem is solved. I believe that the only deliverable that needs to be perfect is the published product.
 
 ### Process
 
@@ -96,7 +96,7 @@ I start with marking up the content, in either pure HTML, Markdown or other temp
 
 ## The work I want to do
 
-*I would rather design the next GitHub than the next Instagram*
+**I would rather design the next GitHub than the next Instagram**
 
 I believe that passionate designers create better products. That’s why I aim to work on products that interest me on a personal level. It doesn’t have to be something I’ll use, but it has to be something I see value in.
 
