@@ -18,7 +18,7 @@ The aim of Open Pension is to open up data about the Israeli pension fund market
 
 In Israel, all employees are required by law to transfer a part of their salary to a pension fund. These funds are managed by institutional investors, mostly private insurance companies. These funds therefore belong to some of the largest players in the capital market, routing huge sums of money into the economy. But data about these investments are hard to obtain and information about the pension market is essentially closed off  to the public. We wanted to create a greater awareness to what’s going on with our money.
 
-Every quarter, hundreds of pension funds are each required to publish their asset allocations. This means that the data about each fund's investment policy are available. But no one aggregates these data to allow for higher-level analyses, making it nearly impossible to understand this market’s behavior. We believed that there are groups of people – reporters, researchers, bloggers and activists – who would be interested in digging into aggregate data if they were made readily available. At Open Pension, we do just that: we collect the quarterly reports from each of these funds and aggregate them into a single, clean and standardized database.
+Every quarter, hundreds of pension funds are required to publish their asset allocations. This means that the data about each fund's investment policy are available. But no one aggregates these data to allow for higher-level analyses, making it nearly impossible to understand this market’s behavior. We believed that there are groups of people – reporters, researchers, bloggers and activists – who would be interested in digging into aggregate data if they were made readily available. At Open Pension, we do just that: we collect the quarterly reports from each of these funds and aggregate them into a single, clean and standardized database.
 
 ### The team and our work schedule
 
@@ -45,7 +45,7 @@ My first order of business was to become acquainted with the data. I started goi
 
 #### Target users
 
-At this time I also thought it necessary to better define our target audience. We all agreed that the project should cater to all researchers and reporters who may be interested in the data. But as in many other open data projects, there was a latent desire to also make the project accessible to the wider public. I advocated that we should cater only to researchers and reporters and not to "the masses". I have explained this approach at length in [my blog](https://medium.com/social-commentary/the-open-data-hubris-70d12be222e0). In a nutshell – it's extremely hard to interest the uninterested in raw data. They need stories that are meaningful to them. Therefore, we have a better chance of attaining our desired impact by making our data accessible to professional storytellers. 
+At this time I also thought it necessary to better define our target audience. We all agreed that the project should cater to all researchers and reporters who may be interested in the data. But as in many other open data projects, there was also a latent desire to make the project accessible to the wider public. I advocated that we should cater only to researchers and reporters and not to "the masses". I have explained this approach at length in [my blog](https://medium.com/social-commentary/the-open-data-hubris-70d12be222e0). In a nutshell – it's extremely hard to interest the uninterested in raw data. They need stories that are meaningful to them. Therefore, we have a better chance of attaining our desired impact by making our data accessible to professional storytellers. 
 
 While having my work used by thousands of people is always a dream, I felt that with this project I must insist that we limit the scope to audiences who would make the most use of it. It took a while to get other team members on board, but this approach has paid off. Feature prioritization has become much easier once we reached consensus about our target audience.
 
@@ -79,7 +79,7 @@ In essence, our users are mostly interested in exploring how the money is invest
 
 ### Second iteration (current version)
 
-#### Design
+#### Designe
 
 Upon realizing this, I set out to re-design Open Pension so as to better fit this information architecture. We started with the "investors". Rather than presenting the user with a possibly baffling, open-ended task, the user journey is now more structured and starts by selecting a single institutional investor whose portfolio one would like to investigate. Each portfolio shows the institution’s investments via the parameters that we identified at the outset. For example, users can focus on investments in government bonds, investments in a specific company, investments in the banking industry etc.
 
