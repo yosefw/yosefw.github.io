@@ -3,9 +3,10 @@ header {
   .navbar {
     font-family: @font-family-sans-serif;
     margin-bottom: 0;
+    boder: 1px solid @border-color;
     
     .navbar-brand {
-      padding: 15px @navbar-padding-horizontal;
+      padding: 0.6em @navbar-padding-horizontal;
       
       #logo {
         font-size: 1rem;
@@ -70,14 +71,17 @@ header {
       float: right;
       font-size: @navbar-font-size;
       
-      > * {
+      > li {
         margin-bottom: 0;
+      
+        > a {
+          padding: 1.45em @navbar-padding-horizontal;
+        }
       }
       
       #menu {
-        
         border-left: 1px solid @border-color;
-        
+                
         &:before {
           .icn("f0c9");
           margin-right: 0.35rem;
@@ -92,8 +96,7 @@ header {
         li {
           
           > a {
-            color: @strong-text-color;
-            font-size: 1rem / @font-size-scale;
+            font-size: @navbar-font-size;
           }
 
           &.disabled {
@@ -111,6 +114,7 @@ header {
         }
         
         .divider {
+          margin: 0.5em 0;
           background-color: @border-color; 
         }
         

@@ -34,31 +34,38 @@
 @font-family-serif:            "Merriweather", Georgia, "Times New Roman", Times, serif;
 @icon-font:                    "FontAwesome";
 
-@font-family-base:             @font-family-serif;
-@font-size-base:               18px;
+@font-size-root:               112.5%;
+@font-unit:                    0rem; // Pick em or rem here
 @font-size-scale:              4/3;
-@font-size-small:              0.85rem;
-@font-size-large:              1.25rem;
 
-@headings-font-family:         @font-family-sans-serif;
-@font-size-h1:                 unit(pow(@font-size-scale,3),rem);
-@font-size-h2:                 unit(pow(@font-size-scale,2),rem);
-@font-size-h3:                 unit(pow(@font-size-scale,1),rem);
-@font-size-h4:                 1rem;;
-@font-size-h5:                 unit(pow(1/@font-size-scale,1),rem);
-@font-size-h6:                 unit(pow(1/@font-size-scale,2),rem);
+@font-size-base:               1 + @font-unit;
+@font-size-large:              1.25 + @font-unit;
+@font-size-small:              0.85 + @font-unit;
 
-@text-font-weight:             400;
-@strong-font-weight:           700;
-@lead-font-weight:             300;
-@headings-font-weight:         700;
+@font-size-h1:                 pow(@font-size-scale,3) + @font-unit;
+@font-size-h2:                 pow(@font-size-scale,2) + @font-unit;
+@font-size-h3:                 pow(@font-size-scale,1) + @font-unit;
+@font-size-h4:                 1 + @font-unit;
+@font-size-h5:                 pow(1/@font-size-scale,1) + @font-unit;
+@font-size-h6:                 pow(1/@font-size-scale,2) + @font-unit;
 
 @line-height-base:             1.6;
-@line-height-computed:         floor((@font-size-base * @line-height-base));
+
+@font-family-base:             @font-family-serif;
+@headings-font-family:         @font-family-sans-serif;
+
+@light:                        300;
+@normal:                       400;
+@semibold:                     600;
+@bold:                         700;
+
+@text-font-weight:             @normal;
+@strong-font-weight:           @bold;
+@lead-font-weight:             @light;
+@headings-font-weight:         @bold;
+@btn-font-weight:              @normal;
 
 
-
-@btn-font-weight:              400;
 
 @btn-shadow:                   0px 0.25em 0px 0px;
 
@@ -94,9 +101,9 @@
 @btn-disabled-bg:              @gray-lighter;
 @btn-disabled-border:          darken(@btn-disabled-bg, 5%);
 
+@navbar-height:                3.0em;
+@navbar-margin-bottom:         @line-height-computed;
 
-
-@navbar-height:                80px;
 @navbar-default-bg:            white;
 @navbar-default-brand-color:   @text-color;
 
