@@ -5,7 +5,10 @@ header {
     margin-bottom: 0;
     boder: 1px solid @border-color;
     
-    .navbar-brand {
+    .navbar-header {
+      float: left;
+      
+      .navbar-brand {
       padding: 0.6em @navbar-padding-horizontal;
       
       #logo {
@@ -66,10 +69,13 @@ header {
         }
       }
     }
+    }
     
     .navbar-nav {
       float: right;
       font-size: @navbar-font-size;
+      margin-top: 0;
+      margin-bottom: 0;
       
       > li {
         margin-bottom: 0;
@@ -79,47 +85,85 @@ header {
         }
       }
       
+      .dropdown {
+        
+        .dropdown-toggle {
+                
+        }
+
+        .dropdown-menu {
+          border-color: @border-color;
+          padding-top: 0;
+          border-radius: 0;
+
+          li {
+
+            > a {
+              font-size: @navbar-font-size;
+            }
+
+            &.disabled {
+
+              > a {
+                color: @text-muted;
+              }
+            }
+          }
+
+          .dropdown-header {
+            padding-top: 20px;
+            text-transform: uppercase;
+            font-size: @navbar-font-size / @font-size-scale;
+          }
+
+          .divider {
+            margin: 0.5em 0;
+            background-color: @border-color; 
+          }
+
+          > * {
+            font-size: inherit;
+          }
+        }
+      }
+      
+      @media (max-width: @grid-float-breakpoint-max) {
+        // Overriding bootstrap's special layout on xs-screen
+        .open .dropdown-menu {
+          position: absolute;
+          right: 0;
+          left: inherit;
+          float: left;
+          margin-top: 0;
+          background-color: @dropdown-bg;
+          border: 1px solid @dropdown-border;
+          .box-shadow(0 6px 12px rgba(0,0,0,.175));
+          
+          > li {
+            margin-bottom: 0;
+            
+            > a,
+            .dropdown-header {
+              margin-bottom: 0;
+            }
+
+            > a {
+              line-height: @line-height-computed;
+              &:hover,
+              &:focus {
+                background-image: none;
+              }
+            }
+          }
+        }
+      }
+      
       #menu {
         border-left: 1px solid @border-color;
                 
         &:before {
           .icn("f0c9");
           margin-right: 0.35rem;
-        }
-      }
-      
-      .dropdown-menu {
-        border-color: @border-color;
-        padding-top: 0;
-        border-radius: 0;
-                
-        li {
-          
-          > a {
-            font-size: @navbar-font-size;
-          }
-
-          &.disabled {
-            
-            > a {
-              color: @text-muted;
-            }
-          }
-        }
-        
-        .dropdown-header {
-          padding-top: 20px;
-          text-transform: uppercase;
-          font-size: @navbar-font-size / @font-size-scale;
-        }
-        
-        .divider {
-          margin: 0.5em 0;
-          background-color: @border-color; 
-        }
-        
-        > * {
-          font-size: inherit;
         }
       }
     }

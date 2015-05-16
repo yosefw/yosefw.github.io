@@ -107,7 +107,7 @@
 @navbar-default-bg:            white;
 @navbar-default-brand-color:   @text-color;
 
-@navbar-font-size:             unit(pow(1/@font-size-scale,1),rem);
+@navbar-font-size:             pow(1/@font-size-scale,1) + @font-unit;
 
 @navbar-default-color:             @gray;
 @navbar-default-bg:                white;
