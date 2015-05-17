@@ -30,6 +30,10 @@ layout: default
           <img src="{{ page.cover-image }}">
         </div>
         {% endif %}
+        
+        {% if page.message %}
+        <div class="alert alert-warning" role="alert">{{ page.message }}</div>
+        {% endif %}
       </div>
     </div>
   </div>

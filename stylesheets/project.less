@@ -40,6 +40,13 @@
     }
   }
   
+  .alert {
+    margin-top: 1.5 * @line-height-computed;
+    font-family: @font-family-sans-serif;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
   #cover-image {
     .aspect-ratio(16,10);
     margin-top: 1 * @line-height-computed;
@@ -68,6 +75,11 @@
   > :first-child {
     margin-top: 0; 
   }
+  
+  strong {
+    color: @strong-text-color;
+  }
+
 }
 
 .bootstrap-switch {

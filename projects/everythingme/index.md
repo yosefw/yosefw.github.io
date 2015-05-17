@@ -6,6 +6,7 @@ tags: [Interaction design, Product management, Project management]
 time: October 2011—February 2014
 cover-image: 
 excerpt: EverythingMe was my first proper UX position. The company’s main product is a homescreen replacement launcher for Android that organizes the user’s phone and displays apps and information that fit the user’s current context. My initial responsibility was to create and maintain dozens of mobile HTML5 apps for the product's apps collection. Later on, I took upon myself to work on some of the company's internal tools and and improve their productivity. I also became involved in EverythingMe's partnership with Mozilla, in which I worked closely with the Firefox OS UX team. I had the privilege to work with amazing and passionate professionals, and I consider it to be the best organization I have ever worked for.
+message: <strong>This case study has no images yet.</strong> I've asked for permission to upload parts of my work, and hopefully I'll be able to do it soon.
 ---
 
 ## About the company
