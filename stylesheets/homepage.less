@@ -6,6 +6,7 @@ body.homepage {
     .vertical-align-children;
     padding-bottom: 50px;
     
+    
     @media (min-width: @screen-sm-min) {
       text-align: center;
     }
@@ -24,10 +25,15 @@ body.homepage {
 
   
   #hero {
-    background-color: white;
-    color: @gray;
-    padding-top: 0;
-    min-height: 75vh;
+    background-color: @bg-color;
+    color: @gray-dark;
+    padding: 2 * @line-height-computed 0;
+    min-height: 50vh;
+    
+    @media (min-width: @screen-sm-min) {
+      padding: 0;
+      min-height: 75vh;
+    }
     
     h1,
     p {
@@ -36,14 +42,14 @@ body.homepage {
     }
     
     h1 {
-      font-size: @font-size-h3;
-      font-weight: @light;
+      font-size: @font-size-h4;
+      font-weight: @normal;
       margin-bottom: 0.5 * @line-height-computed;
     }
 
     p {
       font-size: @font-size-h2;
-      font-weight: @light;
+      font-weight: @normal;
       line-height: 1.25;
 
       i.love{
@@ -65,28 +71,31 @@ body.homepage {
     background-color: @bg-color;
 
     h2 {
-      margin-bottom: 2 * @line-height-computed;
+      margin-bottom: 1.5 * @line-height-computed;
     }
     
     .thumbnail {
       cursor: pointer;
       padding: 0;
       box-shadow: @img-shadow;
+      border: 1px solid @border-color;
+      border-radius: 0px;
       
       &:hover {
-        text-decoration: none;
+        
+        .project-name,
+        .project-desc {
+          text-decoration: none;
+        }
       }
       
       .project-image {
         .aspect-ratio(4,3);
-      
-        img {
-          border-bottom: 1px solid @border-color;
-        }
+        border-bottom: 1px solid @border-color;
       }
       
       .caption {
-        padding: 10px 15px 15px;
+        padding: 0.25 * @line-height-computed 15px 0.75 * @line-height-computed;
         text-align: left;
         
         span {
@@ -95,14 +104,14 @@ body.homepage {
           &.project-name {
             font-family: @font-family-sans-serif;
             font-weight: semibold;
+            color: @gray-darker;
           }
           
           &.project-desc {
             font-family: @font-family-serif;
-            font-size: @font-size-small;
-            .text-muted;
-            
-            
+            font-size: @font-size-small; 
+            color: @gray-dark;
+            line-height: 1.5;
           }
         }
       }
@@ -113,7 +122,7 @@ body.homepage {
       span {
         width: 100%;
         font-family: @font-family-sans-serif;
-        color: @text-muted;
+        color: @gray-light;
         text-align: center;
         padding: 20px;
         border: 1px solid @border-color;
