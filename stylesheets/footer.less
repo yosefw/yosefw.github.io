@@ -1,7 +1,7 @@
 footer {
-  color: @gray-lighter;
+  color: @gray;
   font-family: @font-family-sans-serif;
-  font-weight: @light;
+  font-weight: @normal;
   background-color: @gray-darker;
   height: auto;
   padding-top: 20px;
@@ -20,12 +20,19 @@ footer {
   }
   
   span:first-child {
+    
+    strong {
+      font-weight: @normal;
+      color: @gray-lighter; 
+    }
+    
     @media (min-width: @screen-sm-min) {
       .pull-left;
     }
   }
   
   span:last-child {
+    
     @media (min-width: @screen-sm-min) {
       .pull-right;
     }
@@ -34,6 +41,7 @@ footer {
   hr {
     margin: 10px 0;
     border-color: @gray-dark;
+    
     @media (min-width: @screen-sm-min) {
       display: none;
     }
