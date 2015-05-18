@@ -5,4 +5,4 @@ This site was launched ahead of schedule in order to seize an interesting job op
 
 ------------
 
-This website is built with LESS and Jekyll and hosted (obviously) on GitHub.
+This website is built with LESS, jQuery and Jekyll and hosted (obviously) on GitHub.
