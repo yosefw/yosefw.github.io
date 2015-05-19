@@ -58,9 +58,9 @@ After the first few team meetings, once I felt that I understood enough to start
 The first version assumed that users would want access to the raw aggregate data without much structuring. This means users will essentially have to create their own queries, albeit through a friendly interface, without any guidance from us.
 
 <div class="slider">
-  <img src="assets/v1/v1-mobile-wireframe01.png" />
-  <img src="assets/v1/v1-mobile-wireframe02.png" />
-  <img src="assets/v1/v1-mobile-wireframe03.png" />
+  <img class="mobile" src="assets/v1/v1-mobile-wireframe01.png" />
+  <img class="mobile" src="assets/v1/v1-mobile-wireframe02.png" />
+  <img class="mobile" src="assets/v1/v1-mobile-wireframe03.png" />
   <img src="assets/v1/v1-tablet-wireframe01.png" />
   <img src="assets/v1/v1-tablet-wireframe02.png" />
 </div>
