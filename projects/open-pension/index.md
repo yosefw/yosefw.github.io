@@ -79,7 +79,7 @@ In essence, our users are mostly interested in exploring how the money is invest
 
 ### Second iteration (current version)
 
-#### Designe
+#### Design
 
 Upon realizing this, I set out to re-design Open Pension so as to better fit this information architecture. We started with the "investors". Rather than presenting the user with a possibly baffling, open-ended task, the user journey is now more structured and starts by selecting a single institutional investor whose portfolio one would like to investigate. Each portfolio shows the institution’s investments via the parameters that we identified at the outset. For example, users can focus on investments in government bonds, investments in a specific company, investments in the banking industry etc.
 
