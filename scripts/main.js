@@ -49,12 +49,14 @@ $(document).ready(function() {
   /***************************
       HEADER DROPDOWN MENU
   ***************************/
+  
   $('#menu').dropdown();
   
   /**********************
      TABLE OF CONTENTS
   **********************/
   
+  /*
   // Generate table of contents
   $('#toc').toc({
     listType: 'ul',
@@ -70,7 +72,7 @@ $(document).ready(function() {
 
   // Turn TOC into Bootstrap affix nav
   $('#toc ul').addClass('nav nav-pills nav-stacked');
-  /*
+
   $('#toc').affix({
     offset: {
       top: 1200
@@ -83,7 +85,7 @@ $(document).ready(function() {
      DISPLAY MODE
   ******************/
   
-  // Display mode
+  /*
   var textElements = "p, h2, h3, h4, ul, ol"; // elements to hide in picture-mode
 
   $("[name='display-mode']").bootstrapSwitch();
@@ -96,6 +98,7 @@ $(document).ready(function() {
       $(textElements).show();
     }
   });
+  */
 
   /*************
      SLIDERS
