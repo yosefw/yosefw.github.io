@@ -5,9 +5,7 @@ body.homepage {
     border-bottom: 1px solid @border-color;
     .vertical-align-children;
     padding-bottom: 50px;
-    text-align: center;
-    
-    
+      
     @media (min-width: @screen-sm-min) {
       text-align: center;
     }
@@ -29,7 +27,7 @@ body.homepage {
   
   #hero {
     background-color: @gray-darker;
-    padding: @line-height-computed 0;
+    padding: 2 * @line-height-computed 0;
     min-height: 50vh;
     
     @media (min-width: @screen-sm-min) {
@@ -42,7 +40,7 @@ body.homepage {
       font-weight: @bold;
       line-height: 1.1;
       color: @gray;
-      margin-bottom: 2 * @line-height-computed;
+      margin-bottom: @line-height-computed;
 
       i.love{
         color: @brand-red;
