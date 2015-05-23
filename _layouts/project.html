@@ -41,16 +41,18 @@ layout: default
 
 <div class="container">
   <main class="row">
-    {% if page.excerpt %}
-    <div id="abstract" class="col-xs-12 col-md-offset-0 col-md-12">
-      <p class="lead">
-        {{ page.excerpt }}
-      </p>
-      <hr></hr>
-    </div>
-    {% endif %}
-    <div id="full-story" class="col-xs-12 col-md-offset-1 col-md-10">
-      {{ content}}
+    <div class="col-xs-12 col-md-offset-0 col-md-9">
+      {% if page.excerpt %}
+      <div id="abstract">
+        <p class="lead">
+          {{ page.excerpt }}
+        </p>
+        <hr></hr>
+      </div>
+      {% endif %}
+      <div id="full-story">
+        {{ content}}
+      </div>
     </div>
   </main>
   <div id="read-next">
