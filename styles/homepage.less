@@ -5,6 +5,7 @@ body.homepage {
     border-bottom: 1px solid @border-color;
     .vertical-align-children;
     padding-bottom: 50px;
+    text-align: center;
     
     
     @media (min-width: @screen-sm-min) {
@@ -28,11 +29,10 @@ body.homepage {
   
   #hero {
     background-color: @gray-darker;
-    padding: 2 * @line-height-computed 0;
+    padding: @line-height-computed 0;
     min-height: 50vh;
     
     @media (min-width: @screen-sm-min) {
-      padding: 0;
       min-height: 75vh;
     }
     
@@ -46,6 +46,8 @@ body.homepage {
 
       i.love{
         color: @brand-red;
+        font-size: 75%;
+        transform: translateY(-5%);
       }
       
       strong {
@@ -53,7 +55,7 @@ body.homepage {
         font-weight: inherit;
       }
       
-      @media (min-width: @screen-md-min) {
+      @media (min-width: @screen-sm-min) {
         font-size: pow(@font-size-scale,5) + @font-unit; 
       }
     }
