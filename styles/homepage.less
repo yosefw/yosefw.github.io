@@ -38,7 +38,7 @@ body.homepage {
     
     p {
       font-family: @font-family-sans-serif;
-      font-size: pow(@font-size-scale,5) + @font-unit;;
+      font-size: pow(@font-size-scale,3) + @font-unit;
       font-weight: @bold;
       line-height: 1.1;
       color: @gray;
@@ -51,6 +51,10 @@ body.homepage {
       strong {
         color: white;
         font-weight: inherit;
+      }
+      
+      @media (min-width: @screen-md-min) {
+        font-size: pow(@font-size-scale,5) + @font-unit; 
       }
     }
     
