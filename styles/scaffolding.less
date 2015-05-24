@@ -19,9 +19,13 @@ body {
 }
 
 a {
+  color: @gray-darker;
+  text-decoration: underline;
   
-  &:hover {
-    text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
+    color: @link-hover-color;
   }
 }
 

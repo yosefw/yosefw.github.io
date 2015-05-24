@@ -5,18 +5,21 @@ body.homepage {
     border-bottom: 1px solid @border-color;
     .vertical-align-children;
     padding-bottom: 50px;
-    text-align: center;
+    text-align: left;
     
-  }
-  
-  h2 {
-    font-size: @font-size-h3;
-    font-weight: @bold;
-    margin-bottom: 10px;
+    @media (min-width: @screen-sm-min) {
+      text-align: center;
+    }
     
-    ~ a {
-      &:after {
-        .icn("f178");
+    h2 {
+      .font-scale-level(2);
+      font-weight: @bold;
+      margin-bottom: 10px;
+
+      ~ a {
+        &:after {
+          .icn("f178");
+        }
       }
     }
   }
@@ -65,83 +68,55 @@ body.homepage {
   }
   
   #my-work {
-    background-color: @bg-color;
-
-    h2 {
-      margin-bottom: 1.5 * @line-height-computed;
-    }
+  background-color: white;
     
-    .thumbnail {
-      cursor: pointer;
-      padding: 0;
-      box-shadow: @img-shadow;
-      border: 1px solid @border-color;
-      border-radius: 0px;
-      
-      &:hover {
-        
-        .project-name,
-        .project-desc {
-          text-decoration: none;
-        }
-      }
-      
-      .project-image {
-        .aspect-ratio(4,3);
-        border-bottom: 1px solid @border-color;
-      }
-      
-      .caption {
-        padding: 0.25 * @line-height-computed 15px 0.75 * @line-height-computed;
-        text-align: left;
-        
-        span {
-          display: block;
-          
-          &.project-name {
-            font-family: @font-family-sans-serif;
-            font-weight: @semibold;
-            color: @gray-darker;
-          }
-          
-          &.project-desc {
-            font-family: @font-family-serif;
-            font-size: @font-size-small; 
-            color: @gray-dark;
-            line-height: 1.5;
-          }
-        }
-      }
-    }
-    
-    #coming-soon {
+    #project-grid {
+      margin-top: 1.5 * @line-height-computed;
+      margin-bottom: 2.5 * @line-height-computed;
 
-      span {
-        width: 100%;
-        font-family: @font-family-sans-serif;
-        color: @gray-light;
-        text-align: center;
-        padding: 20px;
+      .thumbnail {
+        cursor: pointer;
+        padding: 0.5 * @line-height-computed 15px 0;
         border: 1px solid @border-color;
-        border-radius: 4px;
-        font-weight: @light;
-        .center-block;
-        
-        @media (min-width: @screen-sm-min) {
-          width: 50%;
+        border-radius: 0px;
+        text-decoration: none;
+        background-color: @bg-color;
+        overflow: hidden;
+
+        &:hover {
+            text-decoration: none;
+          }
+
+        .project-image {
+          .aspect-ratio(4,3);
+          box-shadow: @img-shadow;
+        }
+
+        .caption {
+          font-family: @font-family-sans-serif;
+          padding: 0.25 * @line-height-computed 15px 0.75 * @line-height-computed;
+          text-decoration: none;
+
+          span {
+            display: block;
+
+            &.project-name {
+              .font-scale-level(1);
+              color: @gray-darker;
+              font-weight: @bold;
+            }
+
+            &.project-desc {
+              line-height: 1.5;
+            }
+          }
         }
       }
+      
+      p {
+  
+      }
     }
-    
   }
-  
-  #somewhat-nice {
-    background-color: @brand-silver;
-  }
-  
-  #somewhat-nice {
-    .hidden; 
-  }
-
 }
 
