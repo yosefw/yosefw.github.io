@@ -1,10 +1,11 @@
 #page-header {
   text-align: center;
-  padding-top: 1 * @line-height-computed;
-  padding-bottom: 2 * @line-height-computed;
+  padding-top: @line-height-computed;
+  padding-bottom: @line-height-computed;
   margin-bottom: 2 * @line-height-computed;
-  background-color: @bg-color;
   border-bottom: 1px solid @border-color;
+  background-color: @bg-color;
+
   
   &.with-image {
     overflow: hidden;
@@ -77,6 +78,7 @@
 }
 
 #full-story {
+  margin-bottom: 3 * @line-height-computed;
   
   > :first-child {
     margin-top: 0; 
@@ -88,15 +90,10 @@
 
 }
 
-.bootstrap-switch {
-  display: none;
-  float: right;
-  font-family: 'FontAwesome';
-  .fa-fw;
-  .bootstrap-switch-handle-on,
-  .bootstrap-switch-handle-off {
-     color: @gray !important;
-  }
+#read-next {
+  border-top: 1px solid @border-color;
+  background-color: @bg-color;
+  height: 10 * @line-height-computed;
 }
 
 .img-2-row {
@@ -113,9 +110,5 @@
 
 figure img:only-of-type {
   margin: 0 auto;
-}
-
-#read-next {
-  height: 10 * @line-height-computed;
 }
 
