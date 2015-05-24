@@ -19,13 +19,19 @@ body {
 }
 
 a {
-  color: @gray-darker;
-  text-decoration: underline;
   
-  &:hover,
-  &:focus,
-  &:active {
-    color: @link-hover-color;
+  p &,
+  ol &,
+  ul &:not(#menu) {
+    
+    color: @gray-darker;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @link-hover-color;
+    }
   }
 }
 
