@@ -18,24 +18,17 @@ body {
   width: 100%;
 }
 
-a {
-  
-  p &,
-  ol &,
-  ul &:not(#menu) {
-    
-    color: @gray-darker;
-    text-decoration: underline;
+main > a {  
+  color: @gray-darker;
+  text-decoration: underline;
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: @link-hover-color;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: @link-hover-color;
   }
-}
-
-a[href^="http"] {
+  
+  &[href^="http"] {
    &:after {
      .icn('f08e');
      margin-left: 5px;
@@ -43,6 +36,7 @@ a[href^="http"] {
      opacity: 0.85;
      vertical-align: baselinel;
    }
+}
 }
 
 ol,

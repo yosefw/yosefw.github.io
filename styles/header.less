@@ -90,13 +90,14 @@ header {
 
         .dropdown-menu {
           border-color: @border-color;
-          padding-top: 0;
+          padding-bottom: 0.5em;
           border-radius: 0;
 
           li {
+            margin-bottom: 0;
 
             > a {
-              font-size: @navbar-font-size;
+              font-size: @font-size-small;
             }
 
             &.disabled {
@@ -108,9 +109,10 @@ header {
           }
 
           .dropdown-header {
-            padding-top: 20px;
+            padding-top: 1em;
             text-transform: uppercase;
-            font-size: @navbar-font-size / @font-size-scale;
+            font-weight: @bold;
+            font-size: @font-size-small
           }
 
           .divider {
