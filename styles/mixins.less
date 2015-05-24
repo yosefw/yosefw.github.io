@@ -1,3 +1,7 @@
+.font-scale-level(@expo) {
+  font-size: pow(@font-size-scale, @expo) + @font-unit;
+}
+
 .icn(@unicode) {
   .fa;
   content: "\@{unicode}";

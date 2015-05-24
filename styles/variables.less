@@ -1,3 +1,5 @@
+@container-lg:                 @container-md;
+
 @gray-base:                    #000;
 @gray-darker:                  rgb(27, 27, 27);
 @gray-dark:                    rgb(102, 102, 110);
@@ -39,12 +41,12 @@
 @font-size-large:              1.25 + @font-unit;
 @font-size-small:              0.85 + @font-unit;
 
-@font-size-h1:                 pow(@font-size-scale,3) + @font-unit;
-@font-size-h2:                 pow(@font-size-scale,2) + @font-unit;
-@font-size-h3:                 pow(@font-size-scale,1) + @font-unit;
-@font-size-h4:                 1 + @font-unit;
-@font-size-h5:                 pow(1/@font-size-scale,1) + @font-unit;
-@font-size-h6:                 pow(1/@font-size-scale,2) + @font-unit;
+@font-size-h1:                 3;
+@font-size-h2:                 2;
+@font-size-h3:                 1;
+@font-size-h4:                 0;
+@font-size-h5:                 -1;
+@font-size-h6:                 -2;
 
 @line-height-base:             1.8;
 
@@ -104,7 +106,7 @@
 @navbar-default-bg:            white;
 @navbar-default-brand-color:   @text-color;
 
-@navbar-font-size:             pow(1/@font-size-scale,1) + @font-unit;
+@navbar-font-size:             -1;
 
 @navbar-default-color:             @gray;
 @navbar-default-bg:                white;
