@@ -1,60 +1,14 @@
-#page-header {
+#cover-img {
   text-align: center;
   padding-top: @line-height-computed;
   padding-bottom: @line-height-computed;
-  margin-bottom: 2 * @line-height-computed;
+  margin-bottom: 1 * @line-height-computed;
   border-bottom: 1px solid @border-color;
   background-color: @bg-color;
-
+  overflow: hidden;
+  padding-bottom: 0;
   
-  &.with-image {
-    overflow: hidden;
-    padding-bottom: 0;
-  }
-  
-  h1 {
-    margin-bottom: 0.5 * @line-height-computed;
-    font-weight: @bold;
-    letter-spacing: -1.5px;
-    
-    small {
-      display: block;
-      margin-top: 0.5 * @line-height-computed;
-      letter-spacing: normal;
-      font-size: 45%;
-    }
-    
-    &:after {
-        background-image: url(/assets/browser-bar.png);
-        height: 20px;
-        border: 1px solid red;
-      }
-  }
-  
-  #project-metadata {
-    .hidden;
-    
-    span {
-      margin: 0 10px;
-      font-weight: @light;
-      font-family: @headings-font-family;
-      color: @gray-light;
-      
-      i {
-        color: @text-muted; 
-        margin-right: 5px;
-      }
-    }
-  }
-  
-  .alert {
-    margin-top: 1.5 * @line-height-computed;
-    font-family: @font-family-sans-serif;
-    text-align: left;
-    font-size: 1rem;
-  }
-  
-  #cover-image {
+  #img-container {
     .aspect-ratio(16,10);
     margin-top: 1 * @line-height-computed;
     box-shadow: @img-shadow;
@@ -66,28 +20,56 @@
   }
 }
 
-#abstract {
-  
-  > p {
-    margin-bottom: 0;
+main {
+
+  .alert {
+    margin-top: 1.5 * @line-height-computed;
+    font-family: @font-family-sans-serif;
+    text-align: left;
+    font-size: 1rem;
   }
-  
-  hr {
-    width: 15%;
+
+  #abstract {
+
+    > p {
+      margin-bottom: 0;
+    }
+
+    hr {
+      width: 15%;
+    }
+  }
+
+  #full-story {
+    margin-bottom: 3 * @line-height-computed;
+
+    > :first-child {
+      margin-top: 0; 
+    }
+
+    strong {
+      color: @strong-text-color;
+    }
+
   }
 }
 
-#full-story {
-  margin-bottom: 3 * @line-height-computed;
-  
-  > :first-child {
-    margin-top: 0; 
-  }
-  
-  strong {
-    color: @strong-text-color;
-  }
+aside {
+  #project-metadata {
+    .hidden;
 
+    span {
+      margin: 0 10px;
+      font-weight: @light;
+      font-family: @headings-font-family;
+      color: @gray-light;
+
+      i {
+        color: @text-muted; 
+        margin-right: 5px;
+      }
+    }
+  }
 }
 
 #read-next {

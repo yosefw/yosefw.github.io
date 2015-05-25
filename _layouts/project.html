@@ -2,46 +2,29 @@
 layout: default
 ---
 
-<div id="page-header" {% if page.cover-image %} class="with-image" {% endif %}>
+{% if page.cover-image %}
+<div id="cover-img">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1> 
-          {{ page.title }}
-          <small>
-            {{ page.subtitle }}
-          </small>
-        </h1>
-        <div id="project-metadata">
-          {% if page.tags %}
-          <span id="tags">
-            <i class="fa fa-tags"></i> {{ page.tags | array_to_sentence_string }}
-          </span>
-          {% endif %}
-          {% if page.time %}
-          <span id="timeline">
-            <i class="fa fa-calendar"></i> {{ page.time }}
-          </span>
-          {% endif %}
-        </div>
-        
-        {% if page.cover-image %}
-        <div id="cover-image">
-          <img src="{{ page.cover-image }}">
-        </div>
-        {% endif %}
-        
-        {% if page.message %}
-        <div class="alert alert-warning" role="alert">{{ page.message }}</div>
-        {% endif %}
-      </div>
+    <div id="img-container">
+      <img src="{{ page.cover-image }}">
     </div>
   </div>
-</div> 
+</div>
+{% endif %}
 
 <div class="container">
-  <main class="row">
-    <div class="col-xs-12 col-md-offset-0 col-md-9">
+  <h1> 
+    {{ page.title }}
+    <small>
+      {{ page.subtitle }}
+    </small>
+  </h1>
+  <div class="row">
+    <main class="col-xs-12 col-md-9">
+      {% if page.message %}
+        <div class="alert alert-warning" role="alert">{{ page.message }}</div>
+      {% endif %}
+      
       {% if page.excerpt %}
       <div id="abstract">
         <p class="lead">
@@ -50,14 +33,36 @@ layout: default
         <hr></hr>
       </div>
       {% endif %}
+    
       <div id="full-story">
         {{ content}}
       </div>
-    </div>
-  </main>
-  <div id="read-next">
+    
+    </main>
   </div>
+  <aside class="col-xs-12 col-md-3">
+    <!--
+    <div id="project-metadata">
+      {% if page.tags %}
+      <span id="tags">
+        <i class="fa fa-tags"></i> {{ page.tags | array_to_sentence_string }}
+      </span>
+      {% endif %}
+      {% if page.time %}
+      <span id="timeline">
+        <i class="fa fa-calendar"></i> {{ page.time }}
+      </span>
+      {% endif %}
+    </div>
+    -->
+  </aside>
 </div><!-- /.container -->
+<div id="read-next" class="container-fluid">
+  <div class="container">
+    <h4>Next case study</h4>
+    
+  </div>
+</div>
 <script src="/scripts/toc.js"></script>
 <script src="/scripts/bootstrap-switch.js"></script>
 <script src="/scripts/slick.min.js"></script>

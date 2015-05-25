@@ -41,19 +41,20 @@ h6, .h6 {
   
   small,
   .small {
+    font-family: @font-family-serif;
+    font-size: 50%;
     margin-top: 10px;
     display: block;
     text-align: inherit;
-    line-height: 1.2
-  }
-  
-  strong {
-    font-weight: 500;
+    line-height: 1.4;
   }
 }
 
 h1 {
   .font-scale-level(@font-size-h1);
+  margin-top: 1.5 * @line-height-computed;
+  margin-bottom: 1.5 * @line-height-computed;
+  text-align: center;
 }
 
 h2 {
@@ -72,6 +73,7 @@ h4 {
   .font-scale-level(@font-size-h4);
   margin-top: 1.5 * @line-height-computed;
   margin-bottom: 0.5 * @line-height-computed;
+  color: @gray-dark;
 }
 
 h5 {
