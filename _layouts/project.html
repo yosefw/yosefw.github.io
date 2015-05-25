@@ -20,42 +20,40 @@ layout: default
     </small>
   </h1>
   <div class="row">
+    <aside class="hidden-xs hidden-sm col-md-3">
+      <!--
+      <div id="project-metadata">
+        {% if page.tags %}
+        <span id="tags">
+          <i class="fa fa-tags"></i> {{ page.tags | array_to_sentence_string }}
+        </span>
+        {% endif %}
+        {% if page.time %}
+        <span id="timeline">
+          <i class="fa fa-calendar"></i> {{ page.time }}
+        </span>
+        {% endif %}
+      </div>
+      -->
+      <nav id="toc"></nav>
+    </aside>
     <main class="col-xs-12 col-md-9">
       {% if page.message %}
         <div class="alert alert-warning" role="alert">{{ page.message }}</div>
       {% endif %}
       
       {% if page.excerpt %}
-      <div id="abstract">
-        <p class="lead">
-          {{ page.excerpt }}
-        </p>
-        <hr></hr>
-      </div>
+      <p id="abstract" class="lead">
+        {{ page.excerpt }}
+      </p>
       {% endif %}
     
       <div id="full-story">
         {{ content}}
       </div>
-    
     </main>
+    
   </div>
-  <aside class="col-xs-12 col-md-3">
-    <!--
-    <div id="project-metadata">
-      {% if page.tags %}
-      <span id="tags">
-        <i class="fa fa-tags"></i> {{ page.tags | array_to_sentence_string }}
-      </span>
-      {% endif %}
-      {% if page.time %}
-      <span id="timeline">
-        <i class="fa fa-calendar"></i> {{ page.time }}
-      </span>
-      {% endif %}
-    </div>
-    -->
-  </aside>
 </div><!-- /.container -->
 <div id="read-next" class="container-fluid">
   <div class="container">

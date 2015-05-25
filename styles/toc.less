@@ -1,31 +1,58 @@
+aside {
+  
+  > span {
+    
+  }
+}
+
 #toc {
   top: 40px;
-  li {
-    > a {
-      line-height: @line-height-large;
-      padding: 5px 0;
-      color: @gray-light;
-      &:hover,
-      &:focus {
-        font-weight: 500;
-        background-color: inherit;
-      }
+  font-family: @font-family-sans-serif;
+  
+  i {
+    display: none;
+  }
+  
+  
+  ol {
+    
+    margin-bottom: 10px;
+    
+    .nav-header {
+      .h5;
+      margin-top: 0.25 * @line-height-computed;
+      margin-bottom: 0;
+      padding: @nav-link-padding;
     }
+  
+    li {
+      margin-bottom: 0;
 
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        font-weight: 600;
-        color: inherit;
-        background-color: inherit;
-      }
-    }
-    ul > li {
       > a {
-        padding-left: 10px;
-        font-size: floor(@font-size-base * 0.8);
+        .font-scale-level(-1);
+        line-height: 1.4;
+        color: @gray-light;
+        font-weight: @normal;
+
+        &:hover,
+        &:focus {
+          color: @gray;
+        }
+      }
+
+      // Active state
+      &.active > a {
+
+        &,
+        &:hover,
+        &:focus {
+          font-weight: @bold;
+          color: inherit;
+        }
+      }
+
+      ol {
+        margin-left: 10px;
       }
     }
   }

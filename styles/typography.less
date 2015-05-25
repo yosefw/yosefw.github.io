@@ -49,7 +49,7 @@ h6, .h6 {
   }
 }
 
-h1 {
+h1, .h1 {
   .font-scale-level(@font-size-h1);
   margin-top: 1.5 * @line-height-computed;
   margin-bottom: 1.5 * @line-height-computed;
@@ -60,30 +60,33 @@ h1 {
   }
 }
 
-h2 {
+h2, .h2 {
   .font-scale-level(@font-size-h2);
   margin-top: 2 * @line-height-computed;
   margin-bottom: 1 * @line-height-computed;
 }
 
-h3 {
+h3, .h3 {
   .font-scale-level(@font-size-h3);
   margin-top: 1.5 * @line-height-computed;
   margin-bottom: 0.5 * @line-height-computed;
 }
 
-h4 {
+h4, .h4 {
   .font-scale-level(@font-size-h4);
   margin-top: 1.5 * @line-height-computed;
   margin-bottom: 0.5 * @line-height-computed;
   color: @gray-dark;
 }
 
-h5 {
+h5, .h5 {
   .font-scale-level(@font-size-h5);
+  text-transform: uppercase;
+  color: @gray;
+  letter-spacing: 0.5px;
 }
 
-h6 {
+h6, .h5 {
   .font-scale-level(@font-size-h6);
 }
 
@@ -92,7 +95,7 @@ h6 {
   font-weight: @lead-font-weight;
   font-size: 1.15rem;
   line-height: @line-height-base * 1;
-  margin-bottom: @line-height-computed;
+  margin-bottom: 2 * @line-height-computed;
   color: @lead-text-color;
 }
 

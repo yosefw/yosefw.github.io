@@ -56,30 +56,33 @@ $(document).ready(function() {
      TABLE OF CONTENTS
   **********************/
   
-  /*
   // Generate table of contents
   $('#toc').toc({
-    listType: 'ul',
-    headers: 'h2, h3, h4',
-    showSpeed: 0
+    headers: 'h2, h3',
+    showSpeed: 0,
+    noBackToTopLinks: true
   });
-
   
-  // Add scrollspy
-  $('body').scrollspy({
-    target: '#toc'
-  });
-
   // Turn TOC into Bootstrap affix nav
-  $('#toc ul').addClass('nav nav-pills nav-stacked');
+  $('#toc ol')
+    .addClass('nav nav-stacked');
+  
+  $('#toc > ol')
+    .prepend('<li class="nav-header">Table of contents</li>');
 
+  /* 
+  // Add scrollspy
+  $('body').scrollspy({ 
+    target: '#toc' 
+  })
+
+  // Add affix functionality
   $('#toc').affix({
     offset: {
       top: 1200
     }
   });
   */
-
   
   /******************
      DISPLAY MODE
