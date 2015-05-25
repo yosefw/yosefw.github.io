@@ -12,7 +12,7 @@ body.homepage {
     }
     
     h2 {
-      .font-scale-level(2);
+      .font-scale-level(3);
       font-weight: @bold;
       margin-bottom: 10px;
 
@@ -59,7 +59,7 @@ body.homepage {
     }
     
     .contact-me {
-      .btn-inverse;
+      text-decoration: none;
     }
   }
   
@@ -94,21 +94,19 @@ body.homepage {
 
         .caption {
           font-family: @font-family-sans-serif;
-          padding: 0.25 * @line-height-computed 15px 0.75 * @line-height-computed;
           text-decoration: none;
+          
+          h3 {
+            .font-scale-level(2);
+            margin: 0.25 * @line-height-computed 0;
+            
+            small {
+              
+            }
+          }
 
           span {
             display: block;
-
-            &.project-name {
-              .font-scale-level(1);
-              color: @gray-darker;
-              font-weight: @bold;
-            }
-
-            &.project-desc {
-              line-height: 1.5;
-            }
           }
         }
       }
