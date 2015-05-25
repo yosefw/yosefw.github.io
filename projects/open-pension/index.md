@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Open Pension
-subtitle: Revealing pension funds from the inside
+subtitle: Exposing the Israeli pension market
 tags: [information architecture, interaction design, visual design]
 url: http://openpension.org.il
 time: May 2013—present

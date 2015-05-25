@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Plint
-subtitle: OKCupid for conferences and business events
+subtitle: Matchmaking for business events
 tags: [Startup, Product, Interaction design, Visual design, Branding]
 time: July—October 2014
 cover-image: assets/cover-img.png
