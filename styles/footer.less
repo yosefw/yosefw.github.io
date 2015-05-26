@@ -1,49 +1,84 @@
 footer {
-  color: @gray;
   font-family: @font-family-sans-serif;
-  font-weight: @normal;
   background-color: @gray-darker;
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  .vertical-align-children;
-  @media (min-width @screen-sm-min) {
-    height: @navbar-height;
-  }
+  margin-top: 5 * @line-height-computed;
+  padding-top: 1.5 * @line-height-computed;
+  padding-bottom: 0.5 * @line-height-computed;
   
-  span,
-  strong {
-    display: block;
-    @media (min-width: @screen-sm-min) {
-      display: inline-block;
-    }
-  }
-  
-  span:first-child {
+  nav {
+    margin: 0 auto;
     
-    strong {
-      font-weight: @normal;
-      color: @gray-lighter; 
+    span {
+      display: block;
     }
     
-    @media (min-width: @screen-sm-min) {
-      .pull-left;
+    a.logo {
+      color: green;
+      margin-bottom: 2 * @line-height-computed;
+      
+      .logomark {
+        border-color: white;
+        margin-bottom: 0.375 * @line-height-computed;
+      }
+      
+      .logotype {
+        
+        .name {
+          color: white; 
+          margin-bottom: 0.125 * @line-height-computed;
+        }
+        
+        .tagline {
+          color: @gray-light; 
+        }
+      }
     }
-  }
-  
-  span:last-child {
     
-    @media (min-width: @screen-sm-min) {
-      .pull-right;
-    }
-  }
-  
-  hr {
-    margin: 10px 0;
-    border-color: @gray-dark;
-    
-    @media (min-width: @screen-sm-min) {
-      display: none;
+    ul.nav {
+      .font-scale-level(-1);
+      margin-bottom: 1 * @line-height-computed;
+      
+      .nav-header {
+        font-size: 75%;
+        color: white;
+      }
+      
+      li {
+        
+        a {
+          
+          &,
+          &:hover,
+          &:focus,
+          &:active {
+            color: white;
+          }
+            
+          .title {
+
+          }
+
+           .tagline {
+            color: @gray-light;
+            line-height: 1.4;
+            font-weight: @light;
+          }
+        }
+      }
+      
+      .nav-header,
+      .title {
+        letter-spacing: 0.05em;
+      }
+      
+      .contact-me {
+        margin-top: 0.25 * @line-height-computed;
+        font-weight: @light;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: @padding-small-vertical @padding-small-horizontal;
+        display: inline-block;
+      }
     }
   }
 }

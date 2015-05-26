@@ -122,6 +122,25 @@ main {
   @media (min-width: @screen-sm-min) {
     padding-left: 60px;
   }
+  
+  a {  
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @brand-primary;
+    }
+    
+    &[href^="http"]:after {
+      .icn('f08e');
+      margin-left: 3px;
+      font-size: 0.85em;
+      opacity: 0.35;
+      vertical-align: super;
+    }
+  }
 
   .alert {
     margin-top: 1.5 * @line-height-computed;
@@ -135,15 +154,10 @@ main {
     > p {
       margin-bottom: 0;
     }
-
-    hr {
-      width: 15%;
-    }
   }
 
   #full-story {
-    margin-bottom: 3 * @line-height-computed;
-
+    
     > :first-child {
       margin-top: 0; 
     }
