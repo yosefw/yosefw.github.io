@@ -33,6 +33,7 @@
   .slick-prev,
   .slick-next {
     .btn;
+    .btn-sm;
     .btn-inverse;
     position: absolute;
     top: 50%;
@@ -90,13 +91,13 @@
         
         &:hover,
         &:focus {
-          color: @gray-light;
+          color: @gray;
         }
       }
       
       &.slick-active {
         > button {
-          color: @gray;
+          color: @gray-darker;
         }
       }
     }
