@@ -82,6 +82,10 @@ header {
         }
       }
       
+      a {
+        color: @gray-light;
+      }
+      
       .dropdown {
         
         .dropdown-toggle {
@@ -89,6 +93,7 @@ header {
         }
 
         .dropdown-menu {
+          .font-scale-level(-1);
           border-color: @border-color;
           padding-bottom: 0.5em;
           border-radius: 0;
@@ -96,8 +101,7 @@ header {
           li {
             margin-bottom: 0;
 
-            > a {
-              font-size: @font-size-small;
+            a {
             }
 
             &.disabled {
@@ -112,7 +116,6 @@ header {
             padding-top: 1em;
             text-transform: uppercase;
             font-weight: @bold;
-            font-size: @font-size-small
           }
 
           .divider {

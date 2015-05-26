@@ -1,14 +1,7 @@
-aside {
-  
-  > span {
-    
-  }
-}
-
 #toc {
   top: 40px;
+  .font-scale-level(-1);
   font-family: @font-family-sans-serif;
-  font-size: @font-size-small;
   
   i {
     display: none;
@@ -17,15 +10,14 @@ aside {
   
   ol {
     
-    margin-bottom: 10px;
-    
     .nav-header {
       .h5;
       margin-top: 0.25 * @line-height-computed;
-      padding: @nav-link-padding;
+      padding-top: @nav-link-padding;
     }
   
     li {
+      
       margin-bottom: 0;
 
       > a {
@@ -51,7 +43,7 @@ aside {
       }
 
       ol {
-        margin-left: 10px;
+        margin-left: 15px;
       }
     }
   }

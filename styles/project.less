@@ -23,13 +23,19 @@
 }
 
 .page-header {
-  margin-bottom: 2 * @line-height-computed;
+  margin-bottom: 1.5 * @line-height-computed;
+  padding-bottom: 0.5 * @line-height-computed;
+  
+  h1 {
+    
+    @media (min-width: @screen-sm-min) {
+      text-align: center;
+    }    
+  }
   
   #project-metadata {
-    color: @gray-dark;
-    font-weight: @light;
-    border-top: 1px solid @border-color;
-    margin-top: 0.5 * @line-height-computed;
+    font-size: 85%;
+    color: @gray-light;
 
     @media (min-width: @screen-sm-min) {
       text-align: center;
@@ -37,8 +43,6 @@
 
     > div {
       
-      padding: 0.5 * @line-height-computed 0;
-
       dl {
         margin: 0 10px;
         font-family: @font-family-sans-serif;
@@ -83,6 +87,10 @@
 }
 
 main {
+  
+  @media (min-width: @screen-sm-min) {
+    padding-left: 60px;
+  }
 
   .alert {
     margin-top: 1.5 * @line-height-computed;
@@ -107,10 +115,6 @@ main {
 
     > :first-child {
       margin-top: 0; 
-    }
-
-    strong {
-      color: @strong-text-color;
     }
   }
 }

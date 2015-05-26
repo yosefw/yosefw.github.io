@@ -1,21 +1,23 @@
 @container-lg:                 @container-md;
 
+/*
 @gray-base:                    #000;
 @gray-darker:                  rgb(27, 27, 27);
 @gray-dark:                    rgb(102, 102, 110);
 @gray:                         rgb(153, 153, 161);
 @gray-light:                   rgb(185, 185, 195);
 @gray-lighter:                 rgb(230, 230, 233);
+*/
 
-@text-color:                   @gray-darker;
-@strong-text-color:            @gray-darker;
-@lead-text-color:              @gray-darker;
-@headings-color:               @gray-darker;
-@headings-small-color:         @gray;
-@text-muted:                   lighten(@text-color, 15%);
+@text-color:                   @gray-dark;
+@strong-text-color:            @gray-dark;
+@headings-color:               @gray-dark;
+@headings-small-color:         @gray-light;
+
+
 
 @border-color:                 @gray-lighter;
-@bg-color:                     #f4f4f6;
+@bg-color:                     #f8f8f8;
 
 @brand-primary:                @brand-red;
 @brand-success:                #5cb85c;
@@ -30,10 +32,10 @@
 
 
 @font-family-sans-serif:       "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:            "Merriweather", Georgia, "Times New Roman", Times, serif;
+@font-family-serif:            Georgia, "Times New Roman", Times, serif;
 @icon-font:                    "FontAwesome";
 
-@font-size-root:               18px;
+@font-size-root:               20px;
 @font-unit:                    0rem; // Pick em or rem here
 @font-size-scale:              4/3;
 
@@ -41,14 +43,14 @@
 @font-size-large:              1.25 + @font-unit;
 @font-size-small:              0.85 + @font-unit;
 
-@font-size-h1:                 4;
+@font-size-h1:                 3;
 @font-size-h2:                 2;
 @font-size-h3:                 1;
 @font-size-h4:                 0.5;
 @font-size-h5:                 0;
 @font-size-h6:                 -1;
 
-@line-height-base:             1.8;
+@line-height-base:             1.65;
 
 @font-family-base:             @font-family-serif;
 @headings-font-family:         @font-family-sans-serif;
@@ -60,11 +62,23 @@
 
 @text-font-weight:             @normal;
 @strong-font-weight:           @bold;
-@lead-font-weight:             @light;
+@lead-font-weight:             @normal;
 @headings-font-weight:         @bold;
-@btn-font-weight:              @normal;
+@btn-font-weight:              @light;
 
 
+
+@padding-base-vertical:     0.5rem;
+@padding-base-horizontal:   1rem;
+
+@padding-large-vertical:    1rem;
+@padding-large-horizontal:  2rem;
+
+@padding-small-vertical:    0.25rem;
+@padding-small-horizontal:  0.5rem;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
 
 @btn-shadow:                   0px 0.25em 0px 0px;
 
@@ -141,7 +155,7 @@
 
 
 // Nav links
-@nav-link-padding:                          3px 0;
+@nav-link-padding:                          5px 0;
 @nav-link-hover-bg:                         transparent;
 
 @nav-disabled-link-color:                   @gray-light;
