@@ -4,7 +4,7 @@ title: Open Pension
 subtitle: Exposing the Israeli pension market
 tags: [information architecture, interaction design, visual design]
 url: http://openpension.org.il
-time: May 2013—present
+time: May 2013–present
 type: Voluntary project
 cover-image: assets/cover-img.png
 excerpt: Open Pension is a voluntary <a href="http://en.wikipedia.org/wiki/Open_data">open data</a> project, aimed at exposing how pension fund savings in Israel are invested and managed. My role in the project  was (and still is) to translate this abstract goal into a useful product. While the project is still in development, it has already garnered the attention and cooperation of both the press and the Ministry of Finance.
@@ -18,11 +18,11 @@ The aim of Open Pension is to open up data about the Israeli pension fund market
 
 In Israel, all employees are required by law to transfer a part of their salary to a pension fund. These funds are managed by institutional investors, mostly private insurance companies. These funds therefore belong to some of the largest players in the capital market, routing huge sums of money into the economy. But data about these investments are hard to obtain and information about the pension market is essentially closed off  to the public. We wanted to create a greater awareness to what’s going on with our money.
 
-Every quarter, hundreds of pension funds are required to publish their asset allocations. This means that the data about each fund's investment policy are available. But no one aggregates these data to allow for higher-level analyses, making it nearly impossible to understand this market’s behavior. We believed that there are groups of people – reporters, researchers, bloggers and activists – who would be interested in digging into aggregate data if they were made readily available. At Open Pension, we do just that: we collect the quarterly reports from each of these funds and aggregate them into a single, clean and standardized database.
+Every quarter, hundreds of pension funds are required to publish their asset allocations. This means that the data about each fund's investment policy are available. But no one aggregates these data to allow for higher-level analyses, making it nearly impossible to understand this market’s behavior. We believed that there are groups of people — reporters, researchers, bloggers and activists — who would be interested in digging into aggregate data if they were made readily available. At Open Pension, we do just that: we collect the quarterly reports from each of these funds and aggregate them into a single, clean and standardized database.
 
 ### The team and our work schedule
 
-The project is being developed under the auspice of the [Public Knowledge Workshop](http://www.hasadna.org.il/en/). It is developed and maintained by volunteers, including myself, each of whom usually contributes 3-5 hours of work per week. The core team currently consists of several developers, data analysts, and subject matter analysts as well as a single designer – me! Other volunteers contribute their time for shorter periods every now and then.
+The project is being developed under the auspice of the [Public Knowledge Workshop](http://www.hasadna.org.il/en/). It is developed and maintained by volunteers, including myself, each of whom usually contributes 3-5 hours of work per week. The core team currently consists of several developers, data analysts, and subject matter analysts as well as a single designer — me! Other volunteers contribute their time for shorter periods every now and then.
 
 ## What I did
 
@@ -45,7 +45,7 @@ My first order of business was to become acquainted with the data. I started goi
 
 #### Target users
 
-At this time I also thought it necessary to better define our target audience. We all agreed that the project should cater to all researchers and reporters who may be interested in the data. But as in many other open data projects, there was also a latent desire to make the project accessible to the wider public. I advocated that we should cater only to researchers and reporters and not to "the masses". I have explained this approach at length in [my blog](https://medium.com/social-commentary/the-open-data-hubris-70d12be222e0). In a nutshell – it's extremely hard to interest the uninterested in raw data. They need stories that are meaningful to them. Therefore, we have a better chance of attaining our desired impact by making our data accessible to professional storytellers. 
+At this time I also thought it necessary to better define our target audience. We all agreed that the project should cater to all researchers and reporters who may be interested in the data. But as in many other open data projects, there was also a latent desire to make the project accessible to the wider public. I advocated that we should cater only to researchers and reporters and not to "the masses". I have explained this approach at length in [my blog](https://medium.com/social-commentary/the-open-data-hubris-70d12be222e0). In a nutshell — it's extremely hard to interest the uninterested in raw data. They need stories that are meaningful to them. Therefore, we have a better chance of attaining our desired impact by making our data accessible to professional storytellers. 
 
 While having my work used by thousands of people is always a dream, I felt that with this project I must insist that we limit the scope to audiences who would make the most use of it. It took a while to get other team members on board, but this approach has paid off. Feature prioritization has become much easier once we reached consensus about our target audience.
 
@@ -107,7 +107,7 @@ Although the database is still not entirely complete and up-to-date, the design 
 
 * The project was presented to the Director of the Capital Market, Insurance and Savings Department in the Ministry of Finance. She was very impressed with the project and has subsequently directed her office to help expedite the collection of any data that we need from the pension funds. In addition, she has promised to work with us on creating an API for these data, so we won't have to scrape the data from each separate fund. By all measures, this is a significant achievement for a voluntary non-profit initiative such as this.
 
-* In early 2015, Israeli TV [Channel 10 aired a story](http://news.nana10.co.il/Article/?ArticleID=1107391&TypeID=0&sid=126) based on our finding that 31 billion shekels — approximately 4% of the entire Israeli pension market – are invested as loans to anonymous borrowers. This means that no one outside the pension funds has any way of knowing who these funds are being given to. The story aired during the main news broadcast and the insurance companies had to issue a response.
+* In early 2015, Israeli TV [Channel 10 aired a story](http://news.nana10.co.il/Article/?ArticleID=1107391&TypeID=0&sid=126) based on our finding that 31 billion shekels — approximately 4% of the entire Israeli pension market — are invested as loans to anonymous borrowers. This means that no one outside the pension funds has any way of knowing who these funds are being given to. The story aired during the main news broadcast and the insurance companies had to issue a response.
 
 While these are modest achievements, we hope they present a glimpse of the future, when all information about the public’s pension savings is easily accessible and real public scrutiny is achieved.
 
@@ -115,6 +115,6 @@ While these are modest achievements, we hope they present a glimpse of the futur
 
 Although Open Pension is already online and available to everyone, it is still very much a work in progress. Some core features are still not ready and the current version is somewhat rough around the edges, but we are doing our best to make progress in the modest amount of time that the team can dedicate to the project. 
 
-We’ve also learned that our most sought after users – reporters in high-profile media outlets – don’t necessarily have the time or energy to dig into the data and find interesting stories on their own. As of this writing (mid-2015) we’re in the process of creating relationships with other types of users — bloggers and social activists — who we assume have more motivation to use our product and create the kind of social impact that we are aiming for.
+We’ve also learned that our most sought after users — reporters in high-profile media outlets — don’t necessarily have the time or energy to dig into the data and find interesting stories on their own. As of this writing (mid-2015) we’re in the process of creating relationships with other types of users — bloggers and social activists — who we assume have more motivation to use our product and create the kind of social impact that we are aiming for.
 
 For me, Open Pension is a great opportunity to combine two of my biggest passions: UI design and social change. Although I have always believed that I will be able to achieve this combination at some point, I thought it would happen much later in life, after gaining more experience in the private sector. Open Pension is exactly the type of product I’m excited about, and hopefully I’ll be able to continue nurturing and developing it in coming years.

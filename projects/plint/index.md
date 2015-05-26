@@ -3,14 +3,14 @@ layout: project
 title: Plint
 subtitle: Matchmaking for business events
 tags: [Startup, Product, Interaction design, Visual design, Branding]
-time: July—October 2014
+time: July–October 2014
 cover-image: assets/cover-img.png
 excerpt: Plint was a short-lived startup that I joined as a co-founder. The idea was to create an <em>OKCupid</em> for conferences. Attendees would sign up, check into upcoming conferences, see other attendees and schedule meetings with them at the conference. This was the first time I took over all design related responsibilities for what was supposed to be the long run. After 4 months of work, we decided to shut down the project due to personal differences in our vision of the company. Although we disbanded at an early stage, I managed to create a solid design system that I was very pleased with, and gained some real-life startup experience.
 ---
 
 ## About the project
 
-Plint was our attempt to solve a real business problem – *how can conference attendees meet the right people?* The idea originated with one of the founders, who had a business development background. In his previous jobs, he would use conferences to find new clients and business opportunities. The problem was that there was no way to know whom he should meet at the conference. Some attendees invest considerable resources in researching conferences online and finding out as much as possible about other participants. But the majority just improvise on the scene.
+Plint was our attempt to solve a real business problem — *how can conference attendees meet the right people?* The idea originated with one of the founders, who had a business development background. In his previous jobs, he would use conferences to find new clients and business opportunities. The problem was that there was no way to know whom he should meet at the conference. Some attendees invest considerable resources in researching conferences online and finding out as much as possible about other participants. But the majority just improvise on the scene.
 
 With Plint, we wanted to help conference attendees find business matches and set up meetings at the conference, thus helping them to achieve their business goals.
 
@@ -143,7 +143,7 @@ As we started preparing for meetings with potential investors, I invested consid
 
 ### Creating a future concept
 
-In the last few weeks of our work together, I dedicated some time to visualizing our future user experience – a fully automated matchmaking service for conferences. In our vision, we saw a system that recommends which events are worth attending based on the business opportunities they present.
+In the last few weeks of our work together, I dedicated some time to visualizing our future user experience — a fully automated matchmaking service for conferences. In our vision, we saw a system that recommends which events are worth attending based on the business opportunities they present.
 
 1. Users will be notified that a conference with people they should meet is taking place.
 2. They’ll browse the matches we found for them.
