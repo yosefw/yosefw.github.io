@@ -2,10 +2,11 @@
 layout: project
 title: Open Pension
 subtitle: Exposing the Israeli pension market
-tags: [information architecture, interaction design, visual design]
+tags: [information architecture,interaction design,visual design]
 url: http://openpension.org.il
 time: May 2013–present
 type: Voluntary project
+link: openpension.org.il
 cover-image: assets/cover-img.png
 excerpt: Open Pension is a voluntary <a href="http://en.wikipedia.org/wiki/Open_data">open data</a> project, aimed at exposing how pension fund savings in Israel are invested and managed. My role in the project  was (and still is) to translate this abstract goal into a useful product. While the project is still in development, it has already garnered the attention and cooperation of both the press and the Ministry of Finance.
 ---

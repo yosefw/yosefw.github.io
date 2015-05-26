@@ -20,30 +20,44 @@ layout: default
         {{ page.subtitle }}
       </small>
     </h1>
-    {% if page.tags or page.time %}
+    {% if page.tags or page.time or page.link%}
     <div id="project-metadata">
-      <div>
+      <dl>
         {% if page.tags %}
-        <dl id="tags">
+        <div id="tags">
           <dt>
             <span class="sr-only">Tags</span>
           </dt>
           <dd>
-            {{ page.tags | join: ' / ' }}
+            <ul class="list-inline list-unstyled">
+              {% for tag in page.tags  %}
+                <li>{{ tag }}</li>
+              {% endfor %}
+            </ul>
           </dd>
-        </dl>
+        </div>
         {% endif %}
         {% if page.time %}
-        <dl id="timeline">
+        <div id="timeline">
           <dt>
             <span class="sr-only">Timeline</span>
           </dt>
           <dd>
             {{ page.time }}
           </dd>
-        </dl>
-       {% endif %}
-      </div>
+        </div>
+        {% endif %}
+        {% if page.link %}
+        <div id="link">
+          <dt id="link">
+          <span class="sr-only">Link</span>
+          </dt>
+          <dd>
+            <a href="http://{{ page.link }}">{{ page.link }}</a>
+          </dd>
+        </div>
+        {% endif %}
+      </dl>
     </div> <!-- #project-metadata -->
     {% endif %}
   </div> <!-- .page-header -->
