@@ -30,7 +30,7 @@ layout: default
             <span class="sr-only">Tags</span>
           </dt>
           <dd>
-            {{ page.tags | array_to_sentence_string }}
+            {{ page.tags | join: ' / ' }}
           </dd>
         </dl>
         {% endif %}
