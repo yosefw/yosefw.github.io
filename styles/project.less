@@ -22,56 +22,61 @@
   }
 }
 
-#project-metadata {
-  margin: 0.5 * @line-height-computed 0 2 * @line-height-computed;
+.page-header {
+  margin-bottom: 2 * @line-height-computed;
   
-  @media (min-width: @screen-sm-min) {
-    text-align: center;
-  }
-  
-  > div {
-    border-width: 1px 0;
-    border-style: solid;
-    border-color: @border-color;
-    padding: 0.5 * @line-height-computed 0;
-    
-    dl {
-      margin: 0 10px;
-      font-family: @font-family-sans-serif;
-      display: table;
-      
-      @media (min-width: @screen-sm-min) {
-        display: inline-block;
-      }
-      
-      dt {
-        display: table-cell;
-        padding-right: 0.5em;
-        
-        @media (min-width: @screen-sm-min) {
-          display: inline-block;
-          padding-right: 0.25em;
-        }
-      }
-      
-      dd {
-        display: table-cell;
-        
-        @media (min-width: @screen-sm-min) {
-          display: inline-block;
-        }
-      }
-    }
-      
-    #tags {
-      dt:before {
-        .icn('f02c');
-      }
+  #project-metadata {
+    color: @gray-dark;
+    font-weight: @light;
+    border-top: 1px solid @border-color;
+    margin-top: 0.5 * @line-height-computed;
+
+    @media (min-width: @screen-sm-min) {
+      text-align: center;
     }
 
-    #timeline {
-      dt:before {
-        .icn('f073');
+    > div {
+      
+      padding: 0.5 * @line-height-computed 0;
+
+      dl {
+        margin: 0 10px;
+        font-family: @font-family-sans-serif;
+        display: table;
+
+        @media (min-width: @screen-sm-min) {
+          display: inline-block;
+        }
+
+        dt {
+          display: table-cell;
+          padding-right: 0.5em;
+
+          @media (min-width: @screen-sm-min) {
+            display: inline-block;
+            padding-right: 0.25em;
+          }
+        }
+
+        dd {
+          display: table-cell;
+
+          @media (min-width: @screen-sm-min) {
+            display: inline-block;
+          }
+        }
+      }
+
+      #tags {
+        dt:before {
+          .icn('f02c');
+        }
+      }
+
+      #timeline {
+        dt:before {
+          .icn('f073');
+        }
       }
     }
   }
