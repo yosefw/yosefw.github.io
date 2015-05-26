@@ -8,6 +8,7 @@ aside {
 #toc {
   top: 40px;
   font-family: @font-family-sans-serif;
+  font-size: @font-size-small;
   
   i {
     display: none;
@@ -21,7 +22,6 @@ aside {
     .nav-header {
       .h5;
       margin-top: 0.25 * @line-height-computed;
-      margin-bottom: 0;
       padding: @nav-link-padding;
     }
   
@@ -29,14 +29,13 @@ aside {
       margin-bottom: 0;
 
       > a {
-        .font-scale-level(-1);
         line-height: 1.4;
         color: @gray-light;
         font-weight: @normal;
 
         &:hover,
         &:focus {
-          color: @gray;
+          color: @brand-primary;
         }
       }
 
@@ -47,7 +46,7 @@ aside {
         &:hover,
         &:focus {
           font-weight: @bold;
-          color: inherit;
+          color: @gray;
         }
       }
 

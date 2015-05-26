@@ -20,23 +20,38 @@ layout: default
     </small>
   </h1>
   <div class="row">
-    <aside class="hidden-xs hidden-sm col-md-3">
-      <!--
-      <div id="project-metadata">
+    
+    {% if page.tags or page.time %}
+    <div id="project-metadata" class="col-xs-12">
+      <div>
         {% if page.tags %}
-        <span id="tags">
-          <i class="fa fa-tags"></i> {{ page.tags | array_to_sentence_string }}
-        </span>
+        <dl id="tags">
+          <dt>
+            <span class="sr-only">Tags</span>
+          </dt>
+          <dd>
+            {{ page.tags | array_to_sentence_string }}
+          </dd>
+        </dl>
         {% endif %}
         {% if page.time %}
-        <span id="timeline">
-          <i class="fa fa-calendar"></i> {{ page.time }}
-        </span>
-        {% endif %}
+        <dl id="timeline">
+          <dt>
+            <span class="sr-only">Timeline</span>
+          </dt>
+          <dd>
+            {{ page.time }}
+          </dd>
+        </dl>
+       {% endif %}
       </div>
-      -->
+    </div>
+    {% endif %}
+    
+    <aside class="hidden-xs hidden-sm col-md-3">
       <nav id="toc"></nav>
     </aside>
+    
     <main class="col-xs-12 col-md-9">
       {% if page.message %}
         <div class="alert alert-warning" role="alert">{{ page.message }}</div>
