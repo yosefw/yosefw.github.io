@@ -49,12 +49,22 @@ header {
         }
 
         #logotype {
-          line-height: 1.15;
-          font-weight: @headings-font-weight;
-          color: @gray-darker;
+          line-height: 1.3;
 
           span {
             display: block;
+            
+            &#name {
+              font-weight: @bold;
+              color: @gray-darker;
+            }
+            
+            &#tagline {
+              font-size: 75%;
+              font-weight: @light;
+              color: @gray-light;
+              
+            }
           }
         }
         
