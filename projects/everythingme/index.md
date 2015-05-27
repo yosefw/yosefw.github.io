@@ -1,7 +1,7 @@
 ---
 layout: project
 title: At EverythingMe
-subtitle: My first proper UX job
+subtitle: My most major UX job as of yet
 tags: [Interaction design,Product management,Project management]
 time: October 2011–February 2014
 link: everything.me
