@@ -102,7 +102,7 @@ I believe that passionate designers create better products. That’s why I aim t
 
 I’m passionate about several types of products, but they could all be described as "useful". I’m talking about **products that solve real problems**. These products weren’t created just for fun (although they can delight their users) — they push us forward. Some of the products I adore include GitHub, MailChimp, Pocket, Basecamp and Dropbox, just to name a few. If your company is building such a product, I might be interested in joining.
 
-On the other end of the spectrum, there are product categories that I’m not very passionate about. These include some high profile and high profit categories, but they I wouldn’t be a good fit for them. These include: social and messaging apps, adtech, content platforms and gambling sites.
+On the other end of the spectrum, there are product categories that I’m not very passionate about. These include some high profile and high profit categories, but I wouldn’t be a good fit for them. These include: social and messaging apps, adtech, content platforms and gambling sites.
 
 Are you building something people need? Are you looking for a product/hacker guy to take over all design? Let’s talk.
 
