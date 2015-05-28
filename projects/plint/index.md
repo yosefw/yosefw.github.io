@@ -5,7 +5,7 @@ subtitle: Matchmaking for business events
 tags: [Startup,Product,Interaction design,Visual design,Branding]
 time: July–October 2014
 cover-image: assets/cover-img.png
-social-image: assets/cover-img.png
+social-image: assets/fb-img.png
 excerpt: Plint was a short-lived startup that I joined as a co-founder. The idea was to create an <em>OKCupid</em> for conferences. Attendees would sign up, check into upcoming conferences, see other attendees and schedule meetings with them at the conference. This was the first time I took over all design related responsibilities for what was supposed to be the long run. After 4 months of work, we decided to shut down the project due to personal differences in our vision of the company. Although we disbanded at an early stage, I managed to create a solid design system that I was very pleased with, and gained some real-life startup experience.
 ---
 

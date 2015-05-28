@@ -10,16 +10,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
       {% if page.title %}
-        {{page.title}} | Yosef Waysman
+        {{ page.title }} | Yosef Waysman
       {% else %}
         Yosef Waysman | UX/UI designer & coder
       {% endif %}
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="
+      {% if page.title %}
+        article
+      {% else %}
+        profile
+      {% endif %}
+    " />
     <meta property="og:title" content="
       {% if page.title %}
-        {{page.title}} | Yosef Waysman
+        {{ page.title }} | Yosef Waysman
       {% else %}
         Yosef Waysman | UX/UI designer + coder
       {% endif %}
@@ -27,7 +34,7 @@
     <meta property="og:site_name" content="Yosef Waysman | UX/UI designer + coder"/>
     <meta property="og:description" content="
       {% if page.excerpt %}
-        {{page.excerpt}}
+        {{ page.excerpt | strip_html | strip_newlines}}
       {% else %}
          My personal website, including my work portfolio and other goodies!
       {% endif %}
@@ -35,12 +42,15 @@
     <meta property="og:image"
 content="
       {% if page.social-image %}
-        {{page.social-image}}
+        {{ site.url }}{{ page.url | remove: 'index.html' }}{{ page.social-image }}
       {% else %}
-         /assets/hero.png
+        {{ site.url }}/assets/hero.png
       {% endif %}  
     " />
+    <meta property="og:url" content="http://yosefw.me" />
+    <meta property=”fb:admins” content=”yosef.waysman”/>
     <meta property="article:author" content="https://www.facebook.com/yosef.waysman" />
+    
     
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,600,700" rel="stylesheet" type="text/css">
     <link href="/favicon.png" rel="icon" >
@@ -48,14 +58,14 @@ content="
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/scripts/bootstrap.min.js"></script>
   </head>
-  <body {% if page.body-class %}class="{{page.body-class}}"{% endif %}>
+  <body {% if page.body-class %}class="{{ page.body-class }}"{% endif %}>
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     {% include header.html %}
 
-    {{ content }}
+    {{  content  }}
 
     {% include footer.html %}
 
