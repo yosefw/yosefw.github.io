@@ -2,6 +2,7 @@
 layout: project
 title: Open Letter to a Potential Employer
 subtitle: Everything you need to know when considering me for a position in your company
+social-image: /assets/cover-img.png
 ---
 
 ## My skills

@@ -17,6 +17,31 @@
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="
+      {% if page.title %}
+        {{page.title}} | Yosef Waysman
+      {% else %}
+        Yosef Waysman | UX/UI designer + coder
+      {% endif %}
+    " />
+    <meta property="og:site_name" content="Yosef Waysman | UX/UI designer + coder"/>
+    <meta property="og:description" content="
+      {% if page.excerpt %}
+        {{page.excerpt}}
+      {% else %}
+         My personal website, including my work portfolio and other goodies!
+      {% endif %}
+    " />
+    <meta property="og:image"
+content="
+      {% if page.social-image %}
+        {{page.social-image}}
+      {% else %}
+         /assets/hero.png
+      {% endif %}  
+    " />
+    <meta property="article:author" content="https://www.facebook.com/yosef.waysman" />
+    
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,600,700" rel="stylesheet" type="text/css">
     <link href="/favicon.png" rel="icon" >
     <link href="/styles/main.css" rel="stylesheet" type="text/css">
