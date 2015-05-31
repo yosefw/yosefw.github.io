@@ -1,0 +1,19 @@
+{
+  "name": "yosefw.github.io",
+  "version": "1.0.0",
+  "description": "Yosef Waysman's personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosefw/yosefw.github.io.git"
+  },
+  "author": "Yosef Waysman <yosefwaysman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosefw/yosefw.github.io/issues"
+  },
+  "homepage": "https://github.com/yosefw/yosefw.github.io#readme"
+}
