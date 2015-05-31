@@ -14,5 +14,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "slick.js": "~1.5.5",
+    "bootstrap": "~3.3.4",
+    "fontawesome": "~4.3.0",
+    "slick-lightbox": "~0.1.12"
+  }
 }

@@ -1,0 +1,167 @@
+@container-lg:                 @container-md;
+
+/*
+@gray-base:                    #000;
+@gray-darker:                  rgb(27, 27, 27);
+@gray-dark:                    rgb(102, 102, 110);
+@gray:                         rgb(153, 153, 161);
+@gray-light:                   rgb(185, 185, 195);
+@gray-lighter:                 rgb(230, 230, 233);
+*/
+
+@text-color:                   @gray-dark;
+@strong-text-color:            @gray-dark;
+@headings-color:               @gray-dark;
+@headings-small-color:         @gray-light;
+
+
+
+@border-color:                 @gray-lighter;
+@bg-color:                     #f8f8f8;
+
+@brand-primary:                @brand-red;
+@brand-success:                #5cb85c;
+@brand-info:                   #5bc0de;
+@brand-warning:                #f0ad4e;
+@brand-danger:                 #d9534f;
+
+@brand-red:                    #fc3e1d;
+@brand-yellow:                 #ffdc00 ;
+@brand-silver:                 #ddd;
+
+
+
+@font-family-sans-serif:       "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:            Georgia, "Times New Roman", Times, serif;
+@icon-font:                    "FontAwesome";
+@fa-font-path:                 "../vendor/fontawesome/fonts";
+
+@font-size-root:               20px;
+@font-unit:                    0rem; // Pick em or rem here
+@font-size-scale:              4/3;
+
+@font-size-base:               1 + @font-unit;
+@font-size-large:              1.25 + @font-unit;
+@font-size-small:              0.85 + @font-unit;
+
+@font-size-h1:                 4;
+@font-size-h2:                 2;
+@font-size-h3:                 1;
+@font-size-h4:                 0.5;
+@font-size-h5:                 0;
+@font-size-h6:                 -1;
+
+@line-height-base:             1.65;
+
+@font-family-base:             @font-family-serif;
+@headings-font-family:         @font-family-sans-serif;
+
+@light:                        300;
+@normal:                       400;
+@semibold:                     600;
+@bold:                         700;
+
+@text-font-weight:             @normal;
+@strong-font-weight:           @bold;
+@lead-font-weight:             @normal;
+@headings-font-weight:         @bold;
+@btn-font-weight:              @light;
+
+
+
+@padding-base-vertical:     0.5rem;
+@padding-base-horizontal:   1rem;
+
+@padding-large-vertical:    1rem;
+@padding-large-horizontal:  2rem;
+
+@padding-small-vertical:    0.25rem;
+@padding-small-horizontal:  0.5rem;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@btn-shadow:                   0px 0.25em 0px 0px;
+
+@btn-default-color:            #333;
+@btn-default-bg:               #fff;
+@btn-default-border:           #ccc;
+
+@btn-primary-color:            #fff;
+@btn-primary-bg:               @brand-primary;
+@btn-primary-border:           darken(@btn-primary-bg, 15%);
+
+@btn-success-color:            #fff;
+@btn-success-bg:               @brand-success;
+@btn-success-border:           darken(@btn-success-bg, 15%);
+
+@btn-info-color:               #fff;
+@btn-info-bg:                  @brand-info;
+@btn-info-border:              darken(@btn-info-bg, 15%);
+
+@btn-warning-color:            #fff;
+@btn-warning-bg:               @brand-warning;
+@btn-warning-border:           darken(@btn-warning-bg, 15%);
+
+@btn-danger-color:             #fff;
+@btn-danger-bg:                @brand-danger;
+@btn-danger-border:            darken(@btn-danger-bg, 15%);
+
+@btn-inverse-color:            #fff;
+@btn-inverse-bg:               @gray-dark;
+@btn-inverse-border:           darken(@btn-inverse-bg, 15%);
+
+@btn-disabled-color:           @btn-disabled-border;
+@btn-disabled-bg:              @gray-lighter;
+@btn-disabled-border:          darken(@btn-disabled-bg, 5%);
+
+@navbar-height:                3.0em;
+@navbar-margin-bottom:         @line-height-computed;
+
+@navbar-default-bg:            white;
+@navbar-default-brand-color:   @text-color;
+
+@navbar-font-size:             -1;
+
+@navbar-default-color:             @gray;
+@navbar-default-bg:                white;
+@navbar-default-border:            @border-color;
+
+@nav-link-hover-bg:                        @gray-lighter;
+@navbar-default-link-color:                @gray;
+@navbar-default-link-hover-color:          @gray-dark;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         @gray;
+@navbar-default-link-active-bg:            @gray-lighter;
+@navbar-default-link-disabled-color:       @gray-light;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @text-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           @gray-light;
+@navbar-default-toggle-icon-bar-bg:        @gray;
+@navbar-default-toggle-border-color:       @border-color;
+
+@dropdown-link-color:            @gray-dark;
+@dropdown-header-color:          @gray;
+
+
+
+@img-shadow:                   0px 0px 16px hsla(0, 0%, 0%, 0.25);
+
+
+
+// Nav links
+@nav-link-padding:                          5px 0;
+@nav-link-hover-bg:                         transparent;
+
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
+
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            transparent;
+@nav-pills-active-link-hover-color:         @component-active-color;

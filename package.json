@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/yosefw/yosefw.github.io/issues"
   },
-  "homepage": "https://github.com/yosefw/yosefw.github.io#readme"
+  "homepage": "https://github.com/yosefw/yosefw.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "grunt": "^0.4.5",
+    "less": "^2.5.1"
+  }
 }
