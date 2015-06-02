@@ -3,6 +3,7 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - CNAME
+- node_modules
 
 kramdown:
   input: GFM
