@@ -17,7 +17,7 @@ The product went through several iterations. The main offering [switched from an
 
 ## The Team
 
-For the purposes of my work, I usually collaborated with 1 or 2 front end developers and a visual designer.
+For the purposes of my work, I usually collaborated with 1 or 2 front-end developers and a visual designer.
 
 <figure>
   <img src="assets/everyone.png" />
