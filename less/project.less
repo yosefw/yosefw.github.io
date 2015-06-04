@@ -161,19 +161,27 @@ main {
     > :first-child {
       margin-top: 0; 
     }
+    
+    aside.pull-quote {
+      .pull-right;
+      width: 50%;
+      margin-left: @grid-gutter-width;
+      margin-top: (0.25 * @line-height-computed);
+      margin-bottom: (0.75 * @line-height-computed);
+
+      @media (min-width: @screen-md-min) {
+        margin-right: (-1 * @container-md / 12);
+      }
+
+      @media (min-width: @screen-lg-min) {
+        margin-right: (-2 * @container-md / 12);
+      }
+    }
   }
 }
 
-
-
 aside {
   
-}
-
-#read-next {
-  border-top: 1px solid @border-color;
-  background-color: @bg-color;
-  height: 10 * @line-height-computed;
 }
 
 .img-2-row {
