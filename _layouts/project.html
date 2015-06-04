@@ -13,7 +13,9 @@ layout: default
 {% endif %}
 
 <div class="container">
-  <div class="page-header">
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+      <div class="page-header">
     <h1> 
       {{ page.title }}
       <small>
@@ -61,14 +63,15 @@ layout: default
     </div> <!-- #project-metadata -->
     {% endif %}
   </div> <!-- .page-header -->
-  
+    </div>
+  </div>
   <div class="row">
     
-    <aside class="hidden-xs hidden-sm col-md-3">
+    <aside class="hidden hidden-xs hidden-sm col-md-2">
       <nav id="toc"></nav>
     </aside>
     
-    <main class="col-xs-12 col-md-9">
+    <main class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
       {% if page.message %}
         <div class="alert alert-warning" role="alert">{{ page.message }}</div>
       {% endif %}
