@@ -16,6 +16,17 @@ module.exports = function(grunt) {
       }
     },
     
+    imagemin: {
+      all: {
+        files: [{
+          expand: true,
+          cwd: 'assets/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/'
+        }]
+      }
+    },
+    
     browserSync: {
       bsFiles: {
         src : ['_site/**/*.*']
@@ -33,7 +44,7 @@ module.exports = function(grunt) {
         tasks: ['less']
       },
       images : {
-          files : ['_site/**/*.{png,jpg,gif}'],
+          files : ['assets/**/*.{png,jpg,gif}'],
           tasks : ['imagemin']
       },
     }
