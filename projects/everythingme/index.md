@@ -5,7 +5,7 @@ subtitle: My most major UX job as of yet
 tags: [Interaction design,Product management,Project management]
 time: October 2011–February 2014
 link: everything.me
-social-image: assets/fb-img.png
+social-image: /assets/everythingme/fb-img.png
 excerpt: EverythingMe was my first proper UX position. The company’s main product is a homescreen replacement launcher for Android that organizes the user’s phone and displays apps and information that fit the user’s current context. My initial responsibility was to create and maintain dozens of mobile HTML5 apps for the product's apps collection. Later on, I took upon myself to work on some of the company's internal tools and and improve their productivity. I also became involved in EverythingMe's partnership with Mozilla, in which I worked closely with the Firefox OS UX team. I had the privilege to work with amazing and passionate professionals, and I consider it to be the best organization I have ever worked for.
 ---
 
@@ -20,7 +20,7 @@ The product went through several iterations. The main offering [switched from an
 For the purposes of my work, I usually collaborated with 1 or 2 front-end developers and a visual designer.
 
 <figure>
-  <img src="assets/everyone.png" />
+  <img src="/assets/everythingme/everyone.png" />
   <figcaption>
     Taking a group photo after a day-long hackathon
   </figcaption>
@@ -58,11 +58,11 @@ After QA and the management's approval, I would have the app deployed and add it
 The apps I created usually had 1-3 screens. They always included a search results page, which the user would reach directly from their EverythingMe results. Sometimes an app would also include a dedicated homepage and other app-specific screens and states. Depending on the user's initial query, apps were supposed to handle different contexts. For example, in location-aware apps, I had to ensure the experience was satisfactory even when the user's location couldn’t be retrieved.
 
 <div class="slider">
-  <img class="mobile" src="assets/apps/Ringtones_0000_Main-Page.png" />
-  <img class="mobile" src="assets/apps/Ringtones_0013_Transfer-screen.png" />
-  <img class="mobile" src="assets/apps/XKCD_A07_0007_Hidden.png" />
-  <img class="mobile" src="assets/apps/XKCD_A07_0010_Pop-over.png" />
-  <img class="mobile" src="assets/apps/XKCD_A07_0005_List-Mode.png" />
+  <img class="mobile" src="/assets/everythingme/apps/Ringtones_0000_Main-Page.png" />
+  <img class="mobile" src="/assets/everythingme/apps/Ringtones_0013_Transfer-screen.png" />
+  <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0007_Hidden.png" />
+  <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0010_Pop-over.png" />
+  <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0005_List-Mode.png" />
 </div>
 
 My job was to have each new app developed as fast as possible, preferably within 2 weeks. During my tenure as apps manager, I oversaw the development of dozens of these apps. Together with the thousands of mobile optimized sites that our content team gathered and indexed, we managed to create a [unique mobile search experience](http://thenextweb.com/apps/2012/03/13/the-best-new-app-at-sxsw-everything-me-redefines-mobile-search/) and content offering, which later aroused considerable interest among other players in the mobile industry.
@@ -98,12 +98,12 @@ I quickly sketched out the main interactions and screens and ran a quick check w
 All in all, several dozen of these replacement HTML5 apps were produced with Alfred.
 
 <div class="slider">
-  <img src="assets/alfred/Alfred%20-%2001%20-%20Homepage.png" />
-  <img src="assets/alfred/Alfred%20-%2002%20-New%20SERP%20modal.png" />
-  <img src="assets/alfred/Alfred%20-%2003%20-%20New%20SERP%20-%2000%20Basic.png" />
-  <img src="assets/alfred/Alfred%20-%2004-%20New%20SERP%20-%2001%20mapping.png" />
-  <img src="assets/alfred/Alfred%20-%2005%20-%20New%20SERP%20-%2002%20UI%20strings.png" />
-  <img src="assets/alfred/Alfred%20-%2006-%20New%20SERP%20-%2003%20Style.png" />
+  <img src="/assets/everythingme/alfred/Alfred%20-%2001%20-%20Homepage.png" />
+  <img src="/assets/everythingme/alfred/Alfred%20-%2002%20-New%20SERP%20modal.png" />
+  <img src="/assets/everythingme/alfred/Alfred%20-%2003%20-%20New%20SERP%20-%2000%20Basic.png" />
+  <img src="/assets/everythingme/alfred/Alfred%20-%2004-%20New%20SERP%20-%2001%20mapping.png" />
+  <img src="/assets/everythingme/alfred/Alfred%20-%2005%20-%20New%20SERP%20-%2002%20UI%20strings.png" />
+  <img src="/assets/everythingme/alfred/Alfred%20-%2006-%20New%20SERP%20-%2003%20Style.png" />
 </div>
 
 ### Firefox OS

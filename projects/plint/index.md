@@ -4,8 +4,8 @@ title: Plint
 subtitle: Matchmaking for business events
 tags: [Startup,Product,Interaction design,Visual design,Branding]
 time: July–October 2014
-cover-image: assets/cover-img.png
-social-image: assets/fb-img.png
+cover-image: /assets/plint/cover-img.png
+social-image: /assets/plint/fb-img.png
 excerpt: Plint was a short-lived startup that I joined as a co-founder. The idea was to create an <em>OKCupid</em> for conferences. Attendees would sign up, check into upcoming conferences, see other attendees and schedule meetings with them at the conference. This was the first time I took over all design related responsibilities for what was supposed to be the long run. After 4 months of work, we decided to shut down the project due to personal differences in our vision of the company. Although we disbanded at an early stage, I managed to create a solid design system that I was very pleased with, and gained some real-life startup experience.
 ---
 
@@ -51,9 +51,9 @@ Since this is a work took, we decided to focus first on a desktop optimized webs
 
 <figure>
   <div class="img-3-row">
-    <img src="assets/design/sketches/sketch-1.jpeg" />
-    <img src="assets/design/sketches/sketch-2.jpeg" />
-    <img src="assets/design/sketches/sketch-3.jpeg" />
+    <img src="/assets/plint/design/sketches/sketch-1.jpeg" />
+    <img src="/assets/plint/design/sketches/sketch-2.jpeg" />
+    <img src="/assets/plint/design/sketches/sketch-3.jpeg" />
   </div>
   <figcaption>
     Pen-and-paper concept sketches from our second meeting
@@ -64,12 +64,12 @@ Since this is a work took, we decided to focus first on a desktop optimized webs
 Within a few days, I had the main screens sketched out in Balsamiq.
 
 <div class="slider">
-  <img src="assets/design/wireframes/homepage-v2.png" />
-  <img src="assets/design/wireframes/attendees.png" />
-  <img src="assets/design/wireframes/inbox.png" />
-  <img src="assets/design/wireframes/sessions.png" />
-  <img src="assets/design/wireframes/plan-v2.png" />
-  <img src="assets/design/wireframes/sign-up.png" />
+  <img src="/assets/plint/design/wireframes/homepage-v2.png" />
+  <img src="/assets/plint/design/wireframes/attendees.png" />
+  <img src="/assets/plint/design/wireframes/inbox.png" />
+  <img src="/assets/plint/design/wireframes/sessions.png" />
+  <img src="/assets/plint/design/wireframes/plan-v2.png" />
+  <img src="/assets/plint/design/wireframes/sign-up.png" />
 </div>
 
 
@@ -81,14 +81,14 @@ For the logo itself, I wanted to play on the metaphor of face to face meetings. 
 
   <figure>
     <div class="img-3-row">
-      <img src="assets/logo/attempts/attempt-23.png" alt="...">
-      <img src="assets/logo/attempts/attempt-28.png" alt="...">
-      <img src="assets/logo/attempts/attempt-42.png" alt="...">
+      <img src="/assets/plint/logo/attempts/attempt-23.png" alt="...">
+      <img src="/assets/plint/logo/attempts/attempt-28.png" alt="...">
+      <img src="/assets/plint/logo/attempts/attempt-42.png" alt="...">
     </div>
     <div class="img-3-row">
-      <img src="assets/logo/attempts/attempt-43.png" alt="...">
-      <img src="assets/logo/attempts/attempt-45.png" alt="...">
-      <img src="assets/logo/attempts/attempt-50.png" alt="...">
+      <img src="/assets/plint/logo/attempts/attempt-43.png" alt="...">
+      <img src="/assets/plint/logo/attempts/attempt-45.png" alt="...">
+      <img src="/assets/plint/logo/attempts/attempt-50.png" alt="...">
     </div>
     <figcaption>
       Six draft versions
@@ -96,7 +96,7 @@ For the logo itself, I wanted to play on the metaphor of face to face meetings. 
   </figure>
   
   <figure>
-    <img src="assets/logo/logo.png" alt="...">
+    <img src="/assets/plint/logo/logo.png" alt="...">
     <figcaption>
       The final logo
     </figcaption>
@@ -104,9 +104,9 @@ For the logo itself, I wanted to play on the metaphor of face to face meetings. 
   
   <figure>
     <div class="img-3-row">
-      <img src="assets/logo/v2/v2a.png" alt="...">
-      <img src="assets/logo/v2/v2b.png" alt="...">
-      <img src="assets/logo/v2/v2c.png" alt="...">
+      <img src="/assets/plint/logo/v2/v2a.png" alt="...">
+      <img src="/assets/plint/logo/v2/v2b.png" alt="...">
+      <img src="/assets/plint/logo/v2/v2c.png" alt="...">
     </div>
     <figcaption>
       Experiments with a new logo design, a task I didn’t get the chance to finish
@@ -121,14 +121,14 @@ Before figuring out the visual language, I consulted with my partners regarding 
 Like most other web projects that I have been involved with in the last few years, I started with [Bootstrap](http://getbootstrap.com/) and tweaked the visual language to match our goals and taste.
 
 <div class="slider">
-  <img src="assets/design/comps/homepage.png" />
-  <img src="assets/design/comps/sign-up.png" />
-  <img src="assets/design/comps/complete-your-profile.png" />
-  <img src="assets/design/comps/complete-your-profile-error.png" />
-  <img src="assets/design/comps/attendees.png" />
-  <img src="assets/design/comps/profile.png" />
-  <img src="assets/design/comps/sessions.png" />
-  <img src="assets/design/comps/session.png" />
+  <img src="/assets/plint/design/comps/homepage.png" />
+  <img src="/assets/plint/design/comps/sign-up.png" />
+  <img src="/assets/plint/design/comps/complete-your-profile.png" />
+  <img src="/assets/plint/design/comps/complete-your-profile-error.png" />
+  <img src="/assets/plint/design/comps/attendees.png" />
+  <img src="/assets/plint/design/comps/profile.png" />
+  <img src="/assets/plint/design/comps/sessions.png" />
+  <img src="/assets/plint/design/comps/session.png" />
 </div>
 
 ### Designing our pitch deck
@@ -136,9 +136,9 @@ Like most other web projects that I have been involved with in the last few year
 As we started preparing for meetings with potential investors, I invested considerable time in designing our pitch deck and refining our messaging. Below is the last version I worked on before closing shop.
 
 <figure>
-  <img src="assets/pitch-deck/slide03.png" />
+  <img src="/assets/plint/pitch-deck/slide03.png" />
   <figcaption>
-    <a href="assets/pitch-deck/plint-deck.pdf" role="button">View the complete deck</a>
+    <a href="/assets/plint/pitch-deck/plint-deck.pdf" role="button">View the complete deck</a>
   </figcaption>
 </figure>
 
@@ -154,10 +154,10 @@ In the last few weeks of our work together, I dedicated some time to visualizing
 I created mockups for the main interaction points, with the intention of including them in our pitch deck.
   
 <div class="slider">
-  <img src="assets/future-concept/comps/notification.png" />
-  <img src="assets/future-concept/comps/matches.png" />
-  <img src="assets/future-concept/comps/invites.png" />
-  <img src="assets/future-concept/comps/my-agenda.png" />
+  <img src="/assets/plint/future-concept/comps/notification.png" />
+  <img src="/assets/plint/future-concept/comps/matches.png" />
+  <img src="/assets/plint/future-concept/comps/invites.png" />
+  <img src="/assets/plint/future-concept/comps/my-agenda.png" />
 </div>
 
 ## Aftermath

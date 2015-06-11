@@ -7,8 +7,8 @@ url: http://openpension.org.il
 time: May 2013–present
 type: Voluntary project
 link: openpension.org.il
-cover-image: assets/cover-img.png
-social-image: assets/fb-img.png
+cover-image: /assets/open-pension/cover-img.png
+social-image: /assets/open-pension/fb-img.png
 excerpt: Open Pension is a voluntary <a href="http://en.wikipedia.org/wiki/Open_data">open data</a> project, aimed at exposing how pension fund savings in Israel are invested and managed. My role in the project was (and still is) to translate this abstract goal into a useful product. While the project is still in development, it has already garnered the attention and cooperation of both the press and the Ministry of Finance.
 ---
 
@@ -37,7 +37,7 @@ At the start of the project, I felt it my responsibility to initiate two convers
 #### Information architecture
 
 <figure>
-  <img src="assets/early-ia.png" />
+  <img src="/assets/open-pension/early-ia.png" />
   <figcaption>
     An early chart I drew to make sense of the data
   </figcaption>
@@ -60,11 +60,11 @@ After the first few team meetings, once I felt that I understood enough to start
 The first version assumed that users would want access to the raw aggregate data without much structuring. This means users will essentially have to create their own queries, albeit through a friendly interface, without any guidance from us.
 
 <div class="slider">
-  <img class="mobile" src="assets/v1/v1-mobile-wireframe01.png" />
-  <img class="mobile" src="assets/v1/v1-mobile-wireframe02.png" />
-  <img class="mobile" src="assets/v1/v1-mobile-wireframe03.png" />
-  <img src="assets/v1/v1-tablet-wireframe01.png" />
-  <img src="assets/v1/v1-tablet-wireframe02.png" />
+  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe01.png" />
+  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe02.png" />
+  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe03.png" />
+  <img src="/assets/open-pension/v1/v1-tablet-wireframe01.png" />
+  <img src="/assets/open-pension/v1/v1-tablet-wireframe02.png" />
 </div>
 
 #### Feedback
@@ -94,11 +94,11 @@ For each investment, we show:
 The investments are shown in compact tables, sorted by size. This allows for quick comparison and easy identification of any unusual investments.
 
 <div class="slider">
-  <img src="assets/v2/v2-wireframe-01.png" />
-  <img src="assets/v2/v2-wireframe-02.png" />
-  <img src="assets/v2/homepage.png" />
-  <img src="assets/v2/portfolio.png" />
-  <img src="assets/v2/investment.png" />
+  <img src="/assets/open-pension/v2/v2-wireframe-01.png" />
+  <img src="/assets/open-pension/v2/v2-wireframe-02.png" />
+  <img src="/assets/open-pension/v2/homepage.png" />
+  <img src="/assets/open-pension/v2/portfolio.png" />
+  <img src="/assets/open-pension/v2/investment.png" />
 </div>
 
 ### Feedback and initial achievements
