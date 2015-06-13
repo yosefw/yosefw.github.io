@@ -31,7 +31,7 @@ body {
 }
 
 p {
-  margin-bottom: 0.5 * @line-height-computed;
+  margin-bottom: (0.5 * @line-height-computed);
 }
 
 h1, .h1,
@@ -40,14 +40,17 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
+  letter-spacing: -0.025em;
   
   small,
   .small {
-    font-family: @font-family-serif;
-    margin-top: 0.5 * @line-height-computed;
     display: block;
+    margin-top: (0.5 * @line-height-computed);
+    line-height: @line-height-small;
+    font-family: @font-family-serif;  
     text-align: inherit;
-    line-height: 1.4;
+    text-transform: none;
+    letter-spacing: normal;
   }
 }
 
@@ -56,28 +59,27 @@ h1, .h1 {
   margin-top: 2 * @line-height-computed;
   
   small {
-    font-size: 50%; 
+    .font-scale-level(2); 
   }
 }
 
 h2, .h2 {
   .font-scale-level(@font-size-h2);
   margin-top: 1.5 * @line-height-computed;
-  margin-bottom: 0.5 * @line-height-computed;
+  margin-bottom: (0.5 * @line-height-computed);
 }
 
 h3, .h3 {
   .font-scale-level(@font-size-h3);
-  margin-top: 0.75 * @line-height-computed;
-  margin-bottom: 0.25 * @line-height-computed;
+  margin-top: 1.5 * @line-height-computed;
+  margin-bottom: (0.5 * @line-height-computed);
   color: @gray-light;
 }
 
 h4, .h4 {
   .font-scale-level(@font-size-h4);
-  font-weight: @normal;
-  margin-top: 0.75 * @line-height-computed;
-  margin-bottom: 0.25 * @line-height-computed;
+  margin-top: (1 * @line-height-computed);
+  margin-bottom: (0.5 * @line-height-computed);
   color: @gray-dark;
 }
 
@@ -95,9 +97,13 @@ h6, .h5 {
 .lead {
   font-family: @font-family-serif;
   font-weight: @lead-font-weight;
-  font-size: 1.25rem;
-  line-height: @line-height-base * 1;
-  margin-bottom: 2 * @line-height-computed;
+  .font-scale-level(1.5);
+  line-height: @line-height-small;
+  margin-bottom: (1 * @line-height-computed);
+  
+  @media (min-width: @screen-sm-min) {
+    margin-bottom: (2 * @line-height-computed);
+  }
 }
 
 hr {
@@ -122,6 +128,8 @@ figcaption {
 }
 
 .pull-quote {
-  .font-scale-level(1);
+  .font-scale-level(2);
+  line-height: @line-height-small;
+  font-style: italic;
   color: @brand-primary;
 }

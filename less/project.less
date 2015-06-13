@@ -28,7 +28,7 @@
   
   h1 {
     
-    @media (min-width: @screen-sm-min) {
+    @media (min-width: @screen-md-min) {
       text-align: center;
     }    
   }
@@ -155,6 +155,25 @@ main {
       margin-bottom: 0;
     }
   }
+  
+  #toc {
+    margin-bottom: (1 * @line-height-computed);
+    width: 50%;
+    
+    @media (min-width: @screen-sm-min) {
+      .pull-right;
+      margin-left: @grid-gutter-width;
+    }
+    
+    @media (min-width: @screen-md-min) {
+      width: @pulled-width;
+      margin-right: (-1 * @container-md / 12);
+    }
+
+    @media (min-width: @screen-lg-min) {
+      margin-right: (-1 * @container-lg / 12);
+    }
+  }
 
   #full-story {
     
@@ -163,18 +182,40 @@ main {
     }
     
     aside.pull-quote {
-      .pull-right;
-      width: 50%;
-      margin-left: @grid-gutter-width;
-      margin-top: (0.25 * @line-height-computed);
-      margin-bottom: (0.75 * @line-height-computed);
-
+      margin-top: (0.5 * @line-height-computed);
+      margin-bottom: (1.5 * @line-height-computed);
+      
       @media (min-width: @screen-md-min) {
-        margin-right: (-1 * @container-md / 12);
+        width: @pulled-width;
+        margin-top: (0.25 * @line-height-computed);
+        margin-bottom: (0.75 * @line-height-computed);
       }
+      
+      
+      &.pull-right {
+        
+        @media (min-width: @screen-md-min) {
+          margin-left: @grid-gutter-width;
+          margin-right: (-1 * @container-md / 12);
+          text-align: left;
+        }
 
-      @media (min-width: @screen-lg-min) {
-        margin-right: (-2 * @container-md / 12);
+        @media (min-width: @screen-lg-min) {
+          margin-right: (-1 * @container-lg / 12);
+        }
+      }
+      
+      &.pull-left {
+        
+        @media (min-width: @screen-md-min) {
+          margin-right: @grid-gutter-width;
+          margin-left: (-1 * @container-md / 12);
+          // text-align: right;
+        }
+
+        @media (min-width: @screen-lg-min) {
+          margin-left: (-1 * @container-lg / 12);
+        }
       }
     }
   }
@@ -200,3 +241,7 @@ figure img:only-of-type {
   margin: 0 auto;
 }
 
+.char45,
+.char75 {
+  color: green;
+}

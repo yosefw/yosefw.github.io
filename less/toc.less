@@ -1,7 +1,11 @@
 #toc {
   top: 40px;
+  padding: @line-height-computed @grid-gutter-width;
   .font-scale-level(-1);
   font-family: @font-family-sans-serif;
+  border-color: @border-color;
+  background-color: @bg-color;
+  
   
   i {
     display: none;
@@ -12,7 +16,6 @@
     
     .nav-header {
       color: @gray;
-      margin-top: 0.25 * @line-height-computed;
       padding-top: @nav-link-padding;
     }
   
@@ -24,6 +27,7 @@
         line-height: 1.4;
         color: @gray-light;
         font-weight: @normal;
+        text-decoration: none;
 
         &:hover,
         &:focus {
