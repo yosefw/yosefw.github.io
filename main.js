@@ -69,8 +69,6 @@ $(document).ready(function() {
   
   $('#toc > ol')
     .prepend('<li class="nav-header">Table of contents</li>');
-  
-  $('#toc i').remove();
 
   /* 
   // Add scrollspy
