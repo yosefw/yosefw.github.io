@@ -12,63 +12,60 @@ layout: default
 </div>
 {% endif %}
 
-<div class="container">
+<main class="container">
   <div class="row">
     <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
       <div class="page-header">
-    <h1> 
-      {{ page.title }}
-      <small>
-        {{ page.subtitle }}
-      </small>
-    </h1>
-    {% if page.tags or page.time or page.link%}
-    <div id="project-metadata">
-      <dl>
-        {% if page.tags %}
-        <div id="tags">
-          <dt>
-            <span class="sr-only">Tags</span>
-          </dt>
-          <dd>
-            <ul class="list-inline list-unstyled">
-              {% for tag in page.tags  %}
-                <li>{{ tag }}</li>
-              {% endfor %}
-            </ul>
-          </dd>
-        </div>
+        <h1> 
+          {{ page.title }}
+          <small>
+            {{ page.subtitle }}
+          </small>
+        </h1>
+        {% if page.tags or page.time or page.link%}
+        <div id="project-metadata">
+          <dl>
+            {% if page.tags %}
+            <div id="tags">
+              <dt>
+                <span class="sr-only">Tags</span>
+              </dt>
+              <dd>
+                <ul class="list-inline list-unstyled">
+                  {% for tag in page.tags  %}
+                    <li>{{ tag }}</li>
+                  {% endfor %}
+                </ul>
+              </dd>
+            </div>
+            {% endif %}
+            {% if page.time %}
+            <div id="timeline">
+              <dt>
+                <span class="sr-only">Timeline</span>
+              </dt>
+              <dd>
+                {{ page.time }}
+              </dd>
+            </div>
+            {% endif %}
+            {% if page.link %}
+            <div id="link">
+              <dt id="link">
+              <span class="sr-only">Link</span>
+              </dt>
+              <dd>
+                <a href="http://{{ page.link }}">{{ page.link }}</a>
+              </dd>
+            </div>
+            {% endif %}
+          </dl>
+        </div> <!-- #project-metadata -->
         {% endif %}
-        {% if page.time %}
-        <div id="timeline">
-          <dt>
-            <span class="sr-only">Timeline</span>
-          </dt>
-          <dd>
-            {{ page.time }}
-          </dd>
-        </div>
-        {% endif %}
-        {% if page.link %}
-        <div id="link">
-          <dt id="link">
-          <span class="sr-only">Link</span>
-          </dt>
-          <dd>
-            <a href="http://{{ page.link }}">{{ page.link }}</a>
-          </dd>
-        </div>
-        {% endif %}
-      </dl>
-    </div> <!-- #project-metadata -->
-    {% endif %}
-  </div> <!-- .page-header -->
-    </div>
-  </div>
-  <div class="row">
-    <main class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+      </div> <!-- .page-header -->
+      
       {% if page.message %}
-        <div class="alert alert-warning" role="alert">{{ page.message }}</div>
+      <div class="alert alert-warning" role="alert">{{ page.message }}</div>
       {% endif %}
       
       {% if page.excerpt %}
@@ -76,24 +73,15 @@ layout: default
         {{ page.excerpt }}
       </p>
       {% endif %}
-    
-      <nav id="toc"></nav>
+      
+      <nav id="toc"></nav>  
       
       <div id="full-story">
-        {{ content }}
-      </div>
-    </main>
-    
+      {{ content }}
+    </div>    
   </div>
-</div><!-- /.container -->
-<!--
-<div id="read-next" class="container-fluid">
-  <div class="container">
-    <h4>Next case study</h4>
-    
-  </div>
-</div>
--->
+</main>
+
 <script src="/vendor/toc.js"></script>
 <script src="/vendor/chartist/dist/chartist.min.js"></script>
 <script src="/vendor/slick.js/slick/slick.min.js"></script>
