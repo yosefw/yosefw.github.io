@@ -18,10 +18,9 @@
 }
 
 .img-row(@images) {
-  display: flex;
+  .vertical-align-children;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 
   img {
     width: percentage(1/(@images+1/pow(@images,@images)));
@@ -52,7 +51,7 @@
   }
 }
 
-.col-pull-right(@cols:1) {
+.col-pull-right {
   
   @media (min-width: @screen-sm-min) {
     .pull-right;
@@ -61,15 +60,15 @@
   }
   
   @media (min-width: @screen-md-min) {
-    margin-right: (-1 * (@cols * @container-md / 12));
+    margin-right: (-1 * (@container-md / 12));
   }
 
   @media (min-width: @screen-lg-min) {
-    margin-right: (-1 * (@cols * @container-lg / 12));
+    margin-right: (-1 * (@container-lg / 12));
   }
 }
 
-.col-pull-left(@cols:1) {
+.col-pull-left {
   
   @media (min-width: @screen-sm-min) {
     .pull-left;
@@ -78,23 +77,25 @@
   }
   
   @media (min-width: @screen-md-min) {
-    margin-left: (-1 * (@cols * @container-md / 12));
+    margin-left: (-1 * (@container-md / 12));
   }
 
   @media (min-width: @screen-lg-min) {
-    margin-left: (-1 * (@cols * @container-lg / 12));
+    margin-left: (-1 * (@container-lg / 12));
   }
 }
 
-.col-pull-center(@cols:1) {
+.col-pull-center {
   
   @media (min-width: @screen-md-min) {
-    margin-right: (-1 * (@cols * @container-md / 12));
-    margin-left: (-1 * (@cols * @container-md / 12));
+    margin-right: (-1 * (@container-md / 12));
+    margin-left: (-1 * (@container-md / 12));
   }
 
   @media (min-width: @screen-lg-min) {
-    margin-right: (-1 * (@cols * @container-lg / 12));
-    margin-left: (-1 * (@cols * @container-lg / 12));
+    margin-right: (-1 * (@container-lg / 12));
+    margin-left: (-1 * (@container-lg / 12));
   }
 }
+
+
