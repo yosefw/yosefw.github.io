@@ -56,6 +56,8 @@
   
   @media (min-width: @screen-sm-min) {
     .pull-right;
+    margin-left: @grid-gutter-width;
+    width: @pulled-width;
   }
   
   @media (min-width: @screen-md-min) {
@@ -71,6 +73,8 @@
   
   @media (min-width: @screen-sm-min) {
     .pull-left;
+    margin-right: @grid-gutter-width;
+    width: @pulled-width;
   }
   
   @media (min-width: @screen-md-min) {
@@ -78,6 +82,19 @@
   }
 
   @media (min-width: @screen-lg-min) {
+    margin-left: (-1 * (@cols * @container-lg / 12));
+  }
+}
+
+.col-pull-center(@cols:1) {
+  
+  @media (min-width: @screen-md-min) {
+    margin-right: (-1 * (@cols * @container-md / 12));
+    margin-left: (-1 * (@cols * @container-md / 12));
+  }
+
+  @media (min-width: @screen-lg-min) {
+    margin-right: (-1 * (@cols * @container-lg / 12));
     margin-left: (-1 * (@cols * @container-lg / 12));
   }
 }

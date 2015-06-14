@@ -160,11 +160,6 @@ main {
     margin-bottom: (1 * @line-height-computed);
     width: 50%;
     .col-pull-right;
-    
-    @media (min-width: @screen-sm-min) {
-      margin-left: @grid-gutter-width;
-      width: @pulled-width;
-    }
   }
 
   #full-story {
@@ -176,12 +171,9 @@ main {
     .pull-quote {
       margin-top: (1.5 * @line-height-computed);
       margin-bottom: (1.5 * @line-height-computed);
-      .col-pull-left;
       text-align: center;
       
       @media (min-width: @screen-sm-min) {
-        width: @pulled-width;
-        margin-right: @grid-gutter-width;
         margin-top: (0.25 * @line-height-computed);
         margin-bottom: (0.75 * @line-height-computed);
         text-align: left;
