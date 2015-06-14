@@ -6,7 +6,7 @@ tags: [Startup,Product,Interaction design,Visual design,Branding]
 time: July–October 2014
 cover-image: /assets/plint/cover-img.png
 social-image: /assets/plint/fb-img.png
-excerpt: Plint was a short-lived startup that I joined as a co-founder. The idea was to create an <em>OKCupid</em> for conferences. Attendees would sign up, check into upcoming conferences, see other attendees and schedule meetings with them at the conference. This was the first time I took over all design related responsibilities for what was supposed to be the long run. After 4 months of work, we decided to shut down the project due to personal differences in our vision of the company. Although we disbanded at an early stage, I managed to create a solid design system that I was very pleased with, and gained some real-life startup experience.
+excerpt: Plint was a short-lived startup that I joined as a co-founder. The idea was to create an <em>OKCupid</em> for conferences. This was the first time I took over all design related responsibilities for what was supposed to be the long run. Although we disbanded at an early stage, I managed to create a solid design system that I was very pleased with, and gained some real-life startup experience.
 ---
 
 ## About the project
@@ -15,15 +15,26 @@ Plint was our attempt to solve a real business problem — *how can conference a
 
 With Plint, we wanted to help conference attendees find business matches and set up meetings at the conference, thus helping them to achieve their business goals.
 
+<figure>
+  <img src="/assets/plint/design/landing-page.png" />
+  <figcaption>
+  Our <a href="http://yosefw.me/plint-landing-page/">landing page</a> which I designed and <a href="https://github.com/yosefw/plint-landing-page">developed</a>
+  </figcaption>
+</figure>
+
 ## What I did
 
 I joined the startup more than a month after the other two co-founders, who had already chosen the problem that they wanted to solve, but had not yet quite figured out how to do so. They were talking to many potential users, confirming the need, learning how they address it using existing tools, getting to know the market. So the problem was well-defined by the time I joined. The solution, however, was not.
 
 ### Interviewing potential users
 
-We spoke to more than a dozen potential users: biz devs, entrepreneurs, managers and personal assistants. All of them attend conferences on a regular basis to promote their business goals. 
+We spoke to more than a dozen potential users: biz devs, entrepreneurs, managers and personal assistants. All of them attend conferences on a regular basis to promote their business goals.
 
 We found several pain points that we wanted to address:
+
+<aside class="pull-quote col-pull-right">
+  This experience has proved to me that I really want to be part of an early stage startup.
+</aside>
 
 * **Research is expensive**
 Most of the people we interviewed dedicate considerable resources -- both time and manpower -- to researching conference attendees. Some also spend money on external services to find information or improve on whatever they’ve already found.
@@ -33,6 +44,17 @@ When deciding whom they should try to reach out to, our interviewees said they a
 Although the conf-tech industry is very crowded, it seems that no app is focusing on conference attendees. Most apps cater to event organizers, helping them manage the event. Any social capabilities allowing attendees to connect with each other are byproducts of the organizers’ needs.
 * **Work tool, not social network**
 Another insight was that researching conferences was a work task, not something you do on your phone in your spare time. Mobile interfaces are too restrictive. Our users wanted the ability to export information as well as integration with other tools like spreadsheets and calendars. One interviewee even told us that he had one of his workers go over an event’s mobile app and copy all information about participants into Excel. Our potential users needed a solution that runs on a desktop computer.
+
+<figure>
+  <div class="img-3-row">
+    <img src="/assets/plint/design/sketches/sketch-1.jpeg" />
+    <img src="/assets/plint/design/sketches/sketch-2.jpeg" />
+    <img src="/assets/plint/design/sketches/sketch-3.jpeg" />
+  </div>
+  <figcaption>
+    Pen-and-paper concept sketches from our second meeting
+  </figcaption>
+</figure>
 
 ### Designing the MVP
 
@@ -47,19 +69,7 @@ For each conference, users could view information about the speakers and agenda.
 * **Browsing known attendees**
 Users who check-in would be able to filter all listed attendees by personal and company attributes (job title, seniority, industry, company size etc.).
 * **Desktop first**
-Since this is a work took, we decided to focus first on a desktop optimized website.
-
-<figure>
-  <div class="img-3-row">
-    <img src="/assets/plint/design/sketches/sketch-1.jpeg" />
-    <img src="/assets/plint/design/sketches/sketch-2.jpeg" />
-    <img src="/assets/plint/design/sketches/sketch-3.jpeg" />
-  </div>
-  <figcaption>
-    Pen-and-paper concept sketches from our second meeting
-  </figcaption>
-</figure>
-
+Since this is a work tool, we decided to focus first on a desktop optimized website.
 
 Within a few days, I had the main screens sketched out in Balsamiq.
 
@@ -77,46 +87,48 @@ Within a few days, I had the main screens sketched out in Balsamiq.
 
 When we were all satisfied with the main screen’s structure and flow, I moved on to branding and visual language. Since we were dealing with a tool for business development, I wanted our brand to convey values of growth and success. During that time, I was also helping my grandfather at his farm, where we were growing corn. The growing corn leaves had such a fresh and invigorating green color, I decided it was a perfect match for our brand.
 
-For the logo itself, I wanted to play on the metaphor of face to face meetings. Since I didn’t have much previous experience with logo design, I knew this had the potential to spiral out of hand. Therefore, I decided to limit myself to a very short design session, and come back to it in the future.
+<figure>
+  <div class="img-3-row">
+    <img src="/assets/plint/logo/attempts/attempt-23.png" alt="...">
+    <img src="/assets/plint/logo/attempts/attempt-28.png" alt="...">
+    <img src="/assets/plint/logo/attempts/attempt-42.png" alt="...">
+  </div>
+  <div class="img-3-row">
+    <img src="/assets/plint/logo/attempts/attempt-43.png" alt="...">
+    <img src="/assets/plint/logo/attempts/attempt-45.png" alt="...">
+    <img src="/assets/plint/logo/attempts/attempt-50.png" alt="...">
+  </div>
+  <figcaption>
+    Six draft versions
+  </figcaption>
+</figure>
 
-  <figure>
-    <div class="img-3-row">
-      <img src="/assets/plint/logo/attempts/attempt-23.png" alt="...">
-      <img src="/assets/plint/logo/attempts/attempt-28.png" alt="...">
-      <img src="/assets/plint/logo/attempts/attempt-42.png" alt="...">
-    </div>
-    <div class="img-3-row">
-      <img src="/assets/plint/logo/attempts/attempt-43.png" alt="...">
-      <img src="/assets/plint/logo/attempts/attempt-45.png" alt="...">
-      <img src="/assets/plint/logo/attempts/attempt-50.png" alt="...">
-    </div>
-    <figcaption>
-      Six draft versions
-    </figcaption>
-  </figure>
+<figure>
+  <img src="/assets/plint/logo/logo.png" alt="...">
+  <figcaption>
+    The final logo
+  </figcaption>
+</figure>
+
+For the logo itself, I wanted to play on the metaphor of face to face meetings. Since I didn’t have much previous experience with logo design, I knew this had the potential to spiral out of hand. Therefore, I decided to limit myself to a very short design session, and come back to it in the future.
   
-  <figure>
-    <img src="/assets/plint/logo/logo.png" alt="...">
-    <figcaption>
-      The final logo
-    </figcaption>
-  </figure>
-  
-  <figure>
-    <div class="img-3-row">
-      <img src="/assets/plint/logo/v2/v2a.png" alt="...">
-      <img src="/assets/plint/logo/v2/v2b.png" alt="...">
-      <img src="/assets/plint/logo/v2/v2c.png" alt="...">
-    </div>
-    <figcaption>
-      Experiments with a new logo design, a task I didn’t get the chance to finish
-    </figcaption>
-  </figure>
+<figure>
+  <div class="img-3-row">
+    <img src="/assets/plint/logo/v2/v2a.png" alt="...">
+    <img src="/assets/plint/logo/v2/v2b.png" alt="...">
+    <img src="/assets/plint/logo/v2/v2c.png" alt="...">
+  </div>
+  <figcaption>
+    Experiments with a new logo design, a task I didn’t get the chance to finish
+  </figcaption>
+</figure>
 
 
 ### Building a visual language
 
 Before figuring out the visual language, I consulted with my partners regarding their aesthetic preferences. They named products such as Quora, GitHub, Trello and Yelp as appealing to their taste. All of these products present a clean visual language, in which the brand is present but the content gets the front seat.
+
+
 
 Like most other web projects that I have been involved with in the last few years, I started with [Bootstrap](http://getbootstrap.com/) and tweaked the visual language to match our goals and taste.
 
