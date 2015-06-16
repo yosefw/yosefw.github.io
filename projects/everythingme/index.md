@@ -6,7 +6,7 @@ tags: [Interaction design,Product management,Project management]
 time: October 2011–February 2014
 link: everything.me
 social-image: /assets/everythingme/fb-img.png
-excerpt: EverythingMe was my first proper UX position. The company’s main product is a homescreen replacement launcher for Android that organizes the user’s phone and displays apps and information that fit the user’s current context. My initial responsibility was to create and maintain dozens of mobile HTML5 apps for the product's apps collection. Later on, I took upon myself to work on some of the company's internal tools and and improve their productivity. I also became involved in EverythingMe's partnership with Mozilla, in which I worked closely with the Firefox OS UX team. I had the privilege to work with amazing and passionate professionals, and I consider it to be the best organization I have ever worked for.
+excerpt: EverythingMe was my first proper UX position. The company’s main product is a homescreen replacement for Android that organizes the user’s phone and displays apps and information that fit the user’s current context. My initial responsibility was to create and maintain dozens of mobile HTML5 apps for the product's apps collection. Later on, I worked on some of the company's internal tools. I was also involved in EverythingMe's partnership with Mozilla, in which I worked closely with the Firefox OS UX team. I had the privilege to work with amazing and passionate professionals, and I consider it to be the best organization I have ever worked for.
 ---
 
 ## About the company
@@ -33,7 +33,25 @@ For the purposes of my work, I usually collaborated with 1 or 2 front-end develo
 
 I joined EverythingMe as a junior UX designer at the end of 2011. The startup's main offering back then was a search app that would analyze the user's query and return a list of relevant mobile-friendly web sites and apps. These were displayed in a grid of icons, similar to the iPhone’s homescreen grid of apps. When the user tapped one of these icons, they would be transferred into the source’s own search results for the user's query. This allowed users to quickly find information and content on mobile without having to either navigate through desktop only websites or clutter their phones with native apps they rarely use.
 
+<figure>
+  <div class="img-3-row">
+    <img class="mobile" src="/assets/everythingme/apps/Ringtones_0000_Main-Page.png" />
+    <img class="mobile" src="/assets/everythingme/apps/Ringtones_0007_Search-Results---Playing-Preview.png" />
+    <img class="mobile" src="/assets/everythingme/apps/Ringtones_0013_Transfer-screen.png" />
+  </div>
+  <figcaption>
+    The last app I worked on — a ringtone search engine. The right screen appears when a user is transfered to a 3rd party website — which is often a big mess — instructing them where they should look for the download button.
+  </figcaption>
+</figure>
+
 My job was to create new mobile web apps for content publishers who had not yet done so, or only on a very limited basis. I worked on apps for Twitter, Instagram, Pandora, Spotify, OpenTable, Urbanspoon, Grooveshark, Google+, LinkedIn, Metacritic, Someecards and many more. Later on, when many of these publishers released mobile web sites of their own, we retired the ones that we had created for them. I also worked on utility apps that we thought were necessary or were popular on native app stores, such as a local business finder, an app that found official websites, a mobile wallpaper finder, a flashlight and more.
+
+<figure class="col-pull-right">
+  <img class="mobile" src="/assets/everythingme/apps/Someecard_A01_0000_Home.png" />
+  <figcaption>
+    A mobile web app for Someecards
+  </figcaption>
+</figure>
 
 My process usually went something like this:
 
@@ -57,13 +75,16 @@ After QA and the management's approval, I would have the app deployed and add it
 
 The apps I created usually had 1-3 screens. They always included a search results page, which the user would reach directly from their EverythingMe results. Sometimes an app would also include a dedicated homepage and other app-specific screens and states. Depending on the user's initial query, apps were supposed to handle different contexts. For example, in location-aware apps, I had to ensure the experience was satisfactory even when the user's location couldn’t be retrieved.
 
-<div class="slider">
-  <img class="mobile" src="/assets/everythingme/apps/Ringtones_0000_Main-Page.png" />
-  <img class="mobile" src="/assets/everythingme/apps/Ringtones_0013_Transfer-screen.png" />
-  <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0007_Hidden.png" />
-  <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0010_Pop-over.png" />
-  <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0005_List-Mode.png" />
-</div>
+<figure>
+  <div class="img-3-row">
+    <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0007_Hidden.png" />
+    <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0010_Pop-over.png" />
+    <img class="mobile" src="/assets/everythingme/apps/XKCD_A07_0005_List-Mode.png" />
+  </div>
+  <figcaption>
+    A mobile web app for XKCD. The second mockup shows that tapping and holding reveals the famous 'alt' description you get on mouse hover on desktop.
+  </figcaption>
+</figure>
 
 My job was to have each new app developed as fast as possible, preferably within 2 weeks. During my tenure as apps manager, I oversaw the development of dozens of these apps. Together with the thousands of mobile optimized sites that our content team gathered and indexed, we managed to create a [unique mobile search experience](http://thenextweb.com/apps/2012/03/13/the-best-new-app-at-sxsw-everything-me-redefines-mobile-search/) and content offering, which later aroused considerable interest among other players in the mobile industry.
 
@@ -75,9 +96,13 @@ After a year or so dedicated to producing new apps, the scene had changed, and m
 
 At this time, we were preparing to [launch our product in new territories](http://techcrunch.com/2013/05/28/clever-siri-like-everything-me-android-content-search-app-launches-in-uk-and-spain/), which led to an expansion of our content team. A byproduct of this effort was a total rework of our internal [CMS](https://en.wikipedia.org/wiki/Content_management_system). Re-designing our CMS was something I always wanted to do, so I jumped at the opportunity and offered my help.
 
-The first iteration of the new CMS focused on adding new functionality, so the content team could take on localization assignments. My job was to make sure these new features were consistent with the rest of the system. I used [Bootstrap](http://getbootstrap.com/) to quickly redesign the main screens and make room for these new features.
+<aside class="pull-quote col-pull-left">
+  First, I interviewed several members of the content team to get their perspective and understand their pain points.
+</aside>
 
-After the new version was deployed, I was tasked with documenting the CMS to make it easier for new content editors to use (more about this in [Write The F*cking Manual](https://medium.com/@yosefwaysman/write-the-f-cking-manual-6bf1bff96f88)). Realizing that there was still much to improve, I started working on improvements to the CMS and new features. First, I interviewed several members of the content team to get their perspective on the system and understand their pain points. I then created a prioritized backlog of problems to be dealt with. After that, I started tackling each these problems, one at a time. Whenever developers were available to work on the CMS, they had a prioritized list of features and improvements to work on, coupled with specs and wireframes as needed. This way, I managed to get a constant stream of incremental improvements to the system. The content became team happier and more efficient.
+The first iteration of the new CMS focused on adding new functionality, so the content team could take on localization assignments. My job was to make sure these new features were consistent with the rest of the system. I used the [Bootstrap](http://getbootstrap.com/) UI framework to quickly redesign the main screens and make room for these new features.
+
+After the new version was deployed, I had to document the CMS to make it easier for new content editors to use (more about this in [Write The F*cking Manual](https://medium.com/@yosefwaysman/write-the-f-cking-manual-6bf1bff96f88)). Realizing that there was still much to improve, I started working on improvements to the CMS and new features. First, I interviewed several members of the content team to get their perspective on the system and understand their pain points. I then created a prioritized backlog of problems to be dealt with. After that, I started tackling each these problems, one at a time. Whenever developers were available to work on the CMS, they had a prioritized list of features and improvements to work on, coupled with specs and wireframes as needed. This way, I managed to get a constant stream of incremental improvements to the system. The content became team happier and more efficient.
 
 #### Alfred
 
@@ -110,15 +135,19 @@ All in all, several dozen of these replacement HTML5 apps were produced with Alf
 
 **NOTE:** All of my deliverables relating to this section are under an NDA and cannot be shared.
 
-In just over a year, we had so much content that we had begun to capture the attention of some major players in the mobile industry, who did not benefit from the "app store" model. It made us a perfect fit for Mozilla's new mobile operating system — [Firefox OS](https://www.mozilla.org/en-US/firefox/os/). They were building an operating system based on web technologies, but they didn't have any content (apps) to make their devices appealing enough for customers, even in the low-end markets they were targeting. We had a huge collection of mobile optimized web apps, coupled with a powerful search engine. Mozilla saw the potential, and [invested in us](https://blog.mozilla.org/blog/2012/11/28/mozilla-invests-in-everything-me/) (their first ever investment in an outside company). 
+In just over a year, we had so much content that we had begun to capture the attention of some major players in the mobile industry, who did not benefit from the "app store" model. It made us a perfect fit for Mozilla's new mobile operating system — [Firefox OS](https://www.mozilla.org/en-US/firefox/os/). They were building an operating system based on web technologies, but they didn't have any content (apps) to make their devices appealing enough for customers, even in the low-end markets they were targeting. We had a huge collection of mobile optimized web apps, coupled with a powerful search engine. Mozilla saw the potential, and [invested in us](https://blog.mozilla.org/blog/2012/11/28/mozilla-invests-in-everything-me/) (their first ever investment in an outside company).
 
-Soon enough, a large part of EverythingMe was dedicated to this new partnership. Our aim was to ensure that the key features of our main product (the [Android launcher](https://play.google.com/store/apps/details?id=me.everything.launcher)) were integrated into Firefox OS. I was called in to take charge of the UX aspects of the partnership. In this role, I had 2 major duties:
+Soon enough, a large part of EverythingMe was dedicated to this new partnership. Our goal was to integrate the key features of our main product (the [Android launcher](https://play.google.com/store/apps/details?id=me.everything.launcher)) into Firefox OS. I was called in to take charge of the UX aspects of the partnership. In this role, I had 2 major duties:
 
 1. Ensure our features are implemented seamlessly in the new operation system, to create a consistent user experience.
 
 2. Communicate and create a relationship with Firefox OS's UX team, which differed from us significantly in both size and culture.
 
-I started by going through all of the existing [UX documentation](https://wiki.mozilla.org/Gaia) Mozilla had produced. This allowed me to catch up with any developments I may have missed and also to understand how the Mozilla team likes to communicate. To build rapport with them, I decided to present all of our deliverables in their preferred style (it also helped that I really liked it). Here's an example of how [their typical UX specs](https://mozilla.app.box.com/applications/1/864505208/7994695536/1) looked.
+First, I went through all of the existing [UX documentation](https://wiki.mozilla.org/Gaia) Mozilla had produced. This allowed me to catch up with any developments I may have missed and also to understand how the Mozilla team likes to communicate. To build rapport with them, I decided to present all of our deliverables in their preferred style (it also helped that I really liked it). Here's an example of how [their typical UX specs](https://mozilla.app.box.com/applications/1/864505208/7994695536/1) looked.
+
+<aside class="pull-quote col-pull-left">
+  To build rapport with them, I decided to present all of our deliverables in their preferred style
+</aside>
 
 I started with creating one massive spec covering all of the features that we wanted to add to the next release. This spec guided our development team for the next several months. During this period I maintained an ongoing relationship with Mozilla's UX team, pitching our features and suggestions, addressing their comments and worries, and generally making sure that things move forward smoothly. We had a weekly video conference with them, where we could freely discuss any UX related topics and report to each other on our progress. Later on, we met at Mozilla's San Francisco headquarters for a week-long workshop in which we planned and brainstormed further integration of our capabilities into Firefox OS’s next versions.
 
@@ -126,7 +155,7 @@ Working with Mozilla taught me how to handle product development in a complex en
 
 ## Aftermath
 
-Two and a half years after I joined EverythingMe, the company’s priorities changed and I found that my areas of responsibility were less in need. Nonetheless, I greatly value the time I spent at this company as I learned  some invaluable skills, amongst them:
+Two and a half years after I joined EverythingMe, the company’s priorities changed and I found that my areas of responsibility were less in need. Nonetheless, I greatly value the time I spent at this company as I learned some invaluable skills, amongst them:
 
 * **Working with tech**
 When I joined EverythingMe, I didn’t even know the difference between "back-end" and “front-end”. But soon enough, I started feeling really comfortable with tech. I can now read and understand  with ease all documentation and specs, and I now design with tech capabilities and constraints in mind.
