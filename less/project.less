@@ -181,12 +181,32 @@ main {
   .img-row(3);
 }
 
+.img-4-row {
+  .img-row(3);
+}
+
+.img-5-row {
+  .img-row(5);
+}
+
 .img-6-row {
   .img-row(6);
 }
 
+.img-7-row {
+  .img-row(7);
+}
+
+.img-8-row {
+  .img-row(8);
+}
+
 figure {
   .col-pull-center;
+  
+  div + div {
+    margin-top: (1 * @line-height-computed);
+  }
   
   img:only-of-type {
     margin: 0 auto;
