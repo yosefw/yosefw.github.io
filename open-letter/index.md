@@ -17,12 +17,6 @@ On the other end of the spectrum, there are product categories that I’m not ve
 
 Are you building something people need? Are you looking for a product/hacker guy to take over all design? If you answered "Yes" to these questions, read on. We just might be a good match!
 
-<figure>
-  <img src="/assets/open-letter/tools.png">
-  <figcaption>
-    My currently favorite design and development tools
-  </figcaption>
-</figure>
 
 ## My skills
 
@@ -38,6 +32,15 @@ By "visual design", I refer specifically to dressing the product’s “skeleton
 
 * **Branding — Average**
 I feel confident enough to create initial branding for early stage products, but at some point down the line you may want to bring in a branding expert. This is definitely a skill I intend to develop further.
+
+<figure>
+  <img src="/assets/open-letter/tools.png">
+  <figcaption>
+    My currently favorite design and development tools. Top row from left: <a href="http://docs.google.com">Google Docs</a>, <a href="http://balsamiq.com">Balsamiq</a>, <a href="http://bohemiancoding.com/sketch/">Sketch</a> and <a href="http://brackets.io">Brackets</a>.
+    Middle row from left: <a href="http://lesscss.org/">LESS</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, <a href="http://handlebarsjs.com/">Handlebars</a> and <a href="https://www.npmjs.com/">npm</a>.
+    Bottom row from left: <a href="http://bower.io">Bower</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://gruntjs.com/">Grunt</a> and <a href="http://github.com">Github</a>.
+  </figcaption>
+</figure>
 
 ### Coding skills
 
@@ -83,15 +86,15 @@ Possible deliverable: *Specs document*.
 
 The first step in any project, big or small, is always figuring out what we want to do. This involves articulating goals, gathering business and user needs and listing any technological or other constraints. I’m a big believer in [activity-centered design](http://www.jnd.org/dn.mss/human-centered_desig.html) (as opposed to human-centered design, which I think benefits agencies more than in-house teams). Therefore, I aim to arrive as quickly as possible at a list of requirements: activities users should be able to accomplish. This makes figuring out screens and workflows *much* easier. I find other more "traditional" types of deliverables and activities, such as personas or experience journeys, an overshoot for most design projects, so I rarely use them.
 
-<aside class="pull-quote col-pull-left">
-  My aim is to get to the end point — building.
-</aside>
-
 If there aren’t many requirements and everyone involved is in agreement as to what we’re doing, I’ll just jot them down quickly or keep them in my head. If requirements are more complex, or if there is a need to reach consent, I’ll create a full-fledged specs document, specifying the requirements and the reasoning behind them.
 
 #### Step #2: Interaction design
 
 Possible deliverables: *Sketches*, *wireframes* or *prototypes*.
+
+<aside class="pull-quote col-pull-left">
+  My aim is to get to the end point — building.
+</aside>
 
 This is where I figure out how the activities outlined in the previous step unfold within the product. Depending on the complexity of each flow, I might choose to design interaction flows in static sketches and wireframes, or just go ahead and write some code to prototype the behavior. For wireframes, my weapon of choice is [Balsamiq](https://balsamiq.com/). I think it best combines the advantages of both paper and design software, allowing for quick iterations on lo-fi wireframes.
 
