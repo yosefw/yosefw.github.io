@@ -2,7 +2,7 @@
 layout: project
 title: Open Letter to a Potential Employer
 subtitle: Everything you need to know when considering me for a position in your company
-excerpt: I’m a UX/UI designer who can code his own designs. I'm currently looking to father a new product. If You're looking for a designer or a design-oriented product manager, for a new productivity-oriented product — I'm your man.
+excerpt: I’m a UX/UI designer who can code his own designs. I'm currently looking to father a new product. If you're looking for a designer or a design-oriented product manager, for a new productivity-oriented product — I'm your man.
 ---
 
 ## The work I want to do
