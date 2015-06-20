@@ -20,11 +20,15 @@ The aim of Open Pension is to open up data about the Israeli pension fund market
 
 In Israel, all employees are required by law to transfer a part of their salary to a pension fund. These funds are managed by institutional investors, mostly private insurance companies. These funds therefore belong to some of the largest players in the capital market, routing huge sums of money into the economy. But data about these investments are hard to obtain and information about the pension market is essentially closed off  to the public. We wanted to create a greater awareness to what’s going on with our money.
 
+<aside class="pull-quote col-pull-left">
+  In early 2015, Israeli TV Channel 10 aired a story based on our finding
+</aside>
+
 Every quarter, hundreds of pension funds are required to publish their asset allocations. This means that the data about each fund's investment policy are available. But no one aggregates these data to allow for higher-level analyses, making it nearly impossible to understand this market’s behavior. We believed that there are groups of people — reporters, researchers, bloggers and activists — who would be interested in digging into aggregate data if they were made readily available. At Open Pension, we do just that: we collect the quarterly reports from each of these funds and aggregate them into a single, clean and standardized database.
 
 ### The team and our work schedule
 
-The project is being developed under the auspice of the [Public Knowledge Workshop](http://www.hasadna.org.il/en/). It is developed and maintained by volunteers, including myself, each of whom usually contributes 3-5 hours of work per week. The core team currently consists of several developers, data analysts, and subject matter analysts as well as a single designer — me! Other volunteers contribute their time for shorter periods every now and then.
+The project is developed under the auspice of the [Public Knowledge Workshop](http://www.hasadna.org.il/en/). It is developed and maintained by volunteers, including myself, each of whom usually contributes 3-5 hours of work per week. The core team currently consists of several developers, data analysts, and subject matter analysts as well as a single designer — me! Other volunteers contribute their time for shorter periods every now and then.
 
 ## What I did
 
@@ -36,18 +40,18 @@ At the start of the project, I felt it my responsibility to initiate two convers
 
 #### Information architecture
 
+My first order of business was to become acquainted with the data. I started going over examples of pension fund quarterly reports. For each asset the fund invests in, it is required to report a plethora of details, from type of asset (shares, options, bonds, loans etc) and amount invested to interest rate and estimated value. I soon realized that not all of these details are of equal importance when observing the entire pension market. So I started a conversation about the information most important to our users (more on that below). Soon enough, we managed to narrow the list down to a handful of key data types.
+
 <figure>
   <img src="/assets/open-pension/early-ia.png" />
   <figcaption>
-    An early chart I drew to make sense of the data
+    An early chart I drew to make sense of the data. I divided the 8 important parameters to 3 meaningful groups: who manages the money, how the money is being invested and who gets the money.
   </figcaption>
 </figure>
 
-My first order of business was to become acquainted with the data. I started going over examples of pension fund quarterly reports. For each asset the fund invests in, it is required to report a plethora of details, from type of asset (shares, options, bonds, loans etc) and amount invested to interest rate and estimated value. I soon realized that not all of these details are of equal importance when observing the entire pension market. So I started a conversation about the information most important to our users (more on that below). Soon enough, we managed to narrow the list down to a handful of key data types.
-
 #### Target users
 
-At this time I also thought it necessary to better define our target audience. We all agreed that the project should cater to all researchers and reporters who may be interested in the data. But as in many other open data projects, there was also a latent desire to make the project accessible to the wider public. I advocated that we should cater only to researchers and reporters and not to "the masses". I have explained this approach at length in [my blog](https://medium.com/social-commentary/the-open-data-hubris-70d12be222e0). In a nutshell — it's extremely hard to interest the uninterested in raw data. They need stories that are meaningful to them. Therefore, we have a better chance of attaining our desired impact by making our data accessible to professional storytellers. 
+At this time I also thought it necessary to better define our target audience. We all agreed that the project should cater to all researchers and reporters who may be interested in the data. But as in many other open data projects, there was also a latent desire to make the project accessible to the wider public. I advocated that we should cater only to researchers and reporters and not to "the masses". I have explained this approach at length in [my blog](https://medium.com/social-commentary/the-open-data-hubris-70d12be222e0). In a nutshell — it's extremely hard to interest the uninterested in raw data. They need stories that are meaningful to them. Therefore, we have a better chance of attaining our desired impact by making our data accessible to professional storytellers.
 
 While having my work used by thousands of people is always a dream, I felt that with this project I must insist that we limit the scope to audiences who would make the most use of it. It took a while to get other team members on board, but this approach has paid off. Feature prioritization has become much easier once we reached consensus about our target audience.
 
@@ -60,11 +64,10 @@ After the first few team meetings, once I felt that I understood enough to start
 The first version assumed that users would want access to the raw aggregate data without much structuring. This means users will essentially have to create their own queries, albeit through a friendly interface, without any guidance from us.
 
 <div class="slider">
-  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe01.png" />
-  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe02.png" />
-  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe03.png" />
-  <img src="/assets/open-pension/v1/v1-tablet-wireframe01.png" />
   <img src="/assets/open-pension/v1/v1-tablet-wireframe02.png" />
+  <img src="/assets/open-pension/v1/v1-tablet-wireframe01.png" />
+  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe02.png" />
+  <img class="mobile" src="/assets/open-pension/v1/v1-mobile-wireframe03.png" />  
 </div>
 
 #### Feedback
@@ -103,7 +106,7 @@ The investments are shown in compact tables, sorted by size. This allows for qui
 
 ### Feedback and initial achievements
 
-The new design proved to be a big improvement. Users found it much easier to navigate and many have told us that they find the interface’s aesthetics exceptional compared to other products in this area. 
+The new design proved to be a big improvement. Users found it much easier to navigate and many have told us that they find the interface’s aesthetics exceptional compared to other products in this area.
 
 Although the database is still not entirely complete and up-to-date, the design itself brought us appreciation and cooperation from journalists, researchers and policy makers. Even without the complete database, we already have several modest achievements:
 
@@ -115,7 +118,11 @@ While these are modest achievements, we hope they present a glimpse of the futur
 
 ## Looking forward
 
-Although Open Pension is already online and available to everyone, it is still very much a work in progress. Some core features are still not ready and the current version is somewhat rough around the edges, but we are doing our best to make progress in the modest amount of time that the team can dedicate to the project. 
+Although Open Pension is already online and available to everyone, it is still very much a work in progress. Some core features are still not ready and the current version is somewhat rough around the edges, but we are doing our best to make progress in the modest amount of time that the team can dedicate to the project.
+
+<aside class="pull-quote col-pull-left">
+  Open Pension is exactly the type of product I’m excited about
+</aside>
 
 We’ve also learned that our most sought after users — reporters in high-profile media outlets — don’t necessarily have the time or energy to dig into the data and find interesting stories on their own. As of this writing (mid-2015) we’re in the process of creating relationships with other types of users — bloggers and social activists — who we assume have more motivation to use our product and create the kind of social impact that we are aiming for.
 
