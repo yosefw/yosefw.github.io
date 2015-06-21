@@ -139,7 +139,7 @@ In just over a year, we had so much content that we had begun to capture the att
 
 Soon enough, a large part of EverythingMe was dedicated to this new partnership. Our goal was to integrate the key features of our main product (the [Android launcher](https://play.google.com/store/apps/details?id=me.everything.launcher)) into Firefox OS. I was called in to take charge of the UX aspects of the partnership. In this role, I had 2 major duties:
 
-1. Ensure our features are implemented seamlessly in the new operation system, to create a consistent user experience.
+1. Ensure our features are implemented seamlessly in the new operating system, to create a consistent user experience.
 
 2. Communicate and create a relationship with Firefox OS's UX team, which differed from us significantly in both size and culture.
 
@@ -161,7 +161,7 @@ Two and a half years after I joined EverythingMe, the company’s priorities cha
 When I joined EverythingMe, I didn’t even know the difference between "back-end" and “front-end”. But soon enough, I started feeling really comfortable with tech. I can now read and understand  with ease all documentation and specs, and I now design with tech capabilities and constraints in mind.
 
 * **Working with developers**
-I had the privilege to work with extremely professional developers. I learned how to communicate with them effectively. Sometimes we worked in a pure waterfall workflow, where I would hand over finished designs and specs to the developer. This taught me how to deliver designs, to cover all edge cases, to specify technological capabilities and dependencies, and to make sure the developers can get straight to work. But whenever possible, we employed an agile approach, where I iterated with developers face to face, exchanging ideas and suggestions in real time to solve problems at hand. Most developers find it fun and simple to work with me.
+I had the privilege of working with extremely professional developers. I learned how to communicate with them effectively. Sometimes we worked in a pure waterfall workflow, where I would hand over finished designs and specs to the developer. This taught me how to deliver designs, to cover all edge cases, to specify technological capabilities and dependencies, and to make sure the developers can get straight to work. But whenever possible, we employed an agile approach, where I iterated with developers face to face, exchanging ideas and suggestions in real time to solve problems at hand. Most developers find it fun and simple to work with me.
 
 * **Being professionally passionate**
 At EverythingMe, almost everyone was deeply passionate about their work. I found a place where people didn’t just work to make a living. They enjoyed what they did. Many pursued side-projects, participated in hackathons and meetups, wrote and spoke about their work and felt really comfortable geeking out about it. I believe this environment had a great positive influence on me, pushing me to passionately keep expanding my skills and to pursue outside-of-work projects, such as [Open Pension](/projects/open-pension) and [Plint](/projects/plint).

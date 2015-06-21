@@ -70,7 +70,7 @@ There is an end goal we want to achieve. A designer’s job is to fill in the ga
 
 In an in-house product team, deliverables have no value in and of themselves. They are simply the result of activities that move a project forward. There is no reason to polish wireframes or mockups beyond the point of achieving a good solution.
 
-Therefore, many of my "deliverables" look like works in progress, even when I’m done with them and moved on in the the next stage. That’s because what I care about the most is the end result. I’ll always use the most relevant tool or activity to solve the specific problem at hand, which I’ll stay with only until the problem is solved. I believe that the only deliverable that needs to be perfect is the published product.
+Therefore, many of my "deliverables" look like works in progress, even when I’m done with them and have moved on to the next stage. That’s because what I care about the most is the end result. I’ll always use the most relevant tool or activity to solve the specific problem at hand, which I’ll stay with only until the problem is solved. I believe that the only deliverable that needs to be perfect is the published product.
 
 ### Design process
 
@@ -121,7 +121,7 @@ Deliverable: *Production ready front-end code*.
 
 Although my background is not in development, I usually enjoy this part the most. My aim here is to implement my design in clean, standard compliant front-end code. I want to get the product shipped, while maintaining the ability to continue tweaking the design as needed (without driving fellow developers crazy).
 
-I start with marking up the content, in either pure HTML, Markdown or other templating engine. I always strive to write clean and semantic markup and try to ensure that it’s accessible (although there is still some room for improvement). Then I sprinkle[ Bootstrap](http://getbootstrap.com/) on top of it, which greatly simplifies configuring the layout and basic UI elements. After that, I start overwriting Bootstrap’s default styles, either on pure CSS, or preferably, in [LESS](http://lesscss.org/). I love changing Bootstrap’s variable values and seeing the changes propagate throughout the design! Any behavior related tasks I will try to solve with a jQuery plug-in someone else has published. If I have no luck, I will write my own. In the end, I’ll have the actual interface designed to the pixel and ready to be shipped.
+I start with marking up the content, in either pure HTML, Markdown or other templating engine. I always strive to write clean and semantic markup and try to ensure that it’s accessible (although there is still some room for improvement). Then I sprinkle[ Bootstrap](http://getbootstrap.com/) on top of it, which greatly simplifies configuring the layout and basic UI elements. After that, I start overwriting Bootstrap’s default styles, either in pure CSS, or preferably, in [LESS](http://lesscss.org/). I love changing Bootstrap’s variable values and seeing the changes propagate throughout the design! Any behavior related tasks I will try to solve with a jQuery plug-in someone else has published. If I have no luck, I will write my own. In the end, I’ll have the actual interface designed to the pixel and ready to be shipped.
 
 ## Are we a good match? (TL;DR)
 
