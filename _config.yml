@@ -5,6 +5,9 @@ exclude:
 - CNAME
 - node_modules
 
+gems:
+  - jekyll-sitemap
+
 kramdown:
   input: GFM
 
