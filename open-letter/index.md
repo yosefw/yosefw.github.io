@@ -127,7 +127,7 @@ I start with marking up the content, in either pure HTML, Markdown or other temp
 
 To sum up, we should talk if:
 
-* You're building a **useful, productivity-oriented product** (think GitHub or MailChimp, not Instagram of Snapchat).
+* You're building a **useful, productivity-oriented product** (think GitHub or MailChimp, not Instagram or Snapchat).
 * You're product is **not** in the following categories:
   * Social/messaging
   * Casual gaming
